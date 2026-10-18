@@ -1,0 +1,86 @@
+[
+ {
+  "task": "m1",
+  "split": "held-in-calib",
+  "file": "sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys.nwb",
+  "session": "20120924",
+  "sha256": "63ee25782c62ff2275dcfbdcaa56552ec4c26fcde00f5a74e5be54785b5c25eb",
+  "cache": "m1_sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys.npz",
+  "bins": 182498,
+  "channels": 64,
+  "outputs": 16,
+  "scored": 54849
+ },
+ {
+  "task": "m1",
+  "split": "held-in-calib",
+  "file": "sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys.nwb",
+  "session": "20120926",
+  "sha256": "9c72512308194b93cc19b51733514eb9721152ffe4dd357ee93aabd4be5caa91",
+  "cache": "m1_sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys.npz",
+  "bins": 172325,
+  "channels": 64,
+  "outputs": 16,
+  "scored": 54476
+ },
+ {
+  "task": "m1",
+  "split": "held-in-calib",
+  "file": "sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys.nwb",
+  "session": "20120927",
+  "sha256": "2d2fdc9be5ccb7a47969894ff1da43a994da11bfff298353f94d489c4af37b3a",
+  "cache": "m1_sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys.npz",
+  "bins": 177606,
+  "channels": 64,
+  "outputs": 16,
+  "scored": 49228
+ },
+ {
+  "task": "m1",
+  "split": "held-in-calib",
+  "file": "sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys.nwb",
+  "session": "20120928",
+  "sha256": "96e7f078c6acb89b802b6241a36b9c9e2d04df82c180a63354fd3f7e74357254",
+  "cache": "m1_sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys.npz",
+  "bins": 160436,
+  "channels": 64,
+  "outputs": 16,
+  "scored": 54783
+ },
+ {
+  "task": "m1",
+  "split": "held-out-calib",
+  "file": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys.nwb",
+  "session": "20121004",
+  "sha256": "782c1fd090facfb3c50b6a85da8209ca3aea71f66bd4edc13d61fe4a55a3429d",
+  "cache": "m1_sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys.npz",
+  "bins": 3442,
+  "channels": 64,
+  "outputs": 16,
+  "scored": 1305
+ },
+ {
+  "task": "m1",
+  "split": "held-out-calib",
+  "file": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys.nwb",
+  "session": "20121017",
+  "sha256": "8dd22c67500445ec1e0c11980475badbba9e960a05db16b78aaaad5502b3c652",
+  "cache": "m1_sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys.npz",
+  "bins": 3342,
+  "channels": 64,
+  "outputs": 16,
+  "scored": 1295
+ },
+ {
+  "task": "m1",
+  "split": "held-out-calib",
+  "file": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys.nwb",
+  "session": "20121024",
+  "sha256": "bbeb6c7d66e2c2e9b76506021a6cf8800bc19021b6d1fd03c4eb6de71490bafb",
+  "cache": "m1_sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys.npz",
+  "bins": 6671,
+  "channels": 64,
+  "outputs": 16,
+  "scored": 1281
+ }
+]

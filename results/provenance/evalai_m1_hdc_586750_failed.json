@@ -1,0 +1,9 @@
+{
+ "submission": 586750,
+ "phase": 4599,
+ "split": 5750,
+ "status": "failed",
+ "configuration": "hdc M1 D=4096 (mjcs selection)",
+ "execution_time_s": 1393.8,
+ "note": "decoding of all 7 files completed in the container log; no result file was produced"
+}

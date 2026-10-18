@@ -1,0 +1,19 @@
+{
+ "task": "m1",
+ "method": "finetune_full",
+ "epochs": 20,
+ "seed": 113,
+ "summary": {
+  "acc": 0.6823848060199192,
+  "acc_held_in": 0.7235030978918076,
+  "acc_held_out": 0.6275604168574015,
+  "plasticity": 0.6535229484240214,
+  "bwt": -0.06015328566233317,
+  "bwt_held_in": -0.07075802981853485,
+  "bwt_held_out": -0.03894379734992981,
+  "zero_shot_held_out": 0.6070264379183451,
+  "adapt_macs": 236236308480.0,
+  "adapt_seconds": 0.412067057332024,
+  "memory": 611216.0
+ }
+}

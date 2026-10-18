@@ -1,0 +1,18 @@
+{
+ "submission": 586751,
+ "phase": 4599,
+ "split": 5751,
+ "submitted": "2026-10-18T20:02:30",
+ "is_public": false,
+ "method": "hdc",
+ "configuration": "hdc (source=state, D=2048, scale=1.0, lam=1000); identical in both selection records",
+ "result": {
+  "test_split_m2": {
+   "Normalized Latency": 0.06403712598618866,
+   "Held Out R2 Mean": 0.3889787843314155,
+   "Held Out R2 Std.": 0.07666173642028766,
+   "Held In R2 Mean": 0.5062621806515737,
+   "Held In R2 Std.": 0.040767029689314754
+  }
+ }
+}

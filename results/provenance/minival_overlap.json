@@ -1,0 +1,71 @@
+{
+ "files": [
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250101T111740.nwb",
+   "bins": 1503,
+   "duplicated": 1503
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250101T112404.nwb",
+   "bins": 1714,
+   "duplicated": 1714
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250108T110520.nwb",
+   "bins": 1691,
+   "duplicated": 1691
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250108T111022.nwb",
+   "bins": 1831,
+   "duplicated": 1831
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250108T111455.nwb",
+   "bins": 1761,
+   "duplicated": 1761
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250113T120811.nwb",
+   "bins": 1530,
+   "duplicated": 1530
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250113T121303.nwb",
+   "bins": 1536,
+   "duplicated": 1536
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250115T110633.nwb",
+   "bins": 1547,
+   "duplicated": 1547
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250115T111328.nwb",
+   "bins": 1530,
+   "duplicated": 1530
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250119T113543.nwb",
+   "bins": 1583,
+   "duplicated": 1583
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250119T114045.nwb",
+   "bins": 1657,
+   "duplicated": 1657
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250120T115044.nwb",
+   "bins": 1517,
+   "duplicated": 1517
+  },
+  {
+   "file": "sub-HumanPitt-held-in-minival_ses-19250120T115537.nwb",
+   "bins": 1520,
+   "duplicated": 1520
+  }
+ ],
+ "bins": 20920,
+ "duplicated": 20920
+}

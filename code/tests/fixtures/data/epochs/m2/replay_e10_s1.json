@@ -1,0 +1,1 @@
+{"task": "m2", "method": "replay", "epochs": 10, "seed": 1, "summary": {"acc": 0.5245848541083468, "acc_held_in": 0.5245848541083468, "acc_held_out": 0.5245848541083468, "bwt": -0.1, "adapt_macs": 1000000000.0}}

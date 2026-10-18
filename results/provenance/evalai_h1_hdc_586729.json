@@ -1,0 +1,17 @@
+{
+ "submission": 586729,
+ "phase": 4599,
+ "submitted": "2026-10-18T11:19:15",
+ "is_public": false,
+ "image": "mjcs/submission/h1.Dockerfile",
+ "method": "hdc",
+ "result": {
+  "test_split_h1": {
+   "Normalized Latency": 0.0705076793789348,
+   "Held Out R2 Mean": 0.5225924909479802,
+   "Held Out R2 Std.": 0.09329253274573093,
+   "Held In R2 Mean": 0.6570761031751869,
+   "Held In R2 Std.": 0.05022973491988766
+  }
+ }
+}

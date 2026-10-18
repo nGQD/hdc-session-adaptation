@@ -1,0 +1,1 @@
+{"task": "h1", "method": "readout_tag", "epochs": 5, "seed": 1, "summary": {"acc": 0.26482794073943156, "acc_held_in": 0.26482794073943156, "acc_held_out": 0.26482794073943156, "bwt": -0.05, "adapt_macs": 500000000.0}}

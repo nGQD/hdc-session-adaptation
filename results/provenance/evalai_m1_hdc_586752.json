@@ -1,0 +1,18 @@
+{
+ "submission": 586752,
+ "phase": 4599,
+ "split": 5750,
+ "submitted": "2026-10-18T20:03:01",
+ "is_public": false,
+ "method": "hdc",
+ "configuration": "hdc (source=state, D=2048, scale=1.0, lam=1000); artifacts from mjcs_snapshot_2026-10-18 selection",
+ "result": {
+  "test_split_m1": {
+   "Normalized Latency": 0.0594894925492952,
+   "Held Out R2 Mean": 0.6220236135175486,
+   "Held Out R2 Std.": 0.07561245063763494,
+   "Held In R2 Mean": 0.7541408506608374,
+   "Held In R2 Std.": 0.029924349476028234
+  }
+ }
+}

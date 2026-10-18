@@ -1,0 +1,1 @@
+{"task": "m2", "method": "finetune_full", "epochs": 5, "seed": 0, "summary": {"acc": 0.3359863487067586, "acc_held_in": 0.3359863487067586, "acc_held_out": 0.3359863487067586, "bwt": -0.05, "adapt_macs": 500000000.0}}
