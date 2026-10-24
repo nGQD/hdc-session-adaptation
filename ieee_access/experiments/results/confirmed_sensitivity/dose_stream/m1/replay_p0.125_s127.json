@@ -1,0 +1,194 @@
+{
+  "R": [
+    [
+      0.7629399299621582,
+      0.8071547746658325,
+      0.787407398223877,
+      0.7982414364814758,
+      0.7327361106872559,
+      0.6184787750244141,
+      0.43214523792266846
+    ],
+    [
+      0.7270660400390625,
+      0.7696460485458374,
+      0.7298102378845215,
+      0.780431866645813,
+      0.7938649654388428,
+      0.6038111448287964,
+      0.5524293780326843
+    ],
+    [
+      0.7270666360855103,
+      0.769646406173706,
+      0.7298110723495483,
+      0.7804323434829712,
+      0.7938652038574219,
+      0.6038112044334412,
+      0.5524295568466187
+    ],
+    [
+      0.7210015058517456,
+      0.7635102272033691,
+      0.7378379702568054,
+      0.7810750007629395,
+      0.7170559763908386,
+      0.5972779393196106,
+      0.5439515113830566
+    ]
+  ],
+  "names": [
+    "20120924",
+    "20120926",
+    "20120927",
+    "20120928",
+    "20121004",
+    "20121017",
+    "20121024"
+  ],
+  "held_in": 4,
+  "adapt_macs": [
+    111170027520,
+    0,
+    305717575680
+  ],
+  "adapt_seconds": [
+    0.6249274349538609,
+    1.562406984041445,
+    0.40417962393257767
+  ],
+  "memory": [
+    44988976,
+    45022416,
+    45089136
+  ],
+  "start_macs": 0,
+  "start_seconds": 0.00573333608917892,
+  "summary": {
+    "acc": 0.694530018738338,
+    "acc_held_in": 0.7508561760187149,
+    "acc_held_out": 0.6194284756978353,
+    "plasticity": 0.6472092270851135,
+    "bwt": -0.039276848236719765,
+    "bwt_held_in": -0.03807970881462097,
+    "bwt_held_out": -0.04167112708091736,
+    "zero_shot_held_out": 0.5944533745447794,
+    "adapt_macs": 138962534400.0,
+    "adapt_seconds": 0.8638380143092945,
+    "memory": 45089136.0
+  },
+  "task": "m1",
+  "method": "replay",
+  "variant": "full",
+  "seed": 127,
+  "rng_seed": 127,
+  "config": {
+    "lr": 0.0003,
+    "epochs": 20
+  },
+  "selection_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+  "checkpoint_sha256": "d9770bde477c26f77582d5a7be3ff40819ed5bbbb8662851a6bcca15b96a3900",
+  "runner_sha256": "6f04f8d2d9b4e6d4e88253181390d823daa3ff5a80046bc9b7cde4cfaf123a48",
+  "implementation_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "software_versions": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu124",
+    "cuda_runtime": "12.4",
+    "device": "cuda"
+  },
+  "data_manifest_sha256": "183af799f53eb6eb9182b51f9c34180c240d2bd7da9763d49428e5d0da3e2f1e",
+  "prefix_fraction": 0.125,
+  "input_identity": {
+    "held_in": 4,
+    "sessions": [
+      {
+        "name": "20120924",
+        "fit_end": 145998,
+        "arrays_sha256": {
+          "x": "1474e9944105035e673d0be26755c7a342e8279f6c080e2f3b7f83b2adf953ff",
+          "y": "74d99a3a508c1111c6496dd79c583501651fae691fba2e65434f41a969eca994",
+          "yz": "f5912ec54bf417e0ba9aeef92e0efb199ebaff7564eca0f5b28f5f41b9299640",
+          "fit": "7a58112f418c0ab9ae0d90090fca55c00e23ea71d868bc7dbd0fd479c4af9de4",
+          "score": "47684f7adf8680b631f7b1f12f58c69eb91a80c4bda0d89d2db245b900ab5bc0"
+        }
+      },
+      {
+        "name": "20120926",
+        "fit_end": 137860,
+        "arrays_sha256": {
+          "x": "66bdd5e9840311feb995556349d2f8ea609d75df1186fc7fcdd1671bd0959e93",
+          "y": "22a45387d7c97501be2bf380567839c28e4d5a9289efc705bf6fbe7faec65247",
+          "yz": "9176b7f705ad2ef97255cf6abebd600ddd8b7db6b20b301ddca29283ac7c1b12",
+          "fit": "8a717e2d46e9604a94835b67e031e51bbbc7049489683d61d3a053ee74d3414c",
+          "score": "6d3cb42ca78340389d8ec6040b44ab42f956b79a253d254bd6a5a95ac3fc9843"
+        }
+      },
+      {
+        "name": "20120927",
+        "fit_end": 142085,
+        "arrays_sha256": {
+          "x": "1d5d0bc328acdf6cdeb2f4fabf477d11bdbc9d7f5eb2d641e5481a820b7e165f",
+          "y": "ccc47e05ade84a896bd788c2f9c8e21d8957af97ba97ffb799d039545f76e5ad",
+          "yz": "df196700fb09dc76a42003c6d98a3891fb24e4e9f45d7ed1b5aa03d369fcf136",
+          "fit": "9dbd17f4d25a012486f6aa8a0181dfb10aae5581c08c515aa6f527f437070078",
+          "score": "61ebc38617e48c2ce409cb5a42c6641ce6db1240ab669a2ae20a5812096ddaed"
+        }
+      },
+      {
+        "name": "20120928",
+        "fit_end": 128349,
+        "arrays_sha256": {
+          "x": "b8278bd01e83ecd0d8e4e5e4688c2c1f9886e5fb6a8dc01de757ca02543502b6",
+          "y": "e27e5d8950ae7ef4a1fd9dfb79d0adbc110cdf9afaa6b6279e0747b2774fec1d",
+          "yz": "13ba5da9e4300459d3dbe49e65e8e959d9fcafbf60ca9f0bfe91295b2345cd01",
+          "fit": "f71e63ce886b247720457c22208f0b3c3e8a690e21352eb5a06fa4347a774668",
+          "score": "1436e910342b8ecbc92a6afc1d52730d26966ead5986a02afcac71bb98b9a0ea"
+        }
+      },
+      {
+        "name": "20121004",
+        "fit_end": 430,
+        "arrays_sha256": {
+          "x": "f3e4710da0b8640e03f435792e5cdeacbd920e6af5d1ddb30d012266e83dc8e7",
+          "y": "92d3071d386eb993c91da123609efa1e7f6b5be42770c470ed14bffbd2945436",
+          "yz": "0289f4a898360914d65fb9b27b5008f24811997cf451ebf866e7d0174c8e5069",
+          "fit": "1b09211c8b87a5b01361f0199a0b9c64ec513901f6093f824c170f71c677e590",
+          "score": "f1ad5aa3cb2fb23c1171ea2bee15e945c4c05cdf5e440123881fc54c1b7c14b1"
+        }
+      },
+      {
+        "name": "20121017",
+        "fit_end": 418,
+        "arrays_sha256": {
+          "x": "0b73e27accea6091512234e95a8bd42486bc31c5b1d097faae1896546b7560d1",
+          "y": "d7f6f7f5e7a1dbfc21b9cd7b5cebbb12fcdfcd1c5aa1b08632cdaad064aef5f9",
+          "yz": "45197e5f9bccc8192c1e9249840e6d43ed74f1b2f4a735d9f85f6c766d0f9ec7",
+          "fit": "5425654939b8a7c8ea4939b2a13dea54685b38cfcdc11b390c67992f9a30fe0b",
+          "score": "82c9c9a9ee6fb454597f6268c379815f3c8df9e2bd75c3044288ee9b3f9c5df7"
+        }
+      },
+      {
+        "name": "20121024",
+        "fit_end": 834,
+        "arrays_sha256": {
+          "x": "feaed048c08bd8907649e5f143172e68c1452d06bc4d1fd86b3ddac7f4ee305e",
+          "y": "0636b24e1e3b3cd71fb50760d3c5640bd6736069101da0bc887667960a04017a",
+          "yz": "bfb1a881cf053094b894df43ee2b67728d76b01ee982651af2ac110e002e403e",
+          "fit": "9c0eba5bdb2182f1f6ebe83dfd9e66b915f17b18f8e754658d068646dd2670e2",
+          "score": "f8f8b68a3ffffeb7f8be55711677a234bdfa0233ec01ee57c5421e9c4e31b62b"
+        }
+      }
+    ],
+    "target_statistics_sha256": {
+      "mean": "954191672c59529f69f259b07c563e7f32db6c2c26b272bea9147e6f1b83b01e",
+      "std": "3736cb3687a87f489a8909820935dfa67feb4eb420c638cee276d1d77ea06b44"
+    }
+  },
+  "timing_scope": "Stream computation; use isolated resource benchmark for deployment timing."
+}

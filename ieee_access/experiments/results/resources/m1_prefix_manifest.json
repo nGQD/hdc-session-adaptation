@@ -1,0 +1,17 @@
+[
+  {
+    "name": "20121004",
+    "prefix_bins": 1721,
+    "labeled_bins": 520
+  },
+  {
+    "name": "20121017",
+    "prefix_bins": 1671,
+    "labeled_bins": 523
+  },
+  {
+    "name": "20121024",
+    "prefix_bins": 3336,
+    "labeled_bins": 517
+  }
+]

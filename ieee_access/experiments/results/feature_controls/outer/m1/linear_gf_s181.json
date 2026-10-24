@@ -1,0 +1,113 @@
+{
+  "R": [
+    [
+      0.7678899168968201,
+      0.8078163266181946,
+      0.7887191772460938,
+      0.7974866628646851,
+      0.7249737977981567,
+      0.5967221260070801,
+      0.4185977578163147
+    ],
+    [
+      0.7678899168968201,
+      0.8078163266181946,
+      0.7887191772460938,
+      0.7974866628646851,
+      0.7245758175849915,
+      0.5967221260070801,
+      0.4185977578163147
+    ],
+    [
+      0.7678899168968201,
+      0.8078163266181946,
+      0.7887191772460938,
+      0.7974866628646851,
+      0.7245758175849915,
+      0.5810838937759399,
+      0.4185977578163147
+    ],
+    [
+      0.7678899168968201,
+      0.8078163266181946,
+      0.7887191772460938,
+      0.7974866628646851,
+      0.7245758175849915,
+      0.5810838937759399,
+      0.4563990831375122
+    ]
+  ],
+  "names": [
+    "20120924",
+    "20120926",
+    "20120927",
+    "20120928",
+    "20121004",
+    "20121017",
+    "20121024"
+  ],
+  "held_in": 4,
+  "adapt_macs": [
+    1620408973,
+    1575498304,
+    3081181402
+  ],
+  "adapt_seconds": [
+    0.02100024197716266,
+    0.02096042106859386,
+    0.022668033023364842
+  ],
+  "memory": [
+    618416,
+    623552,
+    628688
+  ],
+  "start_macs": 0,
+  "start_seconds": 0,
+  "task": "m1",
+  "seed": 181,
+  "split": "outer",
+  "method": "linear_gf",
+  "configuration": {
+    "kind": "linear_gf",
+    "lam": 300.0,
+    "dimension": 4096,
+    "source": "state",
+    "relu_width": 8192,
+    "scale": 1.0
+  },
+  "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+  "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+  "feature_cache": "ieee_access/experiments/results/feature_controls/features/m1/outer/s181",
+  "checkpoint_sha256": "9a308ce6d9e574076fb9494d6cdab911832b2b17dc4a4a50e4b2a8c5440f21be",
+  "extra_feature_parameters": 0,
+  "head_width": 321,
+  "summary": {
+    "acc": 0.7034244111606053,
+    "acc_held_in": 0.7904780209064484,
+    "acc_held_out": 0.5873529314994812,
+    "plasticity": 0.5873529314994812,
+    "bwt": 0.0,
+    "bwt_held_in": 0.0,
+    "bwt_held_out": 0.0,
+    "zero_shot_held_out": 0.5800978938738505,
+    "adapt_macs": 2092362893.0,
+    "adapt_seconds": 0.02154289868970712,
+    "memory": 628688
+  },
+  "legacy_primal_adapt_macs": [
+    1593701773,
+    1548637024,
+    3054628282
+  ],
+  "legacy_memory": [
+    616352,
+    621488,
+    626624
+  ],
+  "legacy_symmetric_adapt_macs": [
+    1593701773,
+    1548637024,
+    3054628282
+  ]
+}

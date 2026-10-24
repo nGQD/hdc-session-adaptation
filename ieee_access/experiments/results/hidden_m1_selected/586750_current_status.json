@@ -1,0 +1,37 @@
+{
+  "checked_utc": "2026-10-23T16:01:39.328248+00:00",
+  "submission": {
+    "id": 586750,
+    "participant_team": 40837,
+    "challenge_phase": 4599,
+    "status": "finished",
+    "is_public": false,
+    "submitted_at": "2026-10-18T12:01:56.059442Z",
+    "started_at": "2026-10-18T13:13:30.287382Z",
+    "completed_at": "2026-10-18T13:13:30.526057Z",
+    "execution_time": 0.238675,
+    "job_name": [
+      "submission-586750",
+      "submission-586750"
+    ]
+  },
+  "download_sha256": {
+    "submission_result_file": "481525cb3a283626d1db2afb53072397a9b55f666f77ec562158d6885dc3caaa",
+    "stdout_file": "0c6cfc4f51c03a4e394e550b591c4f849163508d101708b667d8e574822f7387",
+    "stderr_file": "431623eda77978326a317d45e8635cbdba227a4fc809c86b80c583ee07089c84",
+    "input_file": "09c43ff060a4ccf6e34953fa2fa099459394855be6ad4af79f3533b92e902665"
+  },
+  "result": {
+    "test_split_m1": {
+      "Normalized Latency": 0.0648561734202468,
+      "Held Out R2 Mean": 0.6176156125798624,
+      "Held Out R2 Std.": 0.07537084552798956,
+      "Held In R2 Mean": 0.7541408506608374,
+      "Held In R2 Std.": 0.029924349476028234
+    }
+  },
+  "input_keys": [
+    "submitted_image_uri"
+  ],
+  "container_image": "905418259932.dkr.ecr.us-east-1.amazonaws.com/few-shot-algorithms-for-consistent-neural-decoding-falcon-2319-participant-team-40837:caeb7fc9-3cc1-4aac-9d87-1cbd6f2778dd"
+}

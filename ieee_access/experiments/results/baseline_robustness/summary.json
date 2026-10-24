@@ -1,0 +1,3436 @@
+{
+ "description": "Explicitly seeded boundary confirmation; original results are separate historical records.",
+ "tasks": {
+  "h1": {
+   "finetune_full": {
+    "incumbent": {
+     "config": {
+      "lr": 1e-05,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.6078874203893874,
+     "summary": {
+      "acc": {
+       "mean": 0.5011678053782536,
+       "sd": 0.00941621218958581
+      },
+      "acc_held_in": {
+       "mean": 0.6271179854869842,
+       "sd": 0.01125612044680515
+      },
+      "acc_held_out": {
+       "mean": 0.3932105081421988,
+       "sd": 0.013612477545144245
+      },
+      "plasticity": {
+       "mean": 0.39343629138810293,
+       "sd": 0.011673153155495684
+      },
+      "bwt": {
+       "mean": -0.0179582009712855,
+       "sd": 0.005651461561904817
+      },
+      "bwt_held_in": {
+       "mean": -0.03565298815568289,
+       "sd": 0.010114020207557665
+      },
+      "bwt_held_out": {
+       "mean": -0.0002634137868881226,
+       "sd": 0.006186990200607137
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 917789736960.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.6068345642149715,
+       "sd": 0.009662062258268034
+      },
+      "memory": {
+       "mean": 1194919.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.003458789678720331,
+       "margin": 0.03,
+       "p_one_sided": 1.0179197384064857e-07,
+       "p_bonferroni_12": 1.2215036860877828e-06,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.03698317067963736,
+       "margin": 0.03,
+       "p_one_sided": 0.9892616337998883,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 1e-05,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.6078874203893874,
+     "summary": {
+      "acc": {
+       "mean": 0.5011678053782536,
+       "sd": 0.00941621218958581
+      },
+      "acc_held_in": {
+       "mean": 0.6271179854869842,
+       "sd": 0.01125612044680515
+      },
+      "acc_held_out": {
+       "mean": 0.3932105081421988,
+       "sd": 0.013612477545144245
+      },
+      "plasticity": {
+       "mean": 0.39343629138810293,
+       "sd": 0.011673153155495684
+      },
+      "bwt": {
+       "mean": -0.0179582009712855,
+       "sd": 0.005651461561904817
+      },
+      "bwt_held_in": {
+       "mean": -0.03565298815568289,
+       "sd": 0.010114020207557665
+      },
+      "bwt_held_out": {
+       "mean": -0.0002634137868881226,
+       "sd": 0.006186990200607137
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 917789736960.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.6068345642149715,
+       "sd": 0.009662062258268034
+      },
+      "memory": {
+       "mean": 1194919.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.003458789678720331,
+       "margin": 0.03,
+       "p_one_sided": 1.0179197384064857e-07,
+       "p_bonferroni_12": 1.2215036860877828e-06,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.03698317067963736,
+       "margin": 0.03,
+       "p_one_sided": 0.9892616337998883,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.5012212400253002,
+     "acc_held_in": 0.62757362027963,
+     "acc_held_out": 0.3929191998073033,
+     "plasticity": 0.3928483690534319,
+     "bwt": -0.017557358741760253,
+     "bwt_held_in": -0.03519735336303711,
+     "bwt_held_out": 8.263587951660139e-05,
+     "zero_shot_held_out": 0.34205909797123496,
+     "adapt_macs": 917789736960.0,
+     "adapt_seconds": 0.8899736949573187,
+     "memory": 1194919.0
+    },
+    "changed": false
+   },
+   "finetune_readout": {
+    "incumbent": {
+     "config": {
+      "lr": 3e-05,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.5887026786804199,
+     "summary": {
+      "acc": {
+       "mean": 0.4780652445096236,
+       "sd": 0.0105281892873443
+      },
+      "acc_held_in": {
+       "mean": 0.6105426311492919,
+       "sd": 0.014507945765743
+      },
+      "acc_held_out": {
+       "mean": 0.36451319881847927,
+       "sd": 0.013479437691331479
+      },
+      "plasticity": {
+       "mean": 0.37077295013836453,
+       "sd": 0.012117285820699361
+      },
+      "bwt": {
+       "mean": -0.02976569284995397,
+       "sd": 0.007219663356508448
+      },
+      "bwt_held_in": {
+       "mean": -0.052228342493375136,
+       "sd": 0.01500388050656592
+      },
+      "bwt_held_out": {
+       "mean": -0.007303043206532796,
+       "sd": 0.00397798621062748
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3420590920107705,
+       "sd": 0.010534364344670267
+      },
+      "adapt_macs": {
+       "mean": 35859791725.71429,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.15233621982125828,
+       "sd": 0.023564326387210482
+      },
+      "memory": {
+       "mean": 1306798.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.019643771189909714,
+       "margin": 0.03,
+       "p_one_sided": 3.732124186548983e-09,
+       "p_bonferroni_12": 4.478549023858779e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.008285861355917796,
+       "margin": 0.03,
+       "p_one_sided": 9.5747960012984e-06,
+       "p_bonferroni_12": 0.00011489755201558081,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 3e-05,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.5887026786804199,
+     "summary": {
+      "acc": {
+       "mean": 0.4780652445096236,
+       "sd": 0.0105281892873443
+      },
+      "acc_held_in": {
+       "mean": 0.6105426311492919,
+       "sd": 0.014507945765743
+      },
+      "acc_held_out": {
+       "mean": 0.36451319881847927,
+       "sd": 0.013479437691331479
+      },
+      "plasticity": {
+       "mean": 0.37077295013836453,
+       "sd": 0.012117285820699361
+      },
+      "bwt": {
+       "mean": -0.02976569284995397,
+       "sd": 0.007219663356508448
+      },
+      "bwt_held_in": {
+       "mean": -0.052228342493375136,
+       "sd": 0.01500388050656592
+      },
+      "bwt_held_out": {
+       "mean": -0.007303043206532796,
+       "sd": 0.00397798621062748
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3420590920107705,
+       "sd": 0.010534364344670267
+      },
+      "adapt_macs": {
+       "mean": 35859791725.71429,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.15233621982125828,
+       "sd": 0.023564326387210482
+      },
+      "memory": {
+       "mean": 1306798.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.019643771189909714,
+       "margin": 0.03,
+       "p_one_sided": 3.732124186548983e-09,
+       "p_bonferroni_12": 4.478549023858779e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.008285861355917796,
+       "margin": 0.03,
+       "p_one_sided": 9.5747960012984e-06,
+       "p_bonferroni_12": 0.00011489755201558081,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.47811617622008684,
+     "acc_held_in": 0.6105552981297174,
+     "acc_held_out": 0.364596928868975,
+     "plasticity": 0.370832268680845,
+     "bwt": -0.029745119313398998,
+     "bwt_held_in": -0.05221567551294962,
+     "bwt_held_out": -0.007274563113848369,
+     "zero_shot_held_out": 0.3420590920107705,
+     "adapt_macs": 35859791725.71429,
+     "adapt_seconds": 0.1458695677009278,
+     "memory": 1306798.0
+    },
+    "changed": false
+   },
+   "replay": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.6457767188549042,
+     "summary": {
+      "acc": {
+       "mean": 0.546450172479336,
+       "sd": 0.011329245947127732
+      },
+      "acc_held_in": {
+       "mean": 0.6665369739135106,
+       "sd": 0.01323017540772481
+      },
+      "acc_held_out": {
+       "mean": 0.44351862839290074,
+       "sd": 0.012281027536947963
+      },
+      "plasticity": {
+       "mean": 0.4320585693631854,
+       "sd": 0.007525690631200655
+      },
+      "bwt": {
+       "mean": 0.008568034569422404,
+       "sd": 0.010740741722864057
+      },
+      "bwt_held_in": {
+       "mean": 0.003766000270843506,
+       "sd": 0.014481086214003442
+      },
+      "bwt_held_out": {
+       "mean": 0.013370068868001303,
+       "sd": 0.01337974326369546
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 3671158947840.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 3.1852452680551715,
+       "sd": 0.24104213278997874
+      },
+      "memory": {
+       "mean": 24259507.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.048741156779802744,
+       "margin": 0.03,
+       "p_one_sided": 0.9987930747486801,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.08729129093033926,
+       "margin": 0.03,
+       "p_one_sided": 0.9999936457395434,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.003,
+      "epochs": 80
+     },
+     "inner_mean_acc": 0.6643032530943552,
+     "summary": {
+      "acc": {
+       "mean": 0.5563782297647916,
+       "sd": 0.01079838773327779
+      },
+      "acc_held_in": {
+       "mean": 0.6696623424688974,
+       "sd": 0.007987599610998016
+      },
+      "acc_held_out": {
+       "mean": 0.45927756173270096,
+       "sd": 0.020623773905015963
+      },
+      "plasticity": {
+       "mean": 0.4572354665824346,
+       "sd": 0.02203909669423477
+      },
+      "bwt": {
+       "mean": 0.004636906584103902,
+       "sd": 0.009499689509275927
+      },
+      "bwt_held_in": {
+       "mean": 0.006891368826230366,
+       "sd": 0.009758199157493362
+      },
+      "bwt_held_out": {
+       "mean": 0.0023824443419774373,
+       "sd": 0.01583190822329227
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 7342317895680.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 5.806045595506605,
+       "sd": 0.14378455500193135
+      },
+      "memory": {
+       "mean": 24259507.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.05866921406525831,
+       "margin": 0.03,
+       "p_one_sided": 0.999813505667974,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.1030502242701394,
+       "margin": 0.03,
+       "p_one_sided": 0.9999962527021081,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.544040540089974,
+     "acc_held_in": 0.6673105974992117,
+     "acc_held_out": 0.43838049088205616,
+     "plasticity": 0.43059053165572025,
+     "bwt": 0.006813954810301464,
+     "bwt_held_in": 0.0045396238565444955,
+     "bwt_held_out": 0.009088285764058433,
+     "zero_shot_held_out": 0.34205909797123496,
+     "adapt_macs": 3671158947840.0,
+     "adapt_seconds": 3.80424010607177,
+     "memory": 24259507.0
+    },
+    "changed": true
+   },
+   "full_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.0003,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.6174067093266381,
+     "summary": {
+      "acc": {
+       "mean": 0.5027012430704557,
+       "sd": 0.011175434590762461
+      },
+      "acc_held_in": {
+       "mean": 0.6627709736426672,
+       "sd": 0.007855230339859782
+      },
+      "acc_held_out": {
+       "mean": 0.365498616865703,
+       "sd": 0.01749154107133639
+      },
+      "plasticity": {
+       "mean": 0.365498616865703,
+       "sd": 0.01749154107133639
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 458894868480.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.3060502242729334,
+       "sd": 0.008150350968456652
+      },
+      "memory": {
+       "mean": 9559352.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.004992227370922375,
+       "margin": 0.03,
+       "p_one_sided": 3.228985101603773e-06,
+       "p_bonferroni_12": 3.8747821219245276e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.009271279403141552,
+       "margin": 0.03,
+       "p_one_sided": 0.001231195751067064,
+       "p_bonferroni_12": 0.014774349012804769,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.0003,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.6174067093266381,
+     "summary": {
+      "acc": {
+       "mean": 0.5027012430704557,
+       "sd": 0.011175434590762461
+      },
+      "acc_held_in": {
+       "mean": 0.6627709736426672,
+       "sd": 0.007855230339859782
+      },
+      "acc_held_out": {
+       "mean": 0.365498616865703,
+       "sd": 0.01749154107133639
+      },
+      "plasticity": {
+       "mean": 0.365498616865703,
+       "sd": 0.01749154107133639
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 458894868480.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.3060502242729334,
+       "sd": 0.008150350968456652
+      },
+      "memory": {
+       "mean": 9559352.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.004992227370922375,
+       "margin": 0.03,
+       "p_one_sided": 3.228985101603773e-06,
+       "p_bonferroni_12": 3.8747821219245276e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.009271279403141552,
+       "margin": 0.03,
+       "p_one_sided": 0.001231195751067064,
+       "p_bonferroni_12": 0.014774349012804769,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.502275512768672,
+     "acc_held_in": 0.6627709736426672,
+     "acc_held_out": 0.36470797487667633,
+     "plasticity": 0.36470797487667633,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.34205909797123496,
+     "adapt_macs": 458894868480.0,
+     "adapt_seconds": 0.44348356819994345,
+     "memory": 9559352.0
+    },
+    "changed": false
+   },
+   "readout_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.6001459161440531,
+     "summary": {
+      "acc": {
+       "mean": 0.4968225048138545,
+       "sd": 0.014209639564537906
+      },
+      "acc_held_in": {
+       "mean": 0.6627709736426672,
+       "sd": 0.007855234005443303
+      },
+      "acc_held_out": {
+       "mean": 0.3545809601034437,
+       "sd": 0.022175992726418195
+      },
+      "plasticity": {
+       "mean": 0.3545809601034437,
+       "sd": 0.022175992726418195
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3420590920107705,
+       "sd": 0.010534364344670267
+      },
+      "adapt_macs": {
+       "mean": 19837054902.857143,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.0761871239868924,
+       "sd": 0.009023795944733943
+      },
+      "memory": {
+       "mean": 1978072.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.0008865108856788151,
+       "margin": 0.03,
+       "p_one_sided": 2.6240211432534476e-08,
+       "p_bonferroni_12": 3.148825371904137e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.0016463773591177844,
+       "margin": 0.03,
+       "p_one_sided": 4.13331111798178e-06,
+       "p_bonferroni_12": 4.9599733415781364e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.6001459161440531,
+     "summary": {
+      "acc": {
+       "mean": 0.4968225048138545,
+       "sd": 0.014209639564537906
+      },
+      "acc_held_in": {
+       "mean": 0.6627709736426672,
+       "sd": 0.007855234005443303
+      },
+      "acc_held_out": {
+       "mean": 0.3545809601034437,
+       "sd": 0.022175992726418195
+      },
+      "plasticity": {
+       "mean": 0.3545809601034437,
+       "sd": 0.022175992726418195
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3420590920107705,
+       "sd": 0.010534364344670267
+      },
+      "adapt_macs": {
+       "mean": 19837054902.857143,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.0761871239868924,
+       "sd": 0.009023795944733943
+      },
+      "memory": {
+       "mean": 1978072.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.0008865108856788151,
+       "margin": 0.03,
+       "p_one_sided": 2.6240211432534476e-08,
+       "p_bonferroni_12": 3.148825371904137e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.0016463773591177844,
+       "margin": 0.03,
+       "p_one_sided": 4.13331111798178e-06,
+       "p_bonferroni_12": 4.9599733415781364e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.4970980479167058,
+     "acc_held_in": 0.6627709736426672,
+     "acc_held_out": 0.3550926830087389,
+     "plasticity": 0.3550926830087389,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.3420590920107705,
+     "adapt_macs": 19837054902.857143,
+     "adapt_seconds": 0.08158989787043537,
+     "memory": 1978072.0
+    },
+    "changed": false
+   },
+   "last_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.580207089583079,
+     "summary": {
+      "acc": {
+       "mean": 0.49422569779249337,
+       "sd": 0.007093248940776227
+      },
+      "acc_held_in": {
+       "mean": 0.6627709736426672,
+       "sd": 0.007855234005443303
+      },
+      "acc_held_out": {
+       "mean": 0.3497583184923444,
+       "sd": 0.011133391091658923
+      },
+      "plasticity": {
+       "mean": 0.3497583184923444,
+       "sd": 0.011133391091658923
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3420590920107705,
+       "sd": 0.010534364344670267
+      },
+      "adapt_macs": {
+       "mean": 14667836708.57143,
+       "sd": 2.0105219905652234e-06
+      },
+      "adapt_seconds": {
+       "mean": 0.11809909766639717,
+       "sd": 0.018829162753286513
+      },
+      "memory": {
+       "mean": 1201240.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.00348331790703994,
+       "margin": 0.03,
+       "p_one_sided": 2.099908856161366e-09,
+       "p_bonferroni_12": 2.5198906273936394e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.006469018970217027,
+       "margin": 0.03,
+       "p_one_sided": 2.2189944654724837e-07,
+       "p_bonferroni_12": 2.6627933585669805e-06,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.003,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.5805452764034271,
+     "summary": {
+      "acc": {
+       "mean": 0.4894345760345459,
+       "sd": 0.009002457216388982
+      },
+      "acc_held_in": {
+       "mean": 0.6627709736426672,
+       "sd": 0.007855234005443303
+      },
+      "acc_held_out": {
+       "mean": 0.3408605209418706,
+       "sd": 0.014502299296208474
+      },
+      "plasticity": {
+       "mean": 0.3408605209418706,
+       "sd": 0.014502299296208474
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3420590920107705,
+       "sd": 0.010534364344670267
+      },
+      "adapt_macs": {
+       "mean": 14667836708.57143,
+       "sd": 2.0105219905652234e-06
+      },
+      "adapt_seconds": {
+       "mean": 0.11814997224137187,
+       "sd": 0.01346287877081473
+      },
+      "memory": {
+       "mean": 1201240.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.00827443966498742,
+       "margin": 0.03,
+       "p_one_sided": 6.213651456915907e-10,
+       "p_bonferroni_12": 7.456381748299088e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.015366816520690923,
+       "margin": 0.03,
+       "p_one_sided": 3.252836314325433e-08,
+       "p_bonferroni_12": 3.90340357719052e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.49428636294144856,
+     "acc_held_in": 0.6627709736426672,
+     "acc_held_out": 0.349870982340404,
+     "plasticity": 0.349870982340404,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.3420590920107705,
+     "adapt_macs": 14667836708.57143,
+     "adapt_seconds": 0.12961200295747924,
+     "memory": 1201240.0
+    },
+    "changed": true
+   },
+   "ewc": {
+    "incumbent": {
+     "config": {
+      "lr": 1e-05,
+      "epochs": 20,
+      "ewc": 100.0
+     },
+     "inner_mean_acc": 0.6083303723070357,
+     "summary": {
+      "acc": {
+       "mean": 0.5012875630305362,
+       "sd": 0.009107778743136643
+      },
+      "acc_held_in": {
+       "mean": 0.6276372532049815,
+       "sd": 0.011431076671120614
+      },
+      "acc_held_out": {
+       "mean": 0.3929878285952977,
+       "sd": 0.013518036378235922
+      },
+      "plasticity": {
+       "mean": 0.3930460095405578,
+       "sd": 0.011615452501104757
+      },
+      "bwt": {
+       "mean": -0.01760079910357793,
+       "sd": 0.005390955548687174
+      },
+      "bwt_held_in": {
+       "mean": -0.03513372043768565,
+       "sd": 0.010119545593754126
+      },
+      "bwt_held_out": {
+       "mean": -6.787776947021494e-05,
+       "sd": 0.006164727970478687
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 966260248848.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.6676125606056302,
+       "sd": 0.01536190320451909
+      },
+      "memory": {
+       "mean": 3584757.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.0035785473310030345,
+       "margin": 0.03,
+       "p_one_sided": 7.602833934482781e-08,
+       "p_bonferroni_12": 9.123400721379337e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.0367604911327362,
+       "margin": 0.03,
+       "p_one_sided": 0.9862416933075362,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 1e-05,
+      "epochs": 20,
+      "ewc": 100.0
+     },
+     "inner_mean_acc": 0.6083303723070357,
+     "summary": {
+      "acc": {
+       "mean": 0.5012875630305362,
+       "sd": 0.009107778743136643
+      },
+      "acc_held_in": {
+       "mean": 0.6276372532049815,
+       "sd": 0.011431076671120614
+      },
+      "acc_held_out": {
+       "mean": 0.3929878285952977,
+       "sd": 0.013518036378235922
+      },
+      "plasticity": {
+       "mean": 0.3930460095405578,
+       "sd": 0.011615452501104757
+      },
+      "bwt": {
+       "mean": -0.01760079910357793,
+       "sd": 0.005390955548687174
+      },
+      "bwt_held_in": {
+       "mean": -0.03513372043768565,
+       "sd": 0.010119545593754126
+      },
+      "bwt_held_out": {
+       "mean": -6.787776947021494e-05,
+       "sd": 0.006164727970478687
+      },
+      "zero_shot_held_out": {
+       "mean": 0.34205909797123496,
+       "sd": 0.010534360943782305
+      },
+      "adapt_macs": {
+       "mean": 966260248848.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.6676125606056302,
+       "sd": 0.01536190320451909
+      },
+      "memory": {
+       "mean": 3584757.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.0035785473310030345,
+       "margin": 0.03,
+       "p_one_sided": 7.602833934482781e-08,
+       "p_bonferroni_12": 9.123400721379337e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.0367604911327362,
+       "margin": 0.03,
+       "p_one_sided": 0.9862416933075362,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.5016456778232868,
+     "acc_held_in": 0.6276939640442529,
+     "acc_held_out": 0.3936042896338872,
+     "plasticity": 0.3935814585004534,
+     "bwt": -0.01752518663803736,
+     "bwt_held_in": -0.0350770095984141,
+     "bwt_held_out": 2.663632233937587e-05,
+     "zero_shot_held_out": 0.34205909797123496,
+     "adapt_macs": 966260248848.0,
+     "adapt_seconds": 0.9124161086716672,
+     "memory": 3584757.0
+    },
+    "changed": false
+   }
+  },
+  "m1": {
+   "finetune_full": {
+    "incumbent": {
+     "config": {
+      "lr": 3e-05,
+      "epochs": 2
+     },
+     "inner_mean_acc": 0.7227676262458166,
+     "summary": {
+      "acc": {
+       "mean": 0.7120014582361495,
+       "sd": 0.005376530531832874
+      },
+      "acc_held_in": {
+       "mean": 0.7787872046232224,
+       "sd": 0.002135503440225539
+      },
+      "acc_held_out": {
+       "mean": 0.6229537963867187,
+       "sd": 0.010980627734713404
+      },
+      "plasticity": {
+       "mean": 0.6245320459206899,
+       "sd": 0.011243607673934975
+      },
+      "bwt": {
+       "mean": -0.009521147608757021,
+       "sd": 0.0022383911382949004
+      },
+      "bwt_held_in": {
+       "mean": -0.013098034262657165,
+       "sd": 0.0020568781646814224
+      },
+      "bwt_held_out": {
+       "mean": -0.002367374300956726,
+       "sd": 0.003481471462858494
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 23623630848.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.02878845021283875,
+       "sd": 0.005249354648132369
+      },
+      "memory": {
+       "mean": 611216.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.02603636639458794,
+       "margin": 0.03,
+       "p_one_sided": 8.415968208728184e-12,
+       "p_bonferroni_12": 1.0099161850473821e-10,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.04328748186429341,
+       "margin": 0.03,
+       "p_one_sided": 1.3740625810244001e-09,
+       "p_bonferroni_12": 1.64887509722928e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 3e-05,
+      "epochs": 2
+     },
+     "inner_mean_acc": 0.7227676262458166,
+     "summary": {
+      "acc": {
+       "mean": 0.7120014582361495,
+       "sd": 0.005376530531832874
+      },
+      "acc_held_in": {
+       "mean": 0.7787872046232224,
+       "sd": 0.002135503440225539
+      },
+      "acc_held_out": {
+       "mean": 0.6229537963867187,
+       "sd": 0.010980627734713404
+      },
+      "plasticity": {
+       "mean": 0.6245320459206899,
+       "sd": 0.011243607673934975
+      },
+      "bwt": {
+       "mean": -0.009521147608757021,
+       "sd": 0.0022383911382949004
+      },
+      "bwt_held_in": {
+       "mean": -0.013098034262657165,
+       "sd": 0.0020568781646814224
+      },
+      "bwt_held_out": {
+       "mean": -0.002367374300956726,
+       "sd": 0.003481471462858494
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 23623630848.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.02878845021283875,
+       "sd": 0.005249354648132369
+      },
+      "memory": {
+       "mean": 611216.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.02603636639458794,
+       "margin": 0.03,
+       "p_one_sided": 8.415968208728184e-12,
+       "p_bonferroni_12": 1.0099161850473821e-10,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.04328748186429341,
+       "margin": 0.03,
+       "p_one_sided": 1.3740625810244001e-09,
+       "p_bonferroni_12": 1.64887509722928e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.7116766776357378,
+     "acc_held_in": 0.7786649733781814,
+     "acc_held_out": 0.6223589499791463,
+     "plasticity": 0.6243532677491507,
+     "bwt": -0.00981066922346751,
+     "bwt_held_in": -0.013220265507698059,
+     "bwt_held_out": -0.0029914766550064088,
+     "zero_shot_held_out": 0.5972296535968781,
+     "adapt_macs": 23623630848.0,
+     "adapt_seconds": 0.1019967389991507,
+     "memory": 611216.0
+    },
+    "changed": false
+   },
+   "finetune_readout": {
+    "incumbent": {
+     "config": {
+      "lr": 3e-05,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.734061156709989,
+     "summary": {
+      "acc": {
+       "mean": 0.7126128043447222,
+       "sd": 0.0052600012295868645
+      },
+      "acc_held_in": {
+       "mean": 0.7745288729667663,
+       "sd": 0.0019507635796227267
+      },
+      "acc_held_out": {
+       "mean": 0.6300580461819967,
+       "sd": 0.011829836646245944
+      },
+      "plasticity": {
+       "mean": 0.6373762170473735,
+       "sd": 0.011992849692096576
+      },
+      "bwt": {
+       "mean": -0.015229994058609012,
+       "sd": 0.002462191358342578
+      },
+      "bwt_held_in": {
+       "mean": -0.01735636293888092,
+       "sd": 0.0022830734898301192
+      },
+      "bwt_held_out": {
+       "mean": -0.010977256298065185,
+       "sd": 0.005407343142320014
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296476364136,
+       "sd": 0.013698149686748824
+      },
+      "adapt_macs": {
+       "mean": 7080240469.333333,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.1383472032379359,
+       "sd": 0.018930687207235362
+      },
+      "memory": {
+       "mean": 695584.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.02542502028601511,
+       "margin": 0.03,
+       "p_one_sided": 1.4911088125898846e-12,
+       "p_bonferroni_12": 1.7893305751078617e-11,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.03618323206901551,
+       "margin": 0.03,
+       "p_one_sided": 2.7508791863216583e-10,
+       "p_bonferroni_12": 3.30105502358599e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 3e-05,
+      "epochs": 80
+     },
+     "inner_mean_acc": 0.734306717912356,
+     "summary": {
+      "acc": {
+       "mean": 0.7057921562876021,
+       "sd": 0.005639817043223191
+      },
+      "acc_held_in": {
+       "mean": 0.7578464463353157,
+       "sd": 0.0023681435195068625
+      },
+      "acc_held_out": {
+       "mean": 0.6363864362239837,
+       "sd": 0.012047409540772738
+      },
+      "plasticity": {
+       "mean": 0.6502372403939564,
+       "sd": 0.011956738208313132
+      },
+      "bwt": {
+       "mean": -0.029617928465207416,
+       "sd": 0.004219260888117014
+      },
+      "bwt_held_in": {
+       "mean": -0.034038789570331573,
+       "sd": 0.003178176661771519
+      },
+      "bwt_held_out": {
+       "mean": -0.020776206254959108,
+       "sd": 0.008276840558476502
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296476364136,
+       "sd": 0.013698149686748824
+      },
+      "adapt_macs": {
+       "mean": 12319843669.333332,
+       "sd": 2.0105219905652234e-06
+      },
+      "adapt_seconds": {
+       "mean": 0.28835070512335126,
+       "sd": 0.020273351277937307
+      },
+      "memory": {
+       "mean": 695584.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.03224566834313529,
+       "margin": 0.03,
+       "p_one_sided": 4.180384993175087e-12,
+       "p_bonferroni_12": 5.0164619918101044e-11,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.029854842027028407,
+       "margin": 0.03,
+       "p_one_sided": 9.567176908078306e-10,
+       "p_bonferroni_12": 1.1480612289693967e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.712633260658809,
+     "acc_held_in": 0.7745221391320228,
+     "acc_held_out": 0.6301147560278574,
+     "plasticity": 0.637348751227061,
+     "bwt": -0.01519239544868469,
+     "bwt_held_in": -0.01736309677362442,
+     "bwt_held_out": -0.010850992798805238,
+     "zero_shot_held_out": 0.5972296476364136,
+     "adapt_macs": 7080240469.333333,
+     "adapt_seconds": 0.1490550874004839,
+     "memory": 695584.0
+    },
+    "changed": true
+   },
+   "replay": {
+    "incumbent": {
+     "config": {
+      "lr": 0.0003,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.7578643361727396,
+     "summary": {
+      "acc": {
+       "mean": 0.7158421661172596,
+       "sd": 0.008497129817908632
+      },
+      "acc_held_in": {
+       "mean": 0.7578862637281418,
+       "sd": 0.005601119195745135
+      },
+      "acc_held_out": {
+       "mean": 0.6597833693027496,
+       "sd": 0.01658396795051342
+      },
+      "plasticity": {
+       "mean": 0.6866056263446808,
+       "sd": 0.013036695788371461
+      },
+      "bwt": {
+       "mean": -0.0360771119594574,
+       "sd": 0.007701002675768841
+      },
+      "bwt_held_in": {
+       "mean": -0.03399897515773773,
+       "sd": 0.00592094293437324
+      },
+      "bwt_held_out": {
+       "mean": -0.040233385562896726,
+       "sd": 0.014149469318019964
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 472472616960.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.6149973370445271,
+       "sd": 0.06556755364629789
+      },
+      "memory": {
+       "mean": 45492816.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.022195658513477868,
+       "margin": 0.03,
+       "p_one_sided": 1.2223150422738018e-09,
+       "p_bonferroni_12": 1.4667780507285622e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.0064579089482625475,
+       "margin": 0.03,
+       "p_one_sided": 2.337279254978487e-06,
+       "p_bonferroni_12": 2.804735105974184e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.0003,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.7578643361727396,
+     "summary": {
+      "acc": {
+       "mean": 0.7158421661172596,
+       "sd": 0.008497129817908632
+      },
+      "acc_held_in": {
+       "mean": 0.7578862637281418,
+       "sd": 0.005601119195745135
+      },
+      "acc_held_out": {
+       "mean": 0.6597833693027496,
+       "sd": 0.01658396795051342
+      },
+      "plasticity": {
+       "mean": 0.6866056263446808,
+       "sd": 0.013036695788371461
+      },
+      "bwt": {
+       "mean": -0.0360771119594574,
+       "sd": 0.007701002675768841
+      },
+      "bwt_held_in": {
+       "mean": -0.03399897515773773,
+       "sd": 0.00592094293437324
+      },
+      "bwt_held_out": {
+       "mean": -0.040233385562896726,
+       "sd": 0.014149469318019964
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 472472616960.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.6149973370445271,
+       "sd": 0.06556755364629789
+      },
+      "memory": {
+       "mean": 45492816.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.022195658513477868,
+       "margin": 0.03,
+       "p_one_sided": 1.2223150422738018e-09,
+       "p_bonferroni_12": 1.4667780507285622e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.0064579089482625475,
+       "margin": 0.03,
+       "p_one_sided": 2.337279254978487e-06,
+       "p_bonferroni_12": 2.804735105974184e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.71258744767734,
+     "acc_held_in": 0.756386362016201,
+     "acc_held_out": 0.6541888952255249,
+     "plasticity": 0.6821151336034138,
+     "bwt": -0.0376290371020635,
+     "bwt_held_in": -0.035498876869678495,
+     "bwt_held_out": -0.0418893575668335,
+     "zero_shot_held_out": 0.5972296535968781,
+     "adapt_macs": 472472616960.0,
+     "adapt_seconds": 0.8937322455332227,
+     "memory": 45492816.0
+    },
+    "changed": false
+   },
+   "full_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.0001,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.7601862450440725,
+     "summary": {
+      "acc": {
+       "mean": 0.7457333854266576,
+       "sd": 0.004427356408946223
+      },
+      "acc_held_in": {
+       "mean": 0.7918852388858795,
+       "sd": 0.0015171021371917386
+      },
+      "acc_held_out": {
+       "mean": 0.6841975808143616,
+       "sd": 0.010102449565282995
+      },
+      "plasticity": {
+       "mean": 0.6841975808143616,
+       "sd": 0.010102449565282995
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 236236308480.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.28255766374835123,
+       "sd": 0.022195960642576784
+      },
+      "memory": {
+       "mean": 2444864.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.007695560795920242,
+       "margin": 0.03,
+       "p_one_sided": 3.6939876275935107e-09,
+       "p_bonferroni_12": 4.432785153112213e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.017956302563349402,
+       "margin": 0.03,
+       "p_one_sided": 0.0005311657225688186,
+       "p_bonferroni_12": 0.0063739886708258225,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.0001,
+      "epochs": 20
+     },
+     "inner_mean_acc": 0.7601862450440725,
+     "summary": {
+      "acc": {
+       "mean": 0.7457333854266576,
+       "sd": 0.004427356408946223
+      },
+      "acc_held_in": {
+       "mean": 0.7918852388858795,
+       "sd": 0.0015171021371917386
+      },
+      "acc_held_out": {
+       "mean": 0.6841975808143616,
+       "sd": 0.010102449565282995
+      },
+      "plasticity": {
+       "mean": 0.6841975808143616,
+       "sd": 0.010102449565282995
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 236236308480.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.28255766374835123,
+       "sd": 0.022195960642576784
+      },
+      "memory": {
+       "mean": 2444864.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.007695560795920242,
+       "margin": 0.03,
+       "p_one_sided": 3.6939876275935107e-09,
+       "p_bonferroni_12": 4.432785153112213e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.017956302563349402,
+       "margin": 0.03,
+       "p_one_sided": 0.0005311657225688186,
+       "p_bonferroni_12": 0.0063739886708258225,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.7450493769986288,
+     "acc_held_in": 0.7918852388858795,
+     "acc_held_out": 0.6826015611489614,
+     "plasticity": 0.6826015611489614,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.5972296535968781,
+     "adapt_macs": 236236308480.0,
+     "adapt_seconds": 0.4075457113664015,
+     "memory": 2444864.0
+    },
+    "changed": false
+   },
+   "readout_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.7565325498580933,
+     "summary": {
+      "acc": {
+       "mean": 0.7407646434647697,
+       "sd": 0.0060591206464644
+      },
+      "acc_held_in": {
+       "mean": 0.7918852359056473,
+       "sd": 0.0015171067938943834
+      },
+      "acc_held_out": {
+       "mean": 0.6726038535435994,
+       "sd": 0.013723064825222854
+      },
+      "plasticity": {
+       "mean": 0.6726038535435994,
+       "sd": 0.013723064825222854
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296476364136,
+       "sd": 0.013698149686748824
+      },
+      "adapt_macs": {
+       "mean": 7080240469.333333,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.13882203696994108,
+       "sd": 0.018666492819212645
+      },
+      "memory": {
+       "mean": 864320.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.0027268188340323295,
+       "margin": 0.03,
+       "p_one_sided": 1.7421998181996858e-10,
+       "p_bonferroni_12": 2.090639781839623e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.006362575292587269,
+       "margin": 0.03,
+       "p_one_sided": 9.938871351858523e-07,
+       "p_bonferroni_12": 1.1926645622230229e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.7565325498580933,
+     "summary": {
+      "acc": {
+       "mean": 0.7407646434647697,
+       "sd": 0.0060591206464644
+      },
+      "acc_held_in": {
+       "mean": 0.7918852359056473,
+       "sd": 0.0015171067938943834
+      },
+      "acc_held_out": {
+       "mean": 0.6726038535435994,
+       "sd": 0.013723064825222854
+      },
+      "plasticity": {
+       "mean": 0.6726038535435994,
+       "sd": 0.013723064825222854
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296476364136,
+       "sd": 0.013698149686748824
+      },
+      "adapt_macs": {
+       "mean": 7080240469.333333,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.13882203696994108,
+       "sd": 0.018666492819212645
+      },
+      "memory": {
+       "mean": 864320.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.0027268188340323295,
+       "margin": 0.03,
+       "p_one_sided": 1.7421998181996858e-10,
+       "p_bonferroni_12": 2.090639781839623e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.006362575292587269,
+       "margin": 0.03,
+       "p_one_sided": 9.938871351858523e-07,
+       "p_bonferroni_12": 1.1926645622230229e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.7410252221993038,
+     "acc_held_in": 0.7918852359056473,
+     "acc_held_out": 0.6732118705908458,
+     "plasticity": 0.6732118705908458,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.5972296476364136,
+     "adapt_macs": 7080240469.333333,
+     "adapt_seconds": 0.13362549986583566,
+     "memory": 864320.0
+    },
+    "changed": false
+   },
+   "last_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.7413520316282908,
+     "summary": {
+      "acc": {
+       "mean": 0.7214473341192518,
+       "sd": 0.006388118969794409
+      },
+      "acc_held_in": {
+       "mean": 0.7918852359056473,
+       "sd": 0.0015171067938943834
+      },
+      "acc_held_out": {
+       "mean": 0.6275301317373911,
+       "sd": 0.014236464424602767
+      },
+      "plasticity": {
+       "mean": 0.6275301317373911,
+       "sd": 0.014236464424602767
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296476364136,
+       "sd": 0.013698149686748824
+      },
+      "adapt_macs": {
+       "mean": 3672368469.3333335,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.10717600104010974,
+       "sd": 0.01600547849237813
+      },
+      "memory": {
+       "mean": 617408.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.016590490511485534,
+       "margin": 0.03,
+       "p_one_sided": 1.1582149370662326e-12,
+       "p_bonferroni_12": 1.3898579244794792e-11,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.03871114651362103,
+       "margin": 0.03,
+       "p_one_sided": 7.041646908081697e-11,
+       "p_bonferroni_12": 8.449976289698036e-10,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.003,
+      "epochs": 80
+     },
+     "inner_mean_acc": 0.7424542903900146,
+     "summary": {
+      "acc": {
+       "mean": 0.7212737568787166,
+       "sd": 0.0077474223328632
+      },
+      "acc_held_in": {
+       "mean": 0.7918852359056473,
+       "sd": 0.0015171067938943834
+      },
+      "acc_held_out": {
+       "mean": 0.6271251181761424,
+       "sd": 0.017237207238212347
+      },
+      "plasticity": {
+       "mean": 0.6271251181761424,
+       "sd": 0.017237207238212347
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296476364136,
+       "sd": 0.013698149686748824
+      },
+      "adapt_macs": {
+       "mean": 5504099669.333334,
+       "sd": 1.0052609952826117e-06
+      },
+      "adapt_seconds": {
+       "mean": 0.21478578043946372,
+       "sd": 0.02330649519270308
+      },
+      "memory": {
+       "mean": 617408.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.016764067752020717,
+       "margin": 0.03,
+       "p_one_sided": 2.7368019895872106e-11,
+       "p_bonferroni_12": 3.284162387504653e-10,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.0391161600748698,
+       "margin": 0.03,
+       "p_one_sided": 1.59721428427015e-09,
+       "p_bonferroni_12": 1.9166571411241803e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.7216001638344356,
+     "acc_held_in": 0.7918852359056473,
+     "acc_held_out": 0.6278867344061534,
+     "plasticity": 0.6278867344061534,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.5972296476364136,
+     "adapt_macs": 3672368469.3333335,
+     "adapt_seconds": 0.11493464979963997,
+     "memory": 617408.0
+    },
+    "changed": true
+   },
+   "ewc": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 2,
+      "ewc": 1000000.0
+     },
+     "inner_mean_acc": 0.7321704775094986,
+     "summary": {
+      "acc": {
+       "mean": 0.6301770380565099,
+       "sd": 0.014555320704424054
+      },
+      "acc_held_in": {
+       "mean": 0.6702451944351197,
+       "sd": 0.007902106552584456
+      },
+      "acc_held_out": {
+       "mean": 0.5767528295516967,
+       "sd": 0.028168266559413527
+      },
+      "plasticity": {
+       "mean": 0.5859855115413666,
+       "sd": 0.025903754892784032
+      },
+      "bwt": {
+       "mean": -0.08570970396200815,
+       "sd": 0.017466261822807125
+      },
+      "bwt_held_in": {
+       "mean": -0.12164004445075989,
+       "sd": 0.009083596172980938
+      },
+      "bwt_held_out": {
+       "mean": -0.013849022984504699,
+       "sd": 0.03706894557344943
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 35497790304.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.05642348979599774,
+       "sd": 0.0073376346991472245
+      },
+      "memory": {
+       "mean": 1833648.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.10786078657422749,
+       "margin": 0.03,
+       "p_one_sided": 1.0943690940693201e-10,
+       "p_bonferroni_12": 1.3132429128831842e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.0894884486993154,
+       "margin": 0.03,
+       "p_one_sided": 1.0481186985067474e-07,
+       "p_bonferroni_12": 1.2577424382080968e-06,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 20,
+      "ewc": 10000000.0
+     },
+     "inner_mean_acc": 0.7355513821045557,
+     "summary": {
+      "acc": {
+       "mean": 0.6843124491827829,
+       "sd": 0.005502887458649517
+      },
+      "acc_held_in": {
+       "mean": 0.7256825894117356,
+       "sd": 0.006978875491366197
+      },
+      "acc_held_out": {
+       "mean": 0.6291522622108461,
+       "sd": 0.01169386282910251
+      },
+      "plasticity": {
+       "mean": 0.6512068172295888,
+       "sd": 0.014305891894935651
+      },
+      "bwt": {
+       "mean": -0.05516237715880077,
+       "sd": 0.006837994932784999
+      },
+      "bwt_held_in": {
+       "mean": -0.06620264947414398,
+       "sd": 0.007471001201125297
+      },
+      "bwt_held_out": {
+       "mean": -0.03308183252811432,
+       "sd": 0.015008658241535496
+      },
+      "zero_shot_held_out": {
+       "mean": 0.5972296535968781,
+       "sd": 0.01369814588769322
+      },
+      "adapt_macs": {
+       "mean": 248671564224.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.38988162360231704,
+       "sd": 0.0414384951486168
+      },
+      "memory": {
+       "mean": 1833648.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.05372537544795446,
+       "margin": 0.03,
+       "p_one_sided": 1.325682627344241e-12,
+       "p_bonferroni_12": 1.590819152813089e-11,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.037089016040166234,
+       "margin": 0.03,
+       "p_one_sided": 1.0565882026953191e-08,
+       "p_bonferroni_12": 1.267905843234383e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.6333653194563731,
+     "acc_held_in": 0.6706066727638245,
+     "acc_held_out": 0.5837101817131043,
+     "plasticity": 0.599734224875768,
+     "bwt": -0.08886439899603525,
+     "bwt_held_in": -0.12127856612205505,
+     "bwt_held_out": -0.024036064743995667,
+     "zero_shot_held_out": 0.5972296535968781,
+     "adapt_macs": 35497790304.0,
+     "adapt_seconds": 0.08155267393255297,
+     "memory": 1833648.0
+    },
+    "changed": true
+   }
+  },
+  "m2": {
+   "finetune_full": {
+    "incumbent": {
+     "config": {
+      "lr": 1e-05,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.4469074209531148,
+     "summary": {
+      "acc": {
+       "mean": 0.4140200190246105,
+       "sd": 0.005210957304126743
+      },
+      "acc_held_in": {
+       "mean": 0.422727943956852,
+       "sd": 0.007592782560637919
+      },
+      "acc_held_out": {
+       "mean": 0.40531209409236907,
+       "sd": 0.009697550987748785
+      },
+      "plasticity": {
+       "mean": 0.40125416219234467,
+       "sd": 0.0074445447805176635
+      },
+      "bwt": {
+       "mean": -0.042462580544607983,
+       "sd": 0.003733992216041618
+      },
+      "bwt_held_in": {
+       "mean": -0.07836744785308838,
+       "sd": 0.006290796588846766
+      },
+      "bwt_held_out": {
+       "mean": 0.005410575866699218,
+       "sd": 0.005911850854184219
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 940985548800.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.7802188591653249,
+       "sd": 0.03595634586347225
+      },
+      "memory": {
+       "mean": 771394.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.003331147879362106,
+       "margin": 0.03,
+       "p_one_sided": 2.3753390756471364e-08,
+       "p_bonferroni_12": 2.850406890776564e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.07170515209436416,
+       "margin": 0.03,
+       "p_one_sided": 0.9999969228430033,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 3e-06,
+      "epochs": 80
+     },
+     "inner_mean_acc": 0.44718777139981586,
+     "summary": {
+      "acc": {
+       "mean": 0.42591567412018777,
+       "sd": 0.005440102103365041
+      },
+      "acc_held_in": {
+       "mean": 0.4503360852599144,
+       "sd": 0.006181228785986945
+      },
+      "acc_held_out": {
+       "mean": 0.4014952629804611,
+       "sd": 0.00885792509432337
+      },
+      "plasticity": {
+       "mean": 0.39579573571681975,
+       "sd": 0.007762519869932112
+      },
+      "bwt": {
+       "mean": -0.025748445306505476,
+       "sd": 0.003268598506971326
+      },
+      "bwt_held_in": {
+       "mean": -0.05075930655002594,
+       "sd": 0.004605525841288557
+      },
+      "bwt_held_out": {
+       "mean": 0.007599369684855142,
+       "sd": 0.004763696700546704
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 1881971097600.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 1.5525014485057909,
+       "sd": 0.04454149485666158
+      },
+      "memory": {
+       "mean": 771394.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.008564507216215133,
+       "margin": 0.03,
+       "p_one_sided": 9.004679115568637e-07,
+       "p_bonferroni_12": 1.0805614938682365e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.0678883209824562,
+       "margin": 0.03,
+       "p_one_sided": 0.9999966465368442,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.4139659836888313,
+     "acc_held_in": 0.42276143580675124,
+     "acc_held_out": 0.40517053157091143,
+     "plasticity": 0.40101513266563416,
+     "bwt": -0.04238774691309248,
+     "bwt_held_in": -0.07833395600318908,
+     "bwt_held_out": 0.005540531873703003,
+     "zero_shot_held_out": 0.3599550977349281,
+     "adapt_macs": 940985548800.0,
+     "adapt_seconds": 1.6878408664244489,
+     "memory": 771394.0
+    },
+    "changed": true
+   },
+   "finetune_readout": {
+    "incumbent": {
+     "config": {
+      "lr": 0.0001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.4291738321383794,
+     "summary": {
+      "acc": {
+       "mean": 0.3989055499434471,
+       "sd": 0.007631647115274578
+      },
+      "acc_held_in": {
+       "mean": 0.4092798575758934,
+       "sd": 0.013415665853906994
+      },
+      "acc_held_out": {
+       "mean": 0.38853124231100084,
+       "sd": 0.007405043772871918
+      },
+      "plasticity": {
+       "mean": 0.3730320379137993,
+       "sd": 0.0094678040850246
+      },
+      "bwt": {
+       "mean": -0.043609326226370676,
+       "sd": 0.008634319371754448
+      },
+      "bwt_held_in": {
+       "mean": -0.09181552529335021,
+       "sd": 0.012286439027775313
+      },
+      "bwt_held_out": {
+       "mean": 0.020665605862935386,
+       "sd": 0.012580508341013801
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734466125220228
+      },
+      "adapt_macs": {
+       "mean": 22845222400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.15065355094266125,
+       "sd": 0.01682564687572319
+      },
+      "memory": {
+       "mean": 862148.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.01844561696052551,
+       "margin": 0.03,
+       "p_one_sided": 2.7915616041840763e-09,
+       "p_bonferroni_12": 3.3498739250208914e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.05492430031299591,
+       "margin": 0.03,
+       "p_one_sided": 0.9999547671351784,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.0001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.4291738321383794,
+     "summary": {
+      "acc": {
+       "mean": 0.3989055499434471,
+       "sd": 0.007631647115274578
+      },
+      "acc_held_in": {
+       "mean": 0.4092798575758934,
+       "sd": 0.013415665853906994
+      },
+      "acc_held_out": {
+       "mean": 0.38853124231100084,
+       "sd": 0.007405043772871918
+      },
+      "plasticity": {
+       "mean": 0.3730320379137993,
+       "sd": 0.0094678040850246
+      },
+      "bwt": {
+       "mean": -0.043609326226370676,
+       "sd": 0.008634319371754448
+      },
+      "bwt_held_in": {
+       "mean": -0.09181552529335021,
+       "sd": 0.012286439027775313
+      },
+      "bwt_held_out": {
+       "mean": 0.020665605862935386,
+       "sd": 0.012580508341013801
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734466125220228
+      },
+      "adapt_macs": {
+       "mean": 22845222400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.15065355094266125,
+       "sd": 0.01682564687572319
+      },
+      "memory": {
+       "mean": 862148.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.01844561696052551,
+       "margin": 0.03,
+       "p_one_sided": 2.7915616041840763e-09,
+       "p_bonferroni_12": 3.3498739250208914e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.05492430031299591,
+       "margin": 0.03,
+       "p_one_sided": 0.9999547671351784,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.3990387484431267,
+     "acc_held_in": 0.4094175100326538,
+     "acc_held_out": 0.38865998685359954,
+     "plasticity": 0.3731881305575371,
+     "bwt": -0.04354629516601562,
+     "bwt_held_in": -0.09167787283658982,
+     "bwt_held_out": 0.02062914172808329,
+     "zero_shot_held_out": 0.3599550977349281,
+     "adapt_macs": 22845222400.0,
+     "adapt_seconds": 0.16351106907422946,
+     "memory": 862148.0
+    },
+    "changed": false
+   },
+   "replay": {
+    "incumbent": {
+     "config": {
+      "lr": 0.0003,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.47350919246673584,
+     "summary": {
+      "acc": {
+       "mean": 0.42995564043521883,
+       "sd": 0.005119980790378821
+      },
+      "acc_held_in": {
+       "mean": 0.46690845787525176,
+       "sd": 0.005848073644820391
+      },
+      "acc_held_out": {
+       "mean": 0.39300282299518585,
+       "sd": 0.008024738664343133
+      },
+      "plasticity": {
+       "mean": 0.3865200340747833,
+       "sd": 0.013007181910797536
+      },
+      "bwt": {
+       "mean": -0.01583094000816345,
+       "sd": 0.007918688101465505
+      },
+      "bwt_held_in": {
+       "mean": -0.034186933934688565,
+       "sd": 0.0073767925518339605
+      },
+      "bwt_held_out": {
+       "mean": 0.008643718560536702,
+       "sd": 0.016730178488605824
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 470492774400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.44212415792280807,
+       "sd": 0.02941138917185086
+      },
+      "memory": {
+       "mean": 10617748.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.012604473531246186,
+       "margin": 0.03,
+       "p_one_sided": 3.9293448840544834e-05,
+       "p_bonferroni_12": 0.000471521386086538,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.05939588099718094,
+       "margin": 0.03,
+       "p_one_sided": 0.9999829032831115,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.0003,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.47350919246673584,
+     "summary": {
+      "acc": {
+       "mean": 0.42995564043521883,
+       "sd": 0.005119980790378821
+      },
+      "acc_held_in": {
+       "mean": 0.46690845787525176,
+       "sd": 0.005848073644820391
+      },
+      "acc_held_out": {
+       "mean": 0.39300282299518585,
+       "sd": 0.008024738664343133
+      },
+      "plasticity": {
+       "mean": 0.3865200340747833,
+       "sd": 0.013007181910797536
+      },
+      "bwt": {
+       "mean": -0.01583094000816345,
+       "sd": 0.007918688101465505
+      },
+      "bwt_held_in": {
+       "mean": -0.034186933934688565,
+       "sd": 0.0073767925518339605
+      },
+      "bwt_held_out": {
+       "mean": 0.008643718560536702,
+       "sd": 0.016730178488605824
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 470492774400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.44212415792280807,
+       "sd": 0.02941138917185086
+      },
+      "memory": {
+       "mean": 10617748.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.012604473531246186,
+       "margin": 0.03,
+       "p_one_sided": 3.9293448840544834e-05,
+       "p_bonferroni_12": 0.000471521386086538,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.05939588099718094,
+       "margin": 0.03,
+       "p_one_sided": 0.9999829032831115,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.43532102927565575,
+     "acc_held_in": 0.4732844203710556,
+     "acc_held_out": 0.3973576381802559,
+     "plasticity": 0.388296040892601,
+     "bwt": -0.010713928086417062,
+     "bwt_held_in": -0.027810971438884734,
+     "bwt_held_out": 0.01208212971687317,
+     "zero_shot_held_out": 0.3599550977349281,
+     "adapt_macs": 470492774400.0,
+     "adapt_seconds": 0.8832981811243371,
+     "memory": 10617748.0
+    },
+    "changed": false
+   },
+   "full_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.49246765673160553,
+     "summary": {
+      "acc": {
+       "mean": 0.39151241853833196,
+       "sd": 0.005181287334874461
+      },
+      "acc_held_in": {
+       "mean": 0.5010953918099403,
+       "sd": 0.005390828798550983
+      },
+      "acc_held_out": {
+       "mean": 0.28192944526672364,
+       "sd": 0.012067393063116527
+      },
+      "plasticity": {
+       "mean": 0.28192944526672364,
+       "sd": 0.012067393063116527
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 235246387200.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.18507117830158676,
+       "sd": 0.00983705767577856
+      },
+      "memory": {
+       "mean": 3856970.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.02583874836564064,
+       "margin": 0.03,
+       "p_one_sided": 5.074921449567861e-09,
+       "p_bonferroni_12": 6.089905739481433e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.05167749673128128,
+       "margin": 0.03,
+       "p_one_sided": 7.828471653712424e-08,
+       "p_bonferroni_12": 9.39416598445491e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.49246765673160553,
+     "summary": {
+      "acc": {
+       "mean": 0.39151241853833196,
+       "sd": 0.005181287334874461
+      },
+      "acc_held_in": {
+       "mean": 0.5010953918099403,
+       "sd": 0.005390828798550983
+      },
+      "acc_held_out": {
+       "mean": 0.28192944526672364,
+       "sd": 0.012067393063116527
+      },
+      "plasticity": {
+       "mean": 0.28192944526672364,
+       "sd": 0.012067393063116527
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 235246387200.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.18507117830158676,
+       "sd": 0.00983705767577856
+      },
+      "memory": {
+       "mean": 3856970.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.02583874836564064,
+       "margin": 0.03,
+       "p_one_sided": 5.074921449567861e-09,
+       "p_bonferroni_12": 6.089905739481433e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.05167749673128128,
+       "margin": 0.03,
+       "p_one_sided": 7.828471653712424e-08,
+       "p_bonferroni_12": 9.39416598445491e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.3892348617315292,
+     "acc_held_in": 0.5010953918099403,
+     "acc_held_out": 0.27737433165311814,
+     "plasticity": 0.27737433165311814,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.3599550977349281,
+     "adapt_macs": 235246387200.0,
+     "adapt_seconds": 0.43872228637555966,
+     "memory": 3856970.0
+    },
+    "changed": false
+   },
+   "readout_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.4573172777891159,
+     "summary": {
+      "acc": {
+       "mean": 0.41887037381529807,
+       "sd": 0.007506410938180663
+      },
+      "acc_held_in": {
+       "mean": 0.5010953828692436,
+       "sd": 0.005390825440966329
+      },
+      "acc_held_out": {
+       "mean": 0.33664536476135254,
+       "sd": 0.014963533249265339
+      },
+      "plasticity": {
+       "mean": 0.33664536476135254,
+       "sd": 0.014963533249265339
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734466125220228
+      },
+      "adapt_macs": {
+       "mean": 7188966400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.043993967500864525,
+       "sd": 0.009422310296667612
+      },
+      "memory": {
+       "mean": 1134410.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.0015192069113254547,
+       "margin": 0.03,
+       "p_one_sided": 2.7492828794351968e-09,
+       "p_bonferroni_12": 3.299139455322236e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.003038422763347626,
+       "margin": 0.03,
+       "p_one_sided": 1.7598016096079006e-06,
+       "p_bonferroni_12": 2.111761931529481e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.003,
+      "epochs": 10
+     },
+     "inner_mean_acc": 0.4581756393114726,
+     "summary": {
+      "acc": {
+       "mean": 0.3900279484689236,
+       "sd": 0.009770954306898241
+      },
+      "acc_held_in": {
+       "mean": 0.5010953828692436,
+       "sd": 0.005390825440966329
+      },
+      "acc_held_out": {
+       "mean": 0.2789605140686035,
+       "sd": 0.021316413431188664
+      },
+      "plasticity": {
+       "mean": 0.2789605140686035,
+       "sd": 0.021316413431188664
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734466125220228
+      },
+      "adapt_macs": {
+       "mean": 7188966400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.039287214263458735,
+       "sd": 0.005613018854871961
+      },
+      "memory": {
+       "mean": 1134410.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.027323218435049056,
+       "margin": 0.03,
+       "p_one_sided": 5.254326435527661e-11,
+       "p_bonferroni_12": 6.305191722633193e-10,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.0546464279294014,
+       "margin": 0.03,
+       "p_one_sided": 7.837797005706269e-10,
+       "p_bonferroni_12": 9.405356406847522e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Bonferroni family applies to four named NI references across three tasks."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.4189645804464817,
+     "acc_held_in": 0.5010953828692436,
+     "acc_held_out": 0.3368337780237198,
+     "plasticity": 0.3368337780237198,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.3599550977349281,
+     "adapt_macs": 7188966400.0,
+     "adapt_seconds": 0.05971504102490144,
+     "memory": 1134410.0
+    },
+    "changed": true
+   },
+   "last_tag": {
+    "incumbent": {
+     "config": {
+      "lr": 0.001,
+      "epochs": 40
+     },
+     "inner_mean_acc": 0.41601988673210144,
+     "summary": {
+      "acc": {
+       "mean": 0.40178764089941976,
+       "sd": 0.00669178604770629
+      },
+      "acc_held_in": {
+       "mean": 0.5010953828692436,
+       "sd": 0.005390825440966329
+      },
+      "acc_held_out": {
+       "mean": 0.3024798989295959,
+       "sd": 0.011301979720309498
+      },
+      "plasticity": {
+       "mean": 0.3024798989295959,
+       "sd": 0.011301979720309498
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734466125220228
+      },
+      "adapt_macs": {
+       "mean": 8967974400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.11960674708534498,
+       "sd": 0.01097551209347458
+      },
+      "memory": {
+       "mean": 772426.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.015563526004552842,
+       "margin": 0.03,
+       "p_one_sided": 4.4841155690352897e-10,
+       "p_bonferroni_12": 5.3809386828423474e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.031127043068408966,
+       "margin": 0.03,
+       "p_one_sided": 1.527648915877872e-08,
+       "p_bonferroni_12": 1.8331786990534463e-07,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 0.003,
+      "epochs": 80
+     },
+     "inner_mean_acc": 0.42401353021462757,
+     "summary": {
+      "acc": {
+       "mean": 0.39904958978295324,
+       "sd": 0.00499395648106038
+      },
+      "acc_held_in": {
+       "mean": 0.5010953828692436,
+       "sd": 0.005390825440966329
+      },
+      "acc_held_out": {
+       "mean": 0.2970037966966629,
+       "sd": 0.007897042046922357
+      },
+      "plasticity": {
+       "mean": 0.2970037966966629,
+       "sd": 0.007897042046922357
+      },
+      "bwt": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_in": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "bwt_held_out": {
+       "mean": 0.0,
+       "sd": 0.0
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734466125220228
+      },
+      "adapt_macs": {
+       "mean": 15965734400.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.22950671190337743,
+       "sd": 0.02535424383063811
+      },
+      "memory": {
+       "mean": 772426.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": 0.018301577121019364,
+       "margin": 0.03,
+       "p_one_sided": 9.887761027135973e-11,
+       "p_bonferroni_12": 1.1865313232563168e-09,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": 0.03660314530134201,
+       "margin": 0.03,
+       "p_one_sided": 2.692770888299014e-09,
+       "p_bonferroni_12": 3.231325065958817e-08,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.40185526460409166,
+     "acc_held_in": 0.5010953828692436,
+     "acc_held_out": 0.30261514633893966,
+     "plasticity": 0.30261514633893966,
+     "bwt": 0.0,
+     "bwt_held_in": 0.0,
+     "bwt_held_out": 0.0,
+     "zero_shot_held_out": 0.3599550977349281,
+     "adapt_macs": 8967974400.0,
+     "adapt_seconds": 0.13657816199956868,
+     "memory": 772426.0
+    },
+    "changed": true
+   },
+   "ewc": {
+    "incumbent": {
+     "config": {
+      "lr": 1e-05,
+      "epochs": 40,
+      "ewc": 1000000.0
+     },
+     "inner_mean_acc": 0.44905510048071545,
+     "summary": {
+      "acc": {
+       "mean": 0.4281145535409451,
+       "sd": 0.005082839985977478
+      },
+      "acc_held_in": {
+       "mean": 0.44981439262628553,
+       "sd": 0.006926378869226452
+      },
+      "acc_held_out": {
+       "mean": 0.40641471445560456,
+       "sd": 0.008341580459187628
+      },
+      "plasticity": {
+       "mean": 0.4025343254208565,
+       "sd": 0.006612769780577982
+      },
+      "bwt": {
+       "mean": -0.027086062942232404,
+       "sd": 0.0031987093260055586
+      },
+      "bwt_held_in": {
+       "mean": -0.05128099918365479,
+       "sd": 0.005381316907524589
+      },
+      "bwt_held_out": {
+       "mean": 0.0051738520463307704,
+       "sd": 0.0045513734288571955
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 967055787720.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.8880572526570176,
+       "sd": 0.0386396939731701
+      },
+      "memory": {
+       "mean": 2314182.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.010763386636972428,
+       "margin": 0.03,
+       "p_one_sided": 1.4422969620604417e-06,
+       "p_bonferroni_12": 1.7307563544725298e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.07280777245759965,
+       "margin": 0.03,
+       "p_one_sided": 0.9999989282993964,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "selected": {
+     "config": {
+      "lr": 1e-05,
+      "epochs": 40,
+      "ewc": 1000000.0
+     },
+     "inner_mean_acc": 0.44905510048071545,
+     "summary": {
+      "acc": {
+       "mean": 0.4281145535409451,
+       "sd": 0.005082839985977478
+      },
+      "acc_held_in": {
+       "mean": 0.44981439262628553,
+       "sd": 0.006926378869226452
+      },
+      "acc_held_out": {
+       "mean": 0.40641471445560456,
+       "sd": 0.008341580459187628
+      },
+      "plasticity": {
+       "mean": 0.4025343254208565,
+       "sd": 0.006612769780577982
+      },
+      "bwt": {
+       "mean": -0.027086062942232404,
+       "sd": 0.0031987093260055586
+      },
+      "bwt_held_in": {
+       "mean": -0.05128099918365479,
+       "sd": 0.005381316907524589
+      },
+      "bwt_held_out": {
+       "mean": 0.0051738520463307704,
+       "sd": 0.0045513734288571955
+      },
+      "zero_shot_held_out": {
+       "mean": 0.3599550977349281,
+       "sd": 0.008734472306931841
+      },
+      "adapt_macs": {
+       "mean": 967055787720.0,
+       "sd": 0.0
+      },
+      "adapt_seconds": {
+       "mean": 0.8880572526570176,
+       "sd": 0.0386396939731701
+      },
+      "memory": {
+       "mean": 2314182.0,
+       "sd": 0.0
+      }
+     },
+     "hdc_noninferiority": {
+      "acc": {
+       "hdc_minus_reference": -0.010763386636972428,
+       "margin": 0.03,
+       "p_one_sided": 1.4422969620604417e-06,
+       "p_bonferroni_12": 1.7307563544725298e-05,
+       "noninferior_unadjusted": true,
+       "noninferior_bonferroni_12": true,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      },
+      "acc_held_out": {
+       "hdc_minus_reference": -0.07280777245759965,
+       "margin": 0.03,
+       "p_one_sided": 0.9999989282993964,
+       "p_bonferroni_12": 1.0,
+       "noninferior_unadjusted": false,
+       "noninferior_bonferroni_12": false,
+       "scope": "Exploratory reference outside prespecified twelve comparisons."
+      }
+     }
+    },
+    "legacy_mean": {
+     "acc": 0.4276891559362411,
+     "acc_held_in": 0.4491781607270241,
+     "acc_held_out": 0.4062001511454582,
+     "plasticity": 0.4022011339664459,
+     "bwt": -0.02738183651651655,
+     "bwt_held_in": -0.05191723108291626,
+     "bwt_held_out": 0.0053320229053497314,
+     "zero_shot_held_out": 0.3599550977349281,
+     "adapt_macs": 967055787720.0,
+     "adapt_seconds": 1.7751292457502132,
+     "memory": 2314182.0
+    },
+    "changed": false
+   }
+  }
+ },
+ "development_seeds": [
+  11,
+  23,
+  37
+ ],
+ "outer_seeds": [
+  101,
+  113,
+  127,
+  131,
+  137,
+  149,
+  157,
+  163,
+  173,
+  181
+ ]
+}

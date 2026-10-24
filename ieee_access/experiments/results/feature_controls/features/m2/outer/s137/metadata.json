@@ -1,0 +1,91 @@
+{
+  "task": "m2",
+  "split": "outer",
+  "seed": 137,
+  "held_in": 4,
+  "sessions": [
+    {
+      "file": "00_20201019.npz",
+      "name": "20201019",
+      "fit_bins": 0,
+      "prefix_bins": 32032,
+      "score_bins": 7752
+    },
+    {
+      "file": "01_20201020.npz",
+      "name": "20201020",
+      "fit_bins": 0,
+      "prefix_bins": 24949,
+      "score_bins": 5981
+    },
+    {
+      "file": "02_20201027.npz",
+      "name": "20201027",
+      "fit_bins": 0,
+      "prefix_bins": 21566,
+      "score_bins": 5135
+    },
+    {
+      "file": "03_20201028.npz",
+      "name": "20201028",
+      "fit_bins": 0,
+      "prefix_bins": 14226,
+      "score_bins": 3300
+    },
+    {
+      "file": "04_20201030.npz",
+      "name": "20201030",
+      "fit_bins": 2638,
+      "prefix_bins": 2638,
+      "score_bins": 2383
+    },
+    {
+      "file": "05_20201118.npz",
+      "name": "20201118",
+      "fit_bins": 1258,
+      "prefix_bins": 1258,
+      "score_bins": 1003
+    },
+    {
+      "file": "06_20201119.npz",
+      "name": "20201119",
+      "fit_bins": 1522,
+      "prefix_bins": 1522,
+      "score_bins": 1267
+    },
+    {
+      "file": "07_20201124.npz",
+      "name": "20201124",
+      "fit_bins": 2282,
+      "prefix_bins": 2282,
+      "score_bins": 2026
+    }
+  ],
+  "target_mean": [
+    -9.965030585590284e-06,
+    -2.2189369701663963e-05
+  ],
+  "target_std": [
+    0.010341773740947247,
+    0.010445982217788696
+  ],
+  "model_parameters": 771394,
+  "backbone_macs": {
+    "encode": 1023488,
+    "head": 90368
+  },
+  "checkpoint": "mjcs/results/checkpoints/m2/outer/full_s137.pt",
+  "checkpoint_sha256": "56024cc1a8168d4c562a2f75fb7d143bfc0cf2312e266e366d7bbbdac2ac9fc7",
+  "source_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "extraction_device": "cuda",
+  "extraction_seconds": 1.8742557750083506,
+  "projection_width": 224,
+  "prior_width": 129,
+  "dtype": "float32 features; float64 prior and solves",
+  "torch_version": "2.5.1+cu124"
+}

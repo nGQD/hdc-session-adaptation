@@ -1,0 +1,9 @@
+{
+  "test_split_m1": {
+    "Normalized Latency": 0.0648561734202468,
+    "Held Out R2 Mean": 0.6176156125798624,
+    "Held Out R2 Std.": 0.07537084552798956,
+    "Held In R2 Mean": 0.7541408506608374,
+    "Held In R2 Std.": 0.029924349476028234
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "params": {
+    "source": "state",
+    "dimension": 4096,
+    "scale": 1.0,
+    "lam": 1000.0
+  },
+  "seed": 101,
+  "kind": "hdc",
+  "config": {
+    "channels": 64,
+    "outputs": 16,
+    "hidden": 128,
+    "rank": 12,
+    "projection": "multiplicative",
+    "recurrence": true,
+    "refinement": true,
+    "online_norm": true,
+    "smoothing": 0.9,
+    "dropout": 0.35,
+    "refine_width": 256,
+    "epochs": 50,
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "window": 256,
+    "stride": 64,
+    "batch": 64
+  },
+  "backbone_seed": 101,
+  "backbone_state_sha256": "a67d91a60697611f0566282c2e1dc7f668ada3507cf928f017e10aa7caa9216a",
+  "corrections_sha256": "3d23e56298a15f5a2628c3e77957dd2ae102ce12790729817e9096dbc81995e7",
+  "backbone_file_sha256": "f7da9052af8276f4f1f2f2b515902f527618da9bf487b533771c7d9cc8239f4b",
+  "encoder_shape": [
+    192,
+    4096
+  ],
+  "sessions": {
+    "20120924": {
+      "held_out": false,
+      "W_shape": [
+        8321,
+        16
+      ],
+      "finite": true
+    },
+    "20120926": {
+      "held_out": false,
+      "W_shape": [
+        8321,
+        16
+      ],
+      "finite": true
+    },
+    "20120927": {
+      "held_out": false,
+      "W_shape": [
+        8321,
+        16
+      ],
+      "finite": true
+    },
+    "20120928": {
+      "held_out": false,
+      "W_shape": [
+        8321,
+        16
+      ],
+      "finite": true
+    },
+    "20121004": {
+      "held_out": true,
+      "W_shape": [
+        8321,
+        16
+      ],
+      "finite": true
+    },
+    "20121017": {
+      "held_out": true,
+      "W_shape": [
+        8321,
+        16
+      ],
+      "finite": true
+    },
+    "20121024": {
+      "held_out": true,
+      "W_shape": [
+        8321,
+        16
+      ],
+      "finite": true
+    }
+  }
+}

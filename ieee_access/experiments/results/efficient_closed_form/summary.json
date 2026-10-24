@@ -1,0 +1,353 @@
+{
+  "analysis": "exact primal/dual implementation validation",
+  "tolerance": 1e-06,
+  "runs": 150,
+  "tasks": {
+    "h1": {
+      "hdc": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 1.1920928955078125e-07,
+        "max_abs_native_prediction_difference": 0.0,
+        "acc": 0.4977090161580306,
+        "bwt": 0.0,
+        "mean_adapt_macs": 32269970226.85714,
+        "solvers": [
+          "dual"
+        ]
+      },
+      "closed_linear": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 0.0,
+        "max_abs_native_prediction_difference": 0.0,
+        "acc": 0.5008482245298532,
+        "bwt": 0.0,
+        "mean_adapt_macs": 4131473892.0,
+        "solvers": [
+          "primal"
+        ]
+      },
+      "hdc_zero": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 1.1920928955078125e-07,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.44908966651329624,
+        "bwt": 0.0,
+        "mean_adapt_macs": 32269970226.85714,
+        "solvers": [
+          "dual"
+        ]
+      },
+      "closed_zero": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 0.0,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.4889780681866866,
+        "bwt": 0.0,
+        "mean_adapt_macs": 4131473892.0,
+        "solvers": [
+          "primal"
+        ]
+      },
+      "hdc_bound": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 1.1920928955078125e-07,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.45065879317430346,
+        "bwt": -0.026550082862377165,
+        "mean_adapt_macs": 32269970226.85714,
+        "solvers": [
+          "dual"
+        ]
+      }
+    },
+    "m1": {
+      "hdc": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 5.960464477539063e-08,
+        "max_abs_native_prediction_difference": 0.0,
+        "acc": 0.7380378237792424,
+        "bwt": 0.0,
+        "mean_adapt_macs": 4784935912.333334,
+        "solvers": [
+          "dual"
+        ]
+      },
+      "closed_linear": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 0.0,
+        "max_abs_native_prediction_difference": 0.0,
+        "acc": 0.7157776960304805,
+        "bwt": 0.0,
+        "mean_adapt_macs": 2039300141.0,
+        "solvers": [
+          "primal"
+        ]
+      },
+      "hdc_zero": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 0.0,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.7223320731094904,
+        "bwt": 0.0,
+        "mean_adapt_macs": 4784935912.333334,
+        "solvers": [
+          "dual"
+        ]
+      },
+      "closed_zero": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 0.0,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.6730436887059893,
+        "bwt": 0.0,
+        "mean_adapt_macs": 2039300141.0,
+        "solvers": [
+          "primal"
+        ]
+      },
+      "hdc_bound": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 5.960464477539063e-08,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.7314348663602557,
+        "bwt": -0.004354400436083476,
+        "mean_adapt_macs": 4784935912.333334,
+        "solvers": [
+          "dual"
+        ]
+      }
+    },
+    "m2": {
+      "hdc": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 5.960464477539063e-08,
+        "max_abs_native_prediction_difference": 0.0,
+        "acc": 0.4173511676490307,
+        "bwt": 0.0,
+        "mean_adapt_macs": 21510796440.75,
+        "solvers": [
+          "dual"
+        ]
+      },
+      "closed_linear": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 0.0,
+        "max_abs_native_prediction_difference": 0.0,
+        "acc": 0.4048235721886158,
+        "bwt": 0.0,
+        "mean_adapt_macs": 2177094438.0,
+        "solvers": [
+          "primal"
+        ]
+      },
+      "hdc_zero": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 5.960464477539063e-08,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.37182291969656944,
+        "bwt": 0.0,
+        "mean_adapt_macs": 21510796440.75,
+        "solvers": [
+          "dual"
+        ]
+      },
+      "closed_zero": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 0.0,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.39518037587404253,
+        "bwt": 0.0,
+        "mean_adapt_macs": 2177094438.0,
+        "solvers": [
+          "primal"
+        ]
+      },
+      "hdc_bound": {
+        "seeds": [
+          101,
+          113,
+          127,
+          131,
+          137,
+          149,
+          157,
+          163,
+          173,
+          181
+        ],
+        "max_abs_R_difference": 1.1920928955078125e-07,
+        "max_abs_native_prediction_difference": null,
+        "acc": 0.3330980077385902,
+        "bwt": -0.041586382048470635,
+        "mean_adapt_macs": 21510796440.75,
+        "solvers": [
+          "dual"
+        ]
+      }
+    }
+  },
+  "self_test": {
+    "checks": 24,
+    "max_absolute_weight_error": 1.1796119636642288e-14,
+    "reference": "augmented weighted least squares via SVD",
+    "cache_release_checks": 3,
+    "stored_heads_own_exact_sized_storage": true
+  },
+  "mac_counting": "dense_gram_N*d*q",
+  "source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be",
+  "complete": true
+}

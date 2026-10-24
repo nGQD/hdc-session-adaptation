@@ -1,0 +1,54 @@
+{
+ "task": "h1",
+ "seed": 11,
+ "checks": [
+  {
+   "method": "finetune_full",
+   "config": {
+    "lr": 1e-05,
+    "epochs": 1
+   },
+   "max_absolute_final_score_difference": 0.0,
+   "full_acc": 0.5892922878265381,
+   "final_only_acc": 0.5892922878265381,
+   "cached_repeat_acc": 0.5892922878265381
+  },
+  {
+   "method": "readout_tag",
+   "config": {
+    "lr": 0.001,
+    "epochs": 1
+   },
+   "max_absolute_final_score_difference": 0.0,
+   "full_acc": 0.5906319419542948,
+   "final_only_acc": 0.5906319419542948,
+   "cached_repeat_acc": 0.5906319419542948
+  },
+  {
+   "method": "ewc",
+   "config": {
+    "lr": 1e-05,
+    "epochs": 1,
+    "ewc": 100.0
+   },
+   "max_absolute_final_score_difference": 0.0,
+   "full_acc": 0.5891735057036082,
+   "final_only_acc": 0.5891735057036082,
+   "cached_repeat_acc": 0.5891735057036082
+  }
+ ],
+ "passed": true,
+ "environment": {
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "numpy": "2.2.6",
+  "device": "cuda",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "runner_sha256": "f4342964fa19494138276c79063acb19bc6f9d85ee359a8eb20a387d7c9501f3",
+  "plan_sha256": "4da4b6a6541e61142e72abd69513ac9ed046ae0eefe720652e05057cf7d864a2",
+  "tf32_matmul": false,
+  "tf32_cudnn": false,
+  "cpu_threads": 4
+ }
+}

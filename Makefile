@@ -1,75 +1,68 @@
-PY ?= ../.venv/bin/python
-DANDI ?= $(dir $(PY))dandi
-DATA := ../falcon-challenge/data
+.DEFAULT_GOAL := analysis
+.NOTPARALLEL:
+
+PY ?= .venv/bin/python
+DANDI ?= .venv/bin/dandi
 TASKS ?= h1 m1 m2
-AUTHORS ?= Qi Ding Ng
+CPU_AFFINITY ?= 0,2,4,6
+EXPERIMENTS := ieee_access/experiments
+RESULTS := $(EXPERIMENTS)/results
+STUDY := $(RESULTS)/revised_study
+ENDPOINT := $(RESULTS)/revised_endpoint/endpoint_analysis.json
 
-analysis: data cache overlap select main epochs ablation budget dose baselines stats tables figures theory macs
+.PHONY: all analysis check-records check-manifest manifest stats tables figures supplement data cache experiments resources
 
-.PHONY: analysis data cache overlap select main epochs ablation budget dose baselines stats tables figures tikz strip theory macs docx audit manifest all
+all: analysis
+
+analysis:
+	$(MAKE) stats
+	$(MAKE) tables
+	$(MAKE) figures
+	$(MAKE) supplement
+
+check-records:
+	$(PY) publication/check_records.py
+
+stats:
+	$(PY) $(EXPERIMENTS)/analyze_revision.py --study-root $(STUDY) --endpoint-dir $(RESULTS)/revised_endpoint
+
+tables:
+	$(PY) $(EXPERIMENTS)/paper_tables.py --study-root $(STUDY) --endpoint $(ENDPOINT) --output-dir ieee_access/src/tables
+
+figures:
+	$(PY) mjcs/code/figures.py --results $(STUDY) --out ieee_access/src/figures --only f1 f2 f3 f7
+
+supplement:
+	$(PY) $(EXPERIMENTS)/build_supplement.py --study-root $(STUDY) --endpoint $(ENDPOINT) --resources $(RESULTS)/resources --output-dir ieee_access/supplementary_material
 
 data:
-	mkdir -p $(DATA)
-	cd $(DATA) && for id in 000954 000941 000953; do $(abspath $(DANDI)) download --existing skip DANDI:$$id; done
+	mkdir -p falcon-challenge/data
+	cd falcon-challenge/data && for id in 000954 000941 000953; do $(abspath $(DANDI)) download --existing skip DANDI:$$id; done
 
-cache: data
-	$(PY) -c "import sys; sys.path.insert(0, 'code'); import data; [data.build_cache(t) for t in sys.argv[1:]]" $(TASKS)
+cache:
+	$(PY) mjcs/code/data.py $(TASKS)
 
-overlap: data
-	$(PY) code/minival_overlap.py
+experiments: cache
+	$(PY) $(EXPERIMENTS)/feature_controls.py extract
+	$(PY) $(EXPERIMENTS)/feature_controls.py select
+	$(PY) $(EXPERIMENTS)/feature_controls.py evaluate
+	$(PY) $(EXPERIMENTS)/feature_controls.py verify --seeds 101
+	$(PY) $(EXPERIMENTS)/feature_controls.py aggregate
+	$(PY) $(EXPERIMENTS)/feature_controls_audit.py
+	$(PY) $(EXPERIMENTS)/efficient_closed_form.py validate
+	$(PY) $(EXPERIMENTS)/baseline_robustness.py all
+	$(PY) $(EXPERIMENTS)/baseline_robustness_audit.py
+	$(PY) $(EXPERIMENTS)/confirm_sensitivity.py
+	$(PY) $(EXPERIMENTS)/baseline_robustness_sensitivity_audit.py
+	$(PY) $(EXPERIMENTS)/assemble_revision.py
 
-select: cache
-	$(PY) code/run.py select --tasks $(TASKS)
+resources:
+	$(PY) $(EXPERIMENTS)/measure_resources.py prepare
+	taskset -c $(CPU_AFFINITY) $(PY) $(EXPERIMENTS)/measure_resources.py run --device cuda
+	taskset -c $(CPU_AFFINITY) $(PY) $(EXPERIMENTS)/measure_resources.py run --device cpu --methods hdc closed_linear readout_tag
 
-main: select
-	$(PY) code/run.py main --tasks $(TASKS)
-
-epochs: main
-	$(PY) code/run.py epochs --tasks $(TASKS)
-
-ablation: main
-	$(PY) code/run.py ablation --tasks $(TASKS)
-
-budget: main
-	$(PY) code/run.py budget --tasks $(TASKS)
-
-dose: main
-	$(PY) code/run.py dose --tasks $(TASKS)
-
-baselines: cache
-	$(PY) code/falcon_baselines.py --tasks $(TASKS)
-
-stats: main ablation budget baselines
-	$(PY) code/stats.py
-
-tables: stats epochs
-	$(PY) code/tables.py
-
-figures: stats dose epochs theory
-	$(PY) code/figures.py
-
-tikz:
-	bash paper/tikz/build.sh
-	cp paper/tikz/d*.png paper/figures/
-
-strip: figures tikz
-	$(PY) code/strip_metadata.py paper/figures paper/tikz --authors "$(AUTHORS)"
-
-theory:
-	$(PY) code/theory_check.py
-
-macs:
-	$(PY) code/verify_macs.py
-
-docx: strip tables
-	python3 code/assemble.py
-	python3 code/build_docx.py
-	python3 code/strip_metadata.py paper/manuscript.docx --authors "$(AUTHORS)"
-
-audit: docx
-	python3 code/audit_docx.py
+check-manifest:
+	$(PY) publication/manifest.py
 
 manifest:
-	$(PY) code/manifest.py
-
-all: data cache overlap select main epochs ablation budget dose baselines stats tables figures tikz strip theory macs docx audit manifest
+	$(PY) publication/manifest.py --write

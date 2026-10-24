@@ -1,0 +1,37 @@
+[
+  {
+    "name": "S6",
+    "prefix_bins": 2392,
+    "labeled_bins": 2324
+  },
+  {
+    "name": "S7",
+    "prefix_bins": 2550,
+    "labeled_bins": 2481
+  },
+  {
+    "name": "S8",
+    "prefix_bins": 2408,
+    "labeled_bins": 2357
+  },
+  {
+    "name": "S9",
+    "prefix_bins": 2451,
+    "labeled_bins": 2392
+  },
+  {
+    "name": "S10",
+    "prefix_bins": 2336,
+    "labeled_bins": 2266
+  },
+  {
+    "name": "S11",
+    "prefix_bins": 2456,
+    "labeled_bins": 2377
+  },
+  {
+    "name": "S12",
+    "prefix_bins": 2652,
+    "labeled_bins": 2570
+  }
+]

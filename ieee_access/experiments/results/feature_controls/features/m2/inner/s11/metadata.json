@@ -1,0 +1,63 @@
+{
+  "task": "m2",
+  "split": "inner",
+  "seed": 11,
+  "held_in": 2,
+  "sessions": [
+    {
+      "file": "00_20201019.npz",
+      "name": "20201019",
+      "fit_bins": 0,
+      "prefix_bins": 25626,
+      "score_bins": 6150
+    },
+    {
+      "file": "01_20201020.npz",
+      "name": "20201020",
+      "fit_bins": 0,
+      "prefix_bins": 19959,
+      "score_bins": 4734
+    },
+    {
+      "file": "02_20201027.npz",
+      "name": "20201027",
+      "fit_bins": 10783,
+      "prefix_bins": 10783,
+      "score_bins": 10527
+    },
+    {
+      "file": "03_20201028.npz",
+      "name": "20201028",
+      "fit_bins": 7113,
+      "prefix_bins": 7113,
+      "score_bins": 6857
+    }
+  ],
+  "target_mean": [
+    -1.0556954066487378e-06,
+    -8.911169061320834e-06
+  ],
+  "target_std": [
+    0.010479195974767208,
+    0.011010880582034588
+  ],
+  "model_parameters": 771394,
+  "backbone_macs": {
+    "encode": 1023488,
+    "head": 90368
+  },
+  "checkpoint": "mjcs/results/checkpoints/m2/inner_pretrain/full_s11.pt",
+  "checkpoint_sha256": "a8df339ac3b81a17064d0fd5d3f3ed45b58b5bd5660b79df48ed1ea89a61984d",
+  "source_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "extraction_device": "cuda",
+  "extraction_seconds": 2.1249149430077523,
+  "projection_width": 224,
+  "prior_width": 129,
+  "dtype": "float32 features; float64 prior and solves",
+  "torch_version": "2.5.1+cu124"
+}

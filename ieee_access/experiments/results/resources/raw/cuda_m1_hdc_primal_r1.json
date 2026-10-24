@@ -1,0 +1,111 @@
+{
+  "task": "m1",
+  "method": "hdc_primal",
+  "device": "cuda",
+  "repetition": 1,
+  "configuration": {
+    "source": "state",
+    "dimension": 4096,
+    "scale": 1.0,
+    "lam": 1000.0
+  },
+  "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+  "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be",
+  "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+  "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+  "implementation_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+  "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+  "software_versions": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu124",
+    "cuda_runtime": "12.4"
+  },
+  "seed": 101,
+  "threads": 4,
+  "rows": [
+    {
+      "name": "20121004",
+      "prefix_bins": 1721,
+      "labeled_bins": 520,
+      "seconds": 0.9143375490093604,
+      "analytic_macs": 135170306946,
+      "method_returned_macs": 117170319746,
+      "process_rss_base_bytes": 926670848,
+      "process_rss_peak_bytes": 1007108096,
+      "process_rss_increment_bytes": 80437248,
+      "cuda_baseline_allocated_bytes": 20272128,
+      "cuda_peak_allocated_bytes": 1726370304,
+      "cuda_peak_reserved_bytes": 1814036480,
+      "persistent_scalars_after_update": 1536944,
+      "method_memory_return_value": 1534880,
+      "cuda_increment_allocated_bytes": 1706098176
+    },
+    {
+      "name": "20121017",
+      "prefix_bins": 1671,
+      "labeled_bins": 523,
+      "seconds": 0.7870113009121269,
+      "analytic_macs": 135335547573,
+      "method_returned_macs": 117231714293,
+      "process_rss_base_bytes": 1007968256,
+      "process_rss_peak_bytes": 1013583872,
+      "process_rss_increment_bytes": 5615616,
+      "cuda_baseline_allocated_bytes": 20272128,
+      "cuda_peak_allocated_bytes": 1726464512,
+      "cuda_peak_reserved_bytes": 1799356416,
+      "persistent_scalars_after_update": 1536944,
+      "method_memory_return_value": 1534880,
+      "cuda_increment_allocated_bytes": 1706192384
+    },
+    {
+      "name": "20121024",
+      "prefix_bins": 3336,
+      "labeled_bins": 517,
+      "seconds": 0.8664999640313908,
+      "analytic_macs": 136420928079,
+      "method_returned_macs": 118524786959,
+      "process_rss_base_bytes": 1008820224,
+      "process_rss_peak_bytes": 1014333440,
+      "process_rss_increment_bytes": 5513216,
+      "cuda_baseline_allocated_bytes": 20272128,
+      "cuda_peak_allocated_bytes": 1728776192,
+      "cuda_peak_reserved_bytes": 1822425088,
+      "persistent_scalars_after_update": 1536944,
+      "method_memory_return_value": 1534880,
+      "cuda_increment_allocated_bytes": 1708504064
+    }
+  ],
+  "torch": "2.5.1+cu124",
+  "numpy": "2.2.6",
+  "python": "3.10.20",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Core(TM) i9-14900HX",
+  "measurement_environment": {
+    "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+    "cpu_affinity": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  "system_load_start": [
+    14.603515625,
+    12.64306640625,
+    11.25927734375
+  ],
+  "system_load_end": [
+    14.31494140625,
+    12.61572265625,
+    11.2578125
+  ],
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "protocol": "fresh process; pretrained model; normalized prefixes prepared before timing; isolated session update; empty feature cache; prefix only; method initialization, forward pass and update timed; no evaluation suffix; data loading and normalization excluded equally for all methods"
+}

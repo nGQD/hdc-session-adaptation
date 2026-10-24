@@ -1,0 +1,87 @@
+{
+  "task": "h1",
+  "split": "inner",
+  "seed": 37,
+  "held_in": 4,
+  "sessions": [
+    {
+      "file": "00_S0.npz",
+      "name": "S0",
+      "fit_bins": 0,
+      "prefix_bins": 11056,
+      "score_bins": 2432
+    },
+    {
+      "file": "01_S1.npz",
+      "name": "S1",
+      "fit_bins": 0,
+      "prefix_bins": 16335,
+      "score_bins": 3778
+    },
+    {
+      "file": "02_S2.npz",
+      "name": "S2",
+      "fit_bins": 0,
+      "prefix_bins": 14962,
+      "score_bins": 3416
+    },
+    {
+      "file": "03_S3.npz",
+      "name": "S3",
+      "fit_bins": 0,
+      "prefix_bins": 14296,
+      "score_bins": 3240
+    },
+    {
+      "file": "04_S4.npz",
+      "name": "S4",
+      "fit_bins": 9327,
+      "prefix_bins": 9589,
+      "score_bins": 9104
+    },
+    {
+      "file": "05_S5.npz",
+      "name": "S5",
+      "fit_bins": 9106,
+      "prefix_bins": 9401,
+      "score_bins": 8967
+    }
+  ],
+  "target_mean": [
+    1.4814046153333038e-05,
+    5.177815637580352e-06,
+    -2.84472525891033e-06,
+    1.2285926459298935e-05,
+    2.171832966268994e-05,
+    9.976918590837158e-06,
+    -2.999250682478305e-05
+  ],
+  "target_std": [
+    0.0006780765252187848,
+    0.0009989220416173339,
+    0.001138791791163385,
+    0.003861247329041362,
+    0.005828901194036007,
+    0.006142779253423214,
+    0.005593424197286367
+  ],
+  "model_parameters": 1194919,
+  "backbone_macs": {
+    "encode": 1548288,
+    "head": 111488
+  },
+  "checkpoint": "mjcs/results/checkpoints/h1/inner_pretrain/full_s37.pt",
+  "checkpoint_sha256": "7ba0485875724f1e5b451c3fb9edb36422f4ee7903b30f660a8d4c37e6de53b6",
+  "source_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "extraction_device": "cuda",
+  "extraction_seconds": 2.987063774955459,
+  "projection_width": 304,
+  "prior_width": 129,
+  "dtype": "float32 features; float64 prior and solves",
+  "torch_version": "2.5.1+cu124"
+}

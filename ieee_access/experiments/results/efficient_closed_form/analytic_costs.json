@@ -1,0 +1,186 @@
+[
+  {
+    "task": "h1",
+    "mac_counting": "dense_gram_N*d*q",
+    "efficient_mean_macs": 32269970226.857143,
+    "primal_mean_macs": 61103219562.42857,
+    "efficient_symmetric_mean_macs": 20136232562.57143,
+    "legacy_primal_symmetric_mean_macs": 39729606076.71429,
+    "sessions": [
+      {
+        "name": "S6",
+        "N": 2324,
+        "d": 4225,
+        "q": 2324,
+        "prefix_bins": 2392,
+        "efficient_macs": 30434728769,
+        "primal_macs": 59665442279,
+        "efficient_symmetric_macs": 19030076419,
+        "legacy_primal_symmetric_macs": 38927925479
+      },
+      {
+        "name": "S7",
+        "N": 2481,
+        "d": 4225,
+        "q": 2481,
+        "prefix_bins": 2550,
+        "efficient_macs": 34445184652,
+        "primal_macs": 62832625231,
+        "efficient_symmetric_macs": 21447225652,
+        "legacy_primal_symmetric_macs": 40694166031
+      },
+      {
+        "name": "S8",
+        "N": 2357,
+        "d": 4225,
+        "q": 2357,
+        "prefix_bins": 2408,
+        "efficient_macs": 31226923943,
+        "primal_macs": 60302590831,
+        "efficient_symmetric_macs": 19496017093,
+        "legacy_primal_symmetric_macs": 39270608431
+      },
+      {
+        "name": "S9",
+        "N": 2392,
+        "d": 4225,
+        "q": 2392,
+        "prefix_bins": 2451,
+        "efficient_macs": 32123213202,
+        "primal_macs": 61021558919,
+        "efficient_symmetric_macs": 20041251102,
+        "legacy_primal_symmetric_macs": 39677264519
+      },
+      {
+        "name": "S10",
+        "N": 2266,
+        "d": 4225,
+        "q": 2266,
+        "prefix_bins": 2336,
+        "efficient_macs": 29024560732,
+        "primal_macs": 58499332887,
+        "efficient_symmetric_macs": 18182175607,
+        "legacy_primal_symmetric_macs": 38279361687
+      },
+      {
+        "name": "S11",
+        "N": 2377,
+        "d": 4225,
+        "q": 2377,
+        "prefix_bins": 2456,
+        "efficient_macs": 31776349515,
+        "primal_macs": 60752315919,
+        "efficient_symmetric_macs": 19845473415,
+        "legacy_primal_symmetric_macs": 39541869519
+      },
+      {
+        "name": "S12",
+        "N": 2570,
+        "d": 4225,
+        "q": 2570,
+        "prefix_bins": 2652,
+        "efficient_macs": 36858830775,
+        "primal_macs": 64648670871,
+        "efficient_symmetric_macs": 22911408650,
+        "legacy_primal_symmetric_macs": 41716046871
+      }
+    ]
+  },
+  {
+    "task": "m1",
+    "mac_counting": "dense_gram_N*d*q",
+    "efficient_mean_macs": 4784935912.333333,
+    "primal_mean_macs": 135642260866.0,
+    "efficient_symmetric_mean_macs": 3662075209.3333335,
+    "legacy_primal_symmetric_mean_macs": 117642273666.0,
+    "sessions": [
+      {
+        "name": "20121004",
+        "N": 520,
+        "d": 8321,
+        "q": 520,
+        "prefix_bins": 1721,
+        "efficient_macs": 4312930410,
+        "primal_macs": 135170306946,
+        "efficient_symmetric_macs": 3190094670,
+        "legacy_primal_symmetric_macs": 117170319746
+      },
+      {
+        "name": "20121017",
+        "N": 523,
+        "d": 8321,
+        "q": 523,
+        "prefix_bins": 1671,
+        "efficient_macs": 4296948332,
+        "primal_macs": 135335547573,
+        "efficient_symmetric_macs": 3161106869,
+        "legacy_primal_symmetric_macs": 117231714293
+      },
+      {
+        "name": "20121024",
+        "N": 517,
+        "d": 8321,
+        "q": 517,
+        "prefix_bins": 3336,
+        "efficient_macs": 5744928995,
+        "primal_macs": 136420928079,
+        "efficient_symmetric_macs": 4635024089,
+        "legacy_primal_symmetric_macs": 118524786959
+      }
+    ]
+  },
+  {
+    "task": "m2",
+    "mac_counting": "dense_gram_N*d*q",
+    "efficient_mean_macs": 21510796440.75,
+    "primal_mean_macs": 50011506129.0,
+    "efficient_symmetric_mean_macs": 13030209553.25,
+    "legacy_primal_symmetric_mean_macs": 32834346129.0,
+    "sessions": [
+      {
+        "name": "20201030",
+        "N": 2638,
+        "d": 4225,
+        "q": 2638,
+        "prefix_bins": 2638,
+        "efficient_macs": 36646369670,
+        "primal_macs": 63866296108,
+        "efficient_symmetric_macs": 21950961995,
+        "legacy_primal_symmetric_macs": 40326894508
+      },
+      {
+        "name": "20201118",
+        "N": 1258,
+        "d": 4225,
+        "q": 1258,
+        "prefix_bins": 1258,
+        "efficient_macs": 9010279910,
+        "primal_macs": 37050573568,
+        "efficient_symmetric_macs": 5669770985,
+        "legacy_primal_symmetric_macs": 25825187968
+      },
+      {
+        "name": "20201119",
+        "N": 1522,
+        "d": 4225,
+        "q": 1522,
+        "prefix_bins": 1522,
+        "efficient_macs": 12785762918,
+        "primal_macs": 42180537880,
+        "efficient_symmetric_macs": 7895405693,
+        "legacy_primal_symmetric_macs": 28599427480
+      },
+      {
+        "name": "20201124",
+        "N": 2282,
+        "d": 4225,
+        "q": 2282,
+        "prefix_bins": 2282,
+        "efficient_macs": 27600773265,
+        "primal_macs": 56948616960,
+        "efficient_symmetric_macs": 16604699540,
+        "legacy_primal_symmetric_macs": 36585874560
+      }
+    ]
+  }
+]

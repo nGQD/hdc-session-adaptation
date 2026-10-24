@@ -1,0 +1,45 @@
+{
+  "scope": "Workstation context outside timed intervals; unrelated desktop services left running; all study experiment workers stopped before measurement.",
+  "before_cuda": {
+    "utc": "2026-10-23T17:39:46.333455+00:00",
+    "system_load": [
+      12.13720703125,
+      10.8017578125,
+      10.462890625
+    ],
+    "gpu": "name, driver_version, memory.total [MiB], utilization.gpu [%], power.draw [W], temperature.gpu\nNVIDIA GeForce RTX 4080 Laptop GPU, 595.84, 12282 MiB, 0 %, 11.61 W, 69\n",
+    "compute_processes": "pid, process_name, used_gpu_memory [MiB]\n",
+    "benchmark_affinity": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  "after_cuda_before_cpu": {
+    "utc": "2026-10-23T17:46:23.525926+00:00",
+    "system_load": [
+      10.49072265625,
+      11.9794921875,
+      11.29833984375
+    ],
+    "gpu": "name, driver_version, memory.total [MiB], utilization.gpu [%], power.draw [W], temperature.gpu\nNVIDIA GeForce RTX 4080 Laptop GPU, 595.84, 12282 MiB, 0 %, 11.60 W, 70\n",
+    "compute_processes": "pid, process_name, used_gpu_memory [MiB]\n",
+    "benchmark_affinity": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  "after_cpu": {
+    "utc": "2026-10-23T17:51:40.688526+00:00",
+    "system_load": [
+      10.64208984375,
+      12.10986328125,
+      11.6337890625
+    ],
+    "gpu": "name, driver_version, memory.total [MiB], utilization.gpu [%], power.draw [W], temperature.gpu\nNVIDIA GeForce RTX 4080 Laptop GPU, 595.84, 12282 MiB, 0 %, 10.79 W, 66\n",
+    "compute_processes": "pid, process_name, used_gpu_memory [MiB]\n"
+  }
+}

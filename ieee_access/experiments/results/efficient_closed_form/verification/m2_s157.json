@@ -1,0 +1,932 @@
+[
+  {
+    "task": "m2",
+    "seed": 157,
+    "method": "hdc",
+    "variant": "full",
+    "R": [
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.48612314462661743,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.47951024770736694,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.47951024770736694,
+        0.2921748757362366,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.47951024770736694,
+        0.2921748757362366,
+        0.4134613871574402,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.47951024770736694,
+        0.2921748757362366,
+        0.4134613871574402,
+        0.11023473739624023
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028",
+      "20201030",
+      "20201118",
+      "20201119",
+      "20201124"
+    ],
+    "held_in": 4,
+    "adapt_macs": [
+      36646369670,
+      9010279910,
+      12785762918,
+      27600773265
+    ],
+    "memory": [
+      1240902,
+      1249352,
+      1257802,
+      1266252
+    ],
+    "start_macs": 0,
+    "summary": {
+      "acc": 0.41322868317365646,
+      "acc_held_in": 0.5026120543479919,
+      "acc_held_out": 0.323845311999321,
+      "plasticity": 0.323845311999321,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.35791219770908356,
+      "adapt_macs": 21510796440.75,
+      "memory": 1266252
+    },
+    "solver_records": [
+      {
+        "session": "20201030",
+        "solver": "dual",
+        "N": 2638,
+        "d": 4225,
+        "q": 2638,
+        "lambda_effective": 2638.0,
+        "prefix_bins": 2638,
+        "analytic_macs": 36646369670,
+        "symmetric_analytic_macs": 21950961995,
+        "legacy_primal_symmetric_macs": 40326894508,
+        "dense_primal_macs": 63866296108,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201118",
+        "solver": "dual",
+        "N": 1258,
+        "d": 4225,
+        "q": 1258,
+        "lambda_effective": 1258.0,
+        "prefix_bins": 1258,
+        "analytic_macs": 9010279910,
+        "symmetric_analytic_macs": 5669770985,
+        "legacy_primal_symmetric_macs": 25825187968,
+        "dense_primal_macs": 37050573568,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201119",
+        "solver": "dual",
+        "N": 1522,
+        "d": 4225,
+        "q": 1522,
+        "lambda_effective": 1522.0,
+        "prefix_bins": 1522,
+        "analytic_macs": 12785762918,
+        "symmetric_analytic_macs": 7895405693,
+        "legacy_primal_symmetric_macs": 28599427480,
+        "dense_primal_macs": 42180537880,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201124",
+        "solver": "dual",
+        "N": 2282,
+        "d": 4225,
+        "q": 2282,
+        "lambda_effective": 2282.0,
+        "prefix_bins": 2282,
+        "analytic_macs": 27600773265,
+        "symmetric_analytic_macs": 16604699540,
+        "legacy_primal_symmetric_macs": 36585874560,
+        "dense_primal_macs": 56948616960,
+        "gram_counting": "dense_matrix_product"
+      }
+    ],
+    "max_abs_R_difference": 5.960464477539063e-08,
+    "max_abs_native_prediction_difference": 0.0,
+    "native_prediction_checked": true,
+    "tolerance": 1e-06,
+    "original_result_sha256": "7feb78685a71bf5c22ca846c7b9d5aa6970e126cec4217128148bb252bd06928",
+    "checkpoint_sha256": "4d8f5aa580dfb31eb05f15bf72dcb6011284239b0f60704da7028e85fe8498e9",
+    "validation_seconds": 11.522084231022745,
+    "timing_note": "validation_seconds includes cached-feature scoring and native reference solves; no deployment adaptation timing is reported here.",
+    "native_memory": [
+      1240644,
+      1249094,
+      1257544,
+      1265994
+    ],
+    "memory_note": "Retained model/adaptation scalars corrected to include detached prior and bound keys; excludes disposable offline feature cache. native_memory preserves original convention. No prediction recomputation needed.",
+    "adapt_macs_symmetric": [
+      21950961995,
+      5669770985,
+      7895405693,
+      16604699540
+    ],
+    "adapt_macs_legacy_primal_symmetric": [
+      40326894508,
+      25825187968,
+      28599427480,
+      36585874560
+    ],
+    "adapt_macs_dense_primal": [
+      63866296108,
+      37050573568,
+      42180537880,
+      56948616960
+    ],
+    "mac_counting": "dense_gram_N*d*q"
+  },
+  {
+    "task": "m2",
+    "seed": 157,
+    "method": "closed_linear",
+    "variant": "full",
+    "R": [
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.48612314462661743,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5045166015625,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5045166015625,
+        0.3503260016441345,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5045166015625,
+        0.3503260016441345,
+        0.3073554039001465,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5045166015625,
+        0.3503260016441345,
+        0.3073554039001465,
+        -0.003863215446472168
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028",
+      "20201030",
+      "20201118",
+      "20201119",
+      "20201124"
+    ],
+    "held_in": 4,
+    "adapt_macs": [
+      2983322753,
+      1422880853,
+      1721400173,
+      2580773973
+    ],
+    "memory": [
+      771910,
+      772168,
+      772426,
+      772684
+    ],
+    "start_macs": 0,
+    "summary": {
+      "acc": 0.3960978761315346,
+      "acc_held_in": 0.5026120543479919,
+      "acc_held_out": 0.2895836979150772,
+      "plasticity": 0.2895836979150772,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.35791219770908356,
+      "adapt_macs": 2177094438.0,
+      "memory": 772684
+    },
+    "solver_records": [
+      {
+        "session": "20201030",
+        "solver": "primal",
+        "N": 2638,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 79.14,
+        "prefix_bins": 2638,
+        "analytic_macs": 2983322753,
+        "symmetric_analytic_macs": 2961543425,
+        "legacy_primal_symmetric_macs": 2961543425,
+        "dense_primal_macs": 2983322753,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201118",
+        "solver": "primal",
+        "N": 1258,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 37.74,
+        "prefix_bins": 1258,
+        "analytic_macs": 1422880853,
+        "symmetric_analytic_macs": 1412494805,
+        "legacy_primal_symmetric_macs": 1412494805,
+        "dense_primal_macs": 1422880853,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201119",
+        "solver": "primal",
+        "N": 1522,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 45.66,
+        "prefix_bins": 1522,
+        "analytic_macs": 1721400173,
+        "symmetric_analytic_macs": 1708834541,
+        "legacy_primal_symmetric_macs": 1708834541,
+        "dense_primal_macs": 1721400173,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201124",
+        "solver": "primal",
+        "N": 2282,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 68.46,
+        "prefix_bins": 2282,
+        "analytic_macs": 2580773973,
+        "symmetric_analytic_macs": 2561933781,
+        "legacy_primal_symmetric_macs": 2561933781,
+        "dense_primal_macs": 2580773973,
+        "gram_counting": "dense_matrix_product"
+      }
+    ],
+    "max_abs_R_difference": 0.0,
+    "max_abs_native_prediction_difference": 0.0,
+    "native_prediction_checked": true,
+    "tolerance": 1e-06,
+    "original_result_sha256": "3461e3a61a1e427d51dcad5b442ca24bbbc652a98ce39991a8c4d7466af8b823",
+    "checkpoint_sha256": "4d8f5aa580dfb31eb05f15bf72dcb6011284239b0f60704da7028e85fe8498e9",
+    "validation_seconds": 0.05001702508889139,
+    "timing_note": "validation_seconds includes cached-feature scoring and native reference solves; no deployment adaptation timing is reported here.",
+    "native_memory": [
+      771652,
+      771910,
+      772168,
+      772426
+    ],
+    "memory_note": "Retained model/adaptation scalars corrected to include detached prior and bound keys; excludes disposable offline feature cache. native_memory preserves original convention. No prediction recomputation needed.",
+    "adapt_macs_symmetric": [
+      2961543425,
+      1412494805,
+      1708834541,
+      2561933781
+    ],
+    "adapt_macs_legacy_primal_symmetric": [
+      2961543425,
+      1412494805,
+      1708834541,
+      2561933781
+    ],
+    "adapt_macs_dense_primal": [
+      2983322753,
+      1422880853,
+      1721400173,
+      2580773973
+    ],
+    "mac_counting": "dense_gram_N*d*q"
+  },
+  {
+    "task": "m2",
+    "seed": 157,
+    "method": "hdc_zero",
+    "variant": "full",
+    "R": [
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.48612314462661743,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.38022327423095703,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.38022327423095703,
+        0.14589476585388184,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.38022327423095703,
+        0.14589476585388184,
+        0.23437291383743286,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.38022327423095703,
+        0.14589476585388184,
+        0.23437291383743286,
+        0.1217305064201355
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028",
+      "20201030",
+      "20201118",
+      "20201119",
+      "20201124"
+    ],
+    "held_in": 4,
+    "adapt_macs": [
+      36646369670,
+      9010279910,
+      12785762918,
+      27600773265
+    ],
+    "memory": [
+      1240902,
+      1249352,
+      1257802,
+      1266252
+    ],
+    "start_macs": 0,
+    "summary": {
+      "acc": 0.3615837097167969,
+      "acc_held_in": 0.5026120543479919,
+      "acc_held_out": 0.2205553650856018,
+      "plasticity": 0.2205553650856018,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.35791219770908356,
+      "adapt_macs": 21510796440.75,
+      "memory": 1266252
+    },
+    "solver_records": [
+      {
+        "session": "20201030",
+        "solver": "dual",
+        "N": 2638,
+        "d": 4225,
+        "q": 2638,
+        "lambda_effective": 2638.0,
+        "prefix_bins": 2638,
+        "analytic_macs": 36646369670,
+        "symmetric_analytic_macs": 21950961995,
+        "legacy_primal_symmetric_macs": 40326894508,
+        "dense_primal_macs": 63866296108,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201118",
+        "solver": "dual",
+        "N": 1258,
+        "d": 4225,
+        "q": 1258,
+        "lambda_effective": 1258.0,
+        "prefix_bins": 1258,
+        "analytic_macs": 9010279910,
+        "symmetric_analytic_macs": 5669770985,
+        "legacy_primal_symmetric_macs": 25825187968,
+        "dense_primal_macs": 37050573568,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201119",
+        "solver": "dual",
+        "N": 1522,
+        "d": 4225,
+        "q": 1522,
+        "lambda_effective": 1522.0,
+        "prefix_bins": 1522,
+        "analytic_macs": 12785762918,
+        "symmetric_analytic_macs": 7895405693,
+        "legacy_primal_symmetric_macs": 28599427480,
+        "dense_primal_macs": 42180537880,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201124",
+        "solver": "dual",
+        "N": 2282,
+        "d": 4225,
+        "q": 2282,
+        "lambda_effective": 2282.0,
+        "prefix_bins": 2282,
+        "analytic_macs": 27600773265,
+        "symmetric_analytic_macs": 16604699540,
+        "legacy_primal_symmetric_macs": 36585874560,
+        "dense_primal_macs": 56948616960,
+        "gram_counting": "dense_matrix_product"
+      }
+    ],
+    "max_abs_R_difference": 5.960464477539063e-08,
+    "max_abs_native_prediction_difference": null,
+    "native_prediction_checked": false,
+    "tolerance": 1e-06,
+    "original_result_sha256": "1f12081d54b74d5ab77dd109a05a73ae9cd11e748a6ed87954a8be4866c3dca2",
+    "checkpoint_sha256": "4d8f5aa580dfb31eb05f15bf72dcb6011284239b0f60704da7028e85fe8498e9",
+    "validation_seconds": 5.034207048011012,
+    "timing_note": "validation_seconds includes cached-feature scoring and native reference solves; no deployment adaptation timing is reported here.",
+    "native_memory": [
+      1240644,
+      1249094,
+      1257544,
+      1265994
+    ],
+    "memory_note": "Retained model/adaptation scalars corrected to include detached prior and bound keys; excludes disposable offline feature cache. native_memory preserves original convention. No prediction recomputation needed.",
+    "adapt_macs_symmetric": [
+      21950961995,
+      5669770985,
+      7895405693,
+      16604699540
+    ],
+    "adapt_macs_legacy_primal_symmetric": [
+      40326894508,
+      25825187968,
+      28599427480,
+      36585874560
+    ],
+    "adapt_macs_dense_primal": [
+      63866296108,
+      37050573568,
+      42180537880,
+      56948616960
+    ],
+    "mac_counting": "dense_gram_N*d*q"
+  },
+  {
+    "task": "m2",
+    "seed": 157,
+    "method": "closed_zero",
+    "variant": "full",
+    "R": [
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.48612314462661743,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5003865361213684,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5003865361213684,
+        0.331801176071167,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5003865361213684,
+        0.331801176071167,
+        0.278734028339386,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.5003865361213684,
+        0.331801176071167,
+        0.278734028339386,
+        -0.045104265213012695
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028",
+      "20201030",
+      "20201118",
+      "20201119",
+      "20201124"
+    ],
+    "held_in": 4,
+    "adapt_macs": [
+      2983322753,
+      1422880853,
+      1721400173,
+      2580773973
+    ],
+    "memory": [
+      771910,
+      772168,
+      772426,
+      772684
+    ],
+    "start_macs": 0,
+    "summary": {
+      "acc": 0.38453321158885956,
+      "acc_held_in": 0.5026120543479919,
+      "acc_held_out": 0.2664543688297272,
+      "plasticity": 0.2664543688297272,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.35791219770908356,
+      "adapt_macs": 2177094438.0,
+      "memory": 772684
+    },
+    "solver_records": [
+      {
+        "session": "20201030",
+        "solver": "primal",
+        "N": 2638,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 26.38,
+        "prefix_bins": 2638,
+        "analytic_macs": 2983322753,
+        "symmetric_analytic_macs": 2961543425,
+        "legacy_primal_symmetric_macs": 2961543425,
+        "dense_primal_macs": 2983322753,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201118",
+        "solver": "primal",
+        "N": 1258,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 12.58,
+        "prefix_bins": 1258,
+        "analytic_macs": 1422880853,
+        "symmetric_analytic_macs": 1412494805,
+        "legacy_primal_symmetric_macs": 1412494805,
+        "dense_primal_macs": 1422880853,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201119",
+        "solver": "primal",
+        "N": 1522,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 15.22,
+        "prefix_bins": 1522,
+        "analytic_macs": 1721400173,
+        "symmetric_analytic_macs": 1708834541,
+        "legacy_primal_symmetric_macs": 1708834541,
+        "dense_primal_macs": 1721400173,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201124",
+        "solver": "primal",
+        "N": 2282,
+        "d": 129,
+        "q": 129,
+        "lambda_effective": 22.82,
+        "prefix_bins": 2282,
+        "analytic_macs": 2580773973,
+        "symmetric_analytic_macs": 2561933781,
+        "legacy_primal_symmetric_macs": 2561933781,
+        "dense_primal_macs": 2580773973,
+        "gram_counting": "dense_matrix_product"
+      }
+    ],
+    "max_abs_R_difference": 0.0,
+    "max_abs_native_prediction_difference": null,
+    "native_prediction_checked": false,
+    "tolerance": 1e-06,
+    "original_result_sha256": "5ccc4f70e1cdeb1b64f730e5e143f8b5721643e98a400edbf0ce5144605b8cf8",
+    "checkpoint_sha256": "4d8f5aa580dfb31eb05f15bf72dcb6011284239b0f60704da7028e85fe8498e9",
+    "validation_seconds": 0.03638146910816431,
+    "timing_note": "validation_seconds includes cached-feature scoring and native reference solves; no deployment adaptation timing is reported here.",
+    "native_memory": [
+      771652,
+      771910,
+      772168,
+      772426
+    ],
+    "memory_note": "Retained model/adaptation scalars corrected to include detached prior and bound keys; excludes disposable offline feature cache. native_memory preserves original convention. No prediction recomputation needed.",
+    "adapt_macs_symmetric": [
+      2961543425,
+      1412494805,
+      1708834541,
+      2561933781
+    ],
+    "adapt_macs_legacy_primal_symmetric": [
+      2961543425,
+      1412494805,
+      1708834541,
+      2561933781
+    ],
+    "adapt_macs_dense_primal": [
+      2983322753,
+      1422880853,
+      1721400173,
+      2580773973
+    ],
+    "mac_counting": "dense_gram_N*d*q"
+  },
+  {
+    "task": "m2",
+    "seed": 157,
+    "method": "hdc_bound",
+    "variant": "full",
+    "R": [
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.48612314462661743,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.4795103073120117,
+        0.4123173952102661,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.44751185178756714,
+        0.22555989027023315,
+        0.4364479184150696,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.41079771518707275,
+        0.21570861339569092,
+        0.20390331745147705,
+        0.0967603325843811
+      ],
+      [
+        0.5646378993988037,
+        0.42776060104370117,
+        0.49273455142974854,
+        0.5253151655197144,
+        0.3533327579498291,
+        0.09049755334854126,
+        0.1270914077758789,
+        -0.0247652530670166
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028",
+      "20201030",
+      "20201118",
+      "20201119",
+      "20201124"
+    ],
+    "held_in": 4,
+    "adapt_macs": [
+      36646369670,
+      9010279910,
+      12785762918,
+      27600773265
+    ],
+    "memory": [
+      1242950,
+      1245256,
+      1247562,
+      1249868
+    ],
+    "start_macs": 0,
+    "summary": {
+      "acc": 0.31957558542490005,
+      "acc_held_in": 0.5026120543479919,
+      "acc_held_out": 0.13653911650180817,
+      "plasticity": 0.22105206549167633,
+      "bwt": -0.048293113708496094,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": -0.11268393198649089,
+      "zero_shot_held_out": 0.35791219770908356,
+      "adapt_macs": 21510796440.75,
+      "memory": 1249868
+    },
+    "solver_records": [
+      {
+        "session": "20201030",
+        "solver": "dual",
+        "N": 2638,
+        "d": 4225,
+        "q": 2638,
+        "lambda_effective": 2638.0,
+        "prefix_bins": 2638,
+        "analytic_macs": 36646369670,
+        "symmetric_analytic_macs": 21950961995,
+        "legacy_primal_symmetric_macs": 40326894508,
+        "dense_primal_macs": 63866296108,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201118",
+        "solver": "dual",
+        "N": 1258,
+        "d": 4225,
+        "q": 1258,
+        "lambda_effective": 1258.0,
+        "prefix_bins": 1258,
+        "analytic_macs": 9010279910,
+        "symmetric_analytic_macs": 5669770985,
+        "legacy_primal_symmetric_macs": 25825187968,
+        "dense_primal_macs": 37050573568,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201119",
+        "solver": "dual",
+        "N": 1522,
+        "d": 4225,
+        "q": 1522,
+        "lambda_effective": 1522.0,
+        "prefix_bins": 1522,
+        "analytic_macs": 12785762918,
+        "symmetric_analytic_macs": 7895405693,
+        "legacy_primal_symmetric_macs": 28599427480,
+        "dense_primal_macs": 42180537880,
+        "gram_counting": "dense_matrix_product"
+      },
+      {
+        "session": "20201124",
+        "solver": "dual",
+        "N": 2282,
+        "d": 4225,
+        "q": 2282,
+        "lambda_effective": 2282.0,
+        "prefix_bins": 2282,
+        "analytic_macs": 27600773265,
+        "symmetric_analytic_macs": 16604699540,
+        "legacy_primal_symmetric_macs": 36585874560,
+        "dense_primal_macs": 56948616960,
+        "gram_counting": "dense_matrix_product"
+      }
+    ],
+    "max_abs_R_difference": 5.960464477539063e-08,
+    "max_abs_native_prediction_difference": null,
+    "native_prediction_checked": false,
+    "tolerance": 1e-06,
+    "original_result_sha256": "0c9a71071dc8007dde661e30bbb6e0cc56b6f54cc46732100d17f4d0b684074f",
+    "checkpoint_sha256": "4d8f5aa580dfb31eb05f15bf72dcb6011284239b0f60704da7028e85fe8498e9",
+    "validation_seconds": 4.761853112024255,
+    "timing_note": "validation_seconds includes cached-feature scoring and native reference solves; no deployment adaptation timing is reported here.",
+    "native_memory": [
+      1240644,
+      1240902,
+      1241160,
+      1241418
+    ],
+    "memory_note": "Retained model/adaptation scalars corrected to include detached prior and bound keys; excludes disposable offline feature cache. native_memory preserves original convention. No prediction recomputation needed.",
+    "adapt_macs_symmetric": [
+      21950961995,
+      5669770985,
+      7895405693,
+      16604699540
+    ],
+    "adapt_macs_legacy_primal_symmetric": [
+      40326894508,
+      25825187968,
+      28599427480,
+      36585874560
+    ],
+    "adapt_macs_dense_primal": [
+      63866296108,
+      37050573568,
+      42180537880,
+      56948616960
+    ],
+    "mac_counting": "dense_gram_N*d*q"
+  }
+]

@@ -1,58 +1,84 @@
-# Gradient-free hyperdimensional session adaptation on FALCON H1, M1, M2
+# Gradient-free hyperdimensional session adaptation
 
-Code and result records for the study of closed-form session adaptation of a frozen causal recurrent decoder on the FALCON tasks H1, M1 and M2. Fourteen methods share one frozen backbone on a chronological stream of held-out sessions: `hdc` (proposed), `hdc_zero`, `hdc_shared`, `hdc_bound`, `closed_linear`, `closed_zero`, `frozen`, `finetune_full`, `finetune_readout`, `ewc`, `replay`, and the session-tagged `full_tag`, `readout_tag` and `last_tag`; the FALCON reference decoders WF and RNN are run on the same protocol. Gradient baselines select learning rate, epochs and the EWC weight on an inner stream built from held-in data only.
+Code and recorded results for **Gradient-Free Hyperdimensional Session Adaptation of a Causal Recurrent Intracortical Decoder**.
 
-## Hardware
+A frozen causal recurrent decoder adapts through a prior-centered correction on random phasor features. Corrections are fitted in closed form and retrieved by recording-session tag. The study compares fourteen methods starting from the same pretrained backbone on the FALCON human reaching (H1), monkey muscle activity (M1), and monkey finger movement (M2) tasks. Gradient baselines update their designated parameters; closed-form methods keep the backbone frozen.
 
-NVIDIA RTX 4080 Laptop GPU, 12 GB. Python 3.10, torch 2.5.1 (CUDA 12.4). Pinned packages are in `environment/requirements.lock`.
+At an analysis tolerance of 0.03 in the coefficient of determination, the proposed method meets non-inferiority after multiplicity correction in all six comparisons with tagged full-network and readout fine-tuning, for both stream and final held-out accuracy. At the selected configurations, it uses 10.9 to 49.4 times fewer adaptation multiply-accumulate operations than tagged full-network tuning. The records include the full accuracy, retention, cost, and measured-resource comparisons.
 
-## Environment
+## Reproduce the analyses
 
-    python3.10 -m venv ../.venv
-    ../.venv/bin/python -m pip install -r environment/requirements.lock
-    ../.venv/bin/python -m pip install falcon-challenge==1.0.2
-    mkdir -p ../falcon-challenge/data
+Run commands from this repository's root. The supplied records are sufficient to regenerate the statistics, tables, figures, and supplement without neural recordings, checkpoints, or a GPU.
 
-The loader is the `falcon_challenge` package, version 1.0.2 from PyPI; data live in `../falcon-challenge/data`. The manuscript steps (tikz, strip, docx, audit, manifest) need the private `paper/` sources and system tools (`pandoc`, LibreOffice `soffice`, poppler `pdftoppm`, `qpdf`, PyYAML, lxml, Pillow); they are not needed to reproduce the results.
+```sh
+python3.10 -m venv .venv
+.venv/bin/python -m pip install -r requirements-records.txt
+make check-records
+make analysis
+```
 
-## Data
+The supplement also requires `pdflatex` with the standard LaTeX packages used in `build_supplement.py`. On Debian or Ubuntu, these are provided by `texlive-latex-extra` and `lmodern`. Matplotlib uses an installed serif font or its bundled fallback.
 
-NWB files are downloaded from DANDI into `../falcon-challenge/data/<dandiset>`: H1 000954, M1 000941, M2 000953. File hashes are recorded in `results/provenance/manifest_{task}.json`. The data are not redistributed here.
+`make analysis` runs its stages sequentially. Individual targets are available:
 
-## Reproduce
+| Target | Output |
+| --- | --- |
+| `check-records` | Validates the supplied study, source identities, and recorded resource measurements |
+| `stats` | Revised statistics and endpoint analyses |
+| `tables` | Seven Markdown tables in `ieee_access/src/tables/` |
+| `figures` | Main and supplementary plots in `ieee_access/src/figures/` |
+| `supplement` | `ieee_access/supplementary_material/supplement.pdf` and its source records |
 
-    make analysis
+Set `PY=/path/to/python` to use another environment. The analysis uses 10,000 bootstrap resamples and the recorded random seeds.
 
-`make analysis` runs every stage that produces results; `make all` also renders the manuscript. Stages run in order and skip result files that already exist. Set `TASKS="h1"` to restrict tasks and `PY=` to choose the interpreter.
+## Repository layout
 
-| Target | Script | Produces | Runtime |
-| --- | --- | --- | --- |
-| data | dandi CLI | NWB files | network bound |
-| cache | `code/data.py` | `cache/*.npz`, provenance manifests | 5 min |
-| overlap | `code/minival_overlap.py` | `results/provenance/minival_overlap.json` | 1 min |
-| select | `code/run.py select` | `results/selection/{task}.json` (nested selection on held-in sessions only) | 80 min |
-| main | `code/run.py main` | `results/stream/{task}/full/*.json`, 10 seeds | 75 min |
-| epochs | `code/run.py epochs` | `results/epochs/{task}/*_e{E}_s{seed}.json` (1 to 40 epochs), 5 seeds | 60 min |
-| ablation | `code/run.py ablation` | `results/stream/{task}/{variant}/*.json`, 5 seeds | 75 min |
-| budget | `code/run.py budget` | `results/stream/{task}/epochs{25,100}/*.json` | 40 min |
-| dose | `code/run.py dose` | `results/dose/{task}/*.json` | 90 min |
-| baselines | `code/falcon_baselines.py` | `results/selection/wf_{task}.json`, `results/stream/{task}/falcon/wf_*.json`; RNN references from the commands in `code/README_runs.txt` | 20 min |
-| stats | `code/stats.py` | `results/stats/*.json` | 2 min |
-| tables | `code/tables.py` | `results/tables/*.md` | seconds |
-| figures | `code/figures.py` | `paper/figures/f*.png`, `f*.pdf` | 1 min |
-| tikz | `paper/tikz/build.sh` | `paper/tikz/d*.png`, copied to `paper/figures/` | 1 min |
-| theory | `code/theory_check.py` | `results/theory/bound.json` | 5 min |
-| macs | `code/verify_macs.py` | `results/macs/verify.json`, `results/macs/verify.md` | 1 min |
-| docx | `code/assemble.py`, `code/build_docx.py` | `paper/manuscript.docx` | seconds |
-| audit | `code/audit_docx.py` | template and consistency report | seconds |
-| manifest | `code/manifest.py` | `MANIFEST.sha256` | seconds |
+| Directory | Contents |
+| --- | --- |
+| `mjcs/code/` | Original decoder, training, and statistical implementation |
+| `mjcs/results/` | Original experiment records and data manifests |
+| `mjcs/environment/` | Full experiment environment lock |
+| `mjcs/submission/` | Calibration-artifact fitting and causal benchmark decoder |
+| `ieee_access/experiments/` | Smaller-system solver, controls, confirmed baseline search, sensitivity experiments, resource measurements, and analysis tools |
+| `ieee_access/experiments/results/revised_study/` | Authoritative stream, selection, and data-dose records for the manuscript |
+| `ieee_access/experiments/results/revised_endpoint/` | Endpoint-specific non-inferiority and margin analyses |
 
-Runtimes are for the hardware above. Manuscript sources (`paper/`) are not part of this repository; the figures, tikz, docx and audit stages write into `paper/`. Pretrained backbone checkpoints (`results/checkpoints`) and the EvalAI decoder artifacts (`submission/artifacts`) are in the v1.0 release archives (https://github.com/nGQD/hdc-session-adaptation/releases/tag/v1.0); extract them in the repository root. `code/pipeline.sh TASK` runs main, epochs, ablation, budget and dose for one task after its selection is final.
+The revised study incorporates the confirmed gradient configurations. Original records remain available for provenance; use `revised_study` for the current comparisons. The original epoch sweeps are retained in `mjcs/results/epochs/` as historical records. Source hashes bind the recorded fits to their implementations.
 
-## Hidden test set
+## Run the experiments
 
-The EvalAI submission records are in `results/provenance/evalai_{task}_hdc_{id}.json` (H1 586729, M1 586752, M2 586751), with the public leaderboard snapshots in `results/provenance/evalai_{task}_leaderboard_*.json`. Images are built from `submission/` (see `submission/README.txt`).
+The recorded workstation used Python 3.10.20, PyTorch 2.5.1 with CUDA 12.4, and an NVIDIA GeForce RTX 4080 Laptop GPU. Install the full environment and the benchmark loader before fitting models:
 
-## License
+```sh
+.venv/bin/python -m pip install -r mjcs/environment/requirements.lock
+.venv/bin/python -m pip install falcon-challenge==1.0.2
+make data
+```
 
-AGPL-3.0, see `LICENSE`.
+For container builds, clone the benchmark source into `falcon-challenge/` before downloading data; see `mjcs/submission/README.txt`.
+
+The data target downloads DANDI datasets 000954 (H1), 000941 (M1), and 000953 (M2) to `falcon-challenge/data/`. The expected file hashes are in `mjcs/results/provenance/manifest_*.json`.
+
+Download [the released checkpoints](https://github.com/nGQD/hdc-session-adaptation/releases/download/v1.0/checkpoints.tar.gz) and extract them **inside `mjcs/`**, so the files occupy `mjcs/results/checkpoints/`. The experiment records identify the exact checkpoint hashes.
+
+```sh
+make experiments
+make resources CPU_AFFINITY=0,2,4,6
+make analysis
+```
+
+`make experiments` runs the feature controls, solver checks, confirmed gradient search, sensitivity experiments, and study assembly using the released checkpoints. It does not retrain the backbone. Runners validate and reuse completed records; to perform new fits, first move the corresponding completed result directories aside. Keep the original core implementation and selection files unchanged when reproducing the fixed confirmation plan.
+
+Resource measurements must run after the fitting workers have stopped. For fresh timing measurements, move the completed `ieee_access/experiments/results/resources/` directory aside before running `make resources`. The affinity above selects four distinct performance cores on the reported workstation; choose suitable logical processor IDs on another machine. The benchmark records prefix-inclusive adaptation time, GPU tensor allocations, and processor resident memory separately.
+
+## Hidden-test decoder
+
+The selected hidden-test records are H1 submission 586729, M1 submission 586750, and M2 submission 586751. M1 uses the selected 4096-dimensional code. The completed-status and artifact checks are recorded in `ieee_access/experiments/results/hidden_m1_selected/selected_hidden_test_verification.json`.
+
+`mjcs/submission/fit_corrections.py` fits calibration corrections, and `mjcs/submission/decoder.py` runs causal inference. See `mjcs/submission/README.txt` for commands and container inputs. The [released decoder artifacts](https://github.com/nGQD/hdc-session-adaptation/releases/download/v1.0/decoder_artifacts.tar.gz) contain the selected models. Extract the archive inside `mjcs/`; use `mjcs/submission/artifacts/h1/`, `m1/`, and `m2/`. The selected M1 directory is `m1/`, with the 4096-dimensional code.
+
+## Checksums and license
+
+`MANIFEST.sha256` records the files in this release. Check the downloaded tree before regenerating outputs with `make check-manifest`.
+
+Study code is distributed under [AGPL-3.0](LICENSE). The neural recordings retain their original data-use terms and are downloaded from DANDI rather than redistributed here.

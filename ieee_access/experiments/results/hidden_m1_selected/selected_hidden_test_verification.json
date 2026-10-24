@@ -1,0 +1,206 @@
+{
+  "checked_utc": "2026-10-23T16:03:15.449638+00:00",
+  "read_only": true,
+  "new_submissions_created": 0,
+  "all_private": true,
+  "rows": [
+    {
+      "task": "h1",
+      "submission": {
+        "id": 586729,
+        "challenge_phase": 4599,
+        "status": "finished",
+        "is_public": false,
+        "submitted_at": "2026-10-18T03:19:15.502935Z",
+        "started_at": "2026-10-18T03:46:20.670191Z",
+        "completed_at": "2026-10-18T03:46:20.769558Z",
+        "rerun_resumed_at": null,
+        "execution_time": 0.099367,
+        "job_name": [
+          "submission-586729",
+          "submission-586729"
+        ]
+      },
+      "result": {
+        "test_split_h1": {
+          "Normalized Latency": 0.0705076793789348,
+          "Held Out R2 Mean": 0.5225924909479802,
+          "Held Out R2 Std.": 0.09329253274573093,
+          "Held In R2 Mean": 0.6570761031751869,
+          "Held In R2 Std.": 0.05022973491988766
+        }
+      },
+      "result_file_sha256": "d3174d0dac1b2a29204773dde55b6998b7faca956fb7a98f143aa360ce3e9cdc",
+      "historical_score_matches": true
+    },
+    {
+      "task": "m1",
+      "submission": {
+        "id": 586750,
+        "challenge_phase": 4599,
+        "status": "finished",
+        "is_public": false,
+        "submitted_at": "2026-10-18T12:01:56.059442Z",
+        "started_at": "2026-10-18T13:13:30.287382Z",
+        "completed_at": "2026-10-18T13:13:30.526057Z",
+        "rerun_resumed_at": null,
+        "execution_time": 0.238675,
+        "job_name": [
+          "submission-586750",
+          "submission-586750"
+        ]
+      },
+      "result": {
+        "test_split_m1": {
+          "Normalized Latency": 0.0648561734202468,
+          "Held Out R2 Mean": 0.6176156125798624,
+          "Held Out R2 Std.": 0.07537084552798956,
+          "Held In R2 Mean": 0.7541408506608374,
+          "Held In R2 Std.": 0.029924349476028234
+        }
+      },
+      "result_file_sha256": "481525cb3a283626d1db2afb53072397a9b55f666f77ec562158d6885dc3caaa",
+      "historical_score_matches": false,
+      "verified_container_config": {
+        "params": {
+          "source": "state",
+          "dimension": 4096,
+          "scale": 1.0,
+          "lam": 1000.0
+        },
+        "seed": 101,
+        "kind": "hdc",
+        "config": {
+          "channels": 64,
+          "outputs": 16,
+          "hidden": 128,
+          "rank": 12,
+          "projection": "multiplicative",
+          "recurrence": true,
+          "refinement": true,
+          "online_norm": true,
+          "smoothing": 0.9,
+          "dropout": 0.35,
+          "refine_width": 256,
+          "epochs": 50,
+          "lr": 0.0002,
+          "weight_decay": 0.0001,
+          "window": 256,
+          "stride": 64,
+          "batch": 64
+        },
+        "backbone_seed": 101,
+        "backbone_state_sha256": "a67d91a60697611f0566282c2e1dc7f668ada3507cf928f017e10aa7caa9216a",
+        "corrections_sha256": "3d23e56298a15f5a2628c3e77957dd2ae102ce12790729817e9096dbc81995e7",
+        "backbone_file_sha256": "f7da9052af8276f4f1f2f2b515902f527618da9bf487b533771c7d9cc8239f4b",
+        "encoder_shape": [
+          192,
+          4096
+        ],
+        "sessions": {
+          "20120924": {
+            "held_out": false,
+            "W_shape": [
+              8321,
+              16
+            ],
+            "finite": true
+          },
+          "20120926": {
+            "held_out": false,
+            "W_shape": [
+              8321,
+              16
+            ],
+            "finite": true
+          },
+          "20120927": {
+            "held_out": false,
+            "W_shape": [
+              8321,
+              16
+            ],
+            "finite": true
+          },
+          "20120928": {
+            "held_out": false,
+            "W_shape": [
+              8321,
+              16
+            ],
+            "finite": true
+          },
+          "20121004": {
+            "held_out": true,
+            "W_shape": [
+              8321,
+              16
+            ],
+            "finite": true
+          },
+          "20121017": {
+            "held_out": true,
+            "W_shape": [
+              8321,
+              16
+            ],
+            "finite": true
+          },
+          "20121024": {
+            "held_out": true,
+            "W_shape": [
+              8321,
+              16
+            ],
+            "finite": true
+          }
+        }
+      },
+      "container": {
+        "submitted_uri": "905418259932.dkr.ecr.us-east-1.amazonaws.com/few-shot-algorithms-for-consistent-neural-decoding-falcon-2319-participant-team-40837:caeb7fc9-3cc1-4aac-9d87-1cbd6f2778dd",
+        "image_id": "sha256:39ffd1318fb574e892823236cb80265f2da0cfe7f68979485f66a3902b3a5aab",
+        "repo_digests": [
+          "905418259932.dkr.ecr.us-east-1.amazonaws.com/few-shot-algorithms-for-consistent-neural-decoding-falcon-2319-participant-team-40837@sha256:ee87df2a5202f5d2afc75ced04bfd5a060d88eedf19c54b940d68dfd71df28d0"
+        ]
+      },
+      "selection_file_sha256": "38cd74cd8ec6e7094c71d461b109a0f0f29a1ca0dad587f2640bc1ab9365df8d",
+      "checkpoint_file_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+      "historical_snapshot": "mjcs/results/provenance/evalai_m1_hdc_586750_failed.json",
+      "historical_snapshot_sha256": "a0e32a4247de39a5f347ec86dbca1103f59107453860b5f06e4933e20f23708a",
+      "reason_for_update": "The historical failed-status snapshot was superseded by the platform finished result for the same original submission. Use the inner-selected D4096 configuration irrespective of the D2048 score.",
+      "failure_cause": "The current successful scoring record and logs do not establish the cause of the earlier failed status. Container log completed all seven files and reached the evaluator handoff sleep; current stdout reports the valid score."
+    },
+    {
+      "task": "m2",
+      "submission": {
+        "id": 586751,
+        "challenge_phase": 4599,
+        "status": "finished",
+        "is_public": false,
+        "submitted_at": "2026-10-18T12:02:30.692791Z",
+        "started_at": "2026-10-18T12:44:15.872774Z",
+        "completed_at": "2026-10-18T12:44:15.987553Z",
+        "rerun_resumed_at": null,
+        "execution_time": 0.114779,
+        "job_name": [
+          "submission-586751",
+          "submission-586751"
+        ]
+      },
+      "result": {
+        "test_split_m2": {
+          "Normalized Latency": 0.06403712598618866,
+          "Held Out R2 Mean": 0.3889787843314155,
+          "Held Out R2 Std.": 0.07666173642028766,
+          "Held In R2 Mean": 0.5062621806515737,
+          "Held In R2 Std.": 0.040767029689314754
+        }
+      },
+      "result_file_sha256": "f46c419f45a18bca6bb6e961cc93a9d2250f87c391e34aba2bbacadcb085cece",
+      "historical_score_matches": true
+    }
+  ],
+  "local_m1_submission_artifacts_identical_to_submitted_container": true,
+  "m1_backbone_tensor_identity_verified": true,
+  "m1_heads_finite_and_dimension_verified": true
+}

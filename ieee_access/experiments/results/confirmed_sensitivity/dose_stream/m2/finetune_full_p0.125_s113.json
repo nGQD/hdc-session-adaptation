@@ -1,0 +1,223 @@
+{
+  "R": [
+    [
+      0.565882682800293,
+      0.44448012113571167,
+      0.45990025997161865,
+      0.5208499431610107,
+      0.5124111175537109,
+      0.39208340644836426,
+      0.346407413482666,
+      0.1313299536705017
+    ],
+    [
+      0.5540823936462402,
+      0.4279569983482361,
+      0.4325796961784363,
+      0.5169227123260498,
+      0.5252635478973389,
+      0.3939741253852844,
+      0.32995814085006714,
+      0.10865837335586548
+    ],
+    [
+      0.5458844900131226,
+      0.4180290699005127,
+      0.432813823223114,
+      0.49254804849624634,
+      0.5366159677505493,
+      0.391548216342926,
+      0.3465585708618164,
+      0.13519001007080078
+    ],
+    [
+      0.5539273023605347,
+      0.4283198118209839,
+      0.4603862762451172,
+      0.5095522403717041,
+      0.5261583924293518,
+      0.4149566888809204,
+      0.38143694400787354,
+      0.1677783727645874
+    ],
+    [
+      0.5519592761993408,
+      0.41202348470687866,
+      0.4371858835220337,
+      0.5094730854034424,
+      0.546212911605835,
+      0.44290125370025635,
+      0.41286176443099976,
+      0.1847320795059204
+    ]
+  ],
+  "names": [
+    "20201019",
+    "20201020",
+    "20201027",
+    "20201028",
+    "20201030",
+    "20201118",
+    "20201119",
+    "20201124"
+  ],
+  "held_in": 4,
+  "adapt_macs": [
+    547482501120,
+    136870625280,
+    205305937920,
+    410611875840
+  ],
+  "adapt_seconds": [
+    1.045832029893063,
+    0.9401041340315714,
+    0.867451136931777,
+    0.8869498589774594
+  ],
+  "memory": [
+    771394,
+    771394,
+    771394,
+    771394
+  ],
+  "start_macs": 0,
+  "start_seconds": 0.004074905999004841,
+  "summary": {
+    "acc": 0.4371687173843384,
+    "acc_held_in": 0.4776604324579239,
+    "acc_held_out": 0.39667700231075287,
+    "plasticity": 0.3707451969385147,
+    "bwt": 0.003322277750287737,
+    "bwt_held_in": -0.02011781930923462,
+    "bwt_held_out": 0.03457574049631754,
+    "zero_shot_held_out": 0.34555797278881073,
+    "adapt_macs": 325067735040.0,
+    "adapt_seconds": 0.9350842899584677,
+    "memory": 771394.0
+  },
+  "task": "m2",
+  "method": "finetune_full",
+  "variant": "full",
+  "seed": 113,
+  "rng_seed": 113,
+  "config": {
+    "lr": 3e-06,
+    "epochs": 80
+  },
+  "selection_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+  "checkpoint_sha256": "59a0dbe386c09df4dd9ba71c8e77c569025ebc68c40a15f2c6fcdb1c0a4bb7cf",
+  "runner_sha256": "6f04f8d2d9b4e6d4e88253181390d823daa3ff5a80046bc9b7cde4cfaf123a48",
+  "implementation_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "software_versions": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu124",
+    "cuda_runtime": "12.4",
+    "device": "cuda"
+  },
+  "data_manifest_sha256": "ad7e9284e1c835794a1464f6e9659a0b407439bd88e49a673d561eb85183672e",
+  "prefix_fraction": 0.125,
+  "input_identity": {
+    "held_in": 4,
+    "sessions": [
+      {
+        "name": "20201019",
+        "fit_end": 32032,
+        "arrays_sha256": {
+          "x": "2fb49d13b7c8257843677d4a12d2fc445e7e9902564f59340f8899a04140490c",
+          "y": "3d37f1b6b17b7d69db163666e601ceaaf66981a5f0510cd0e7512191c5d27fed",
+          "yz": "b6b5f7b6b6e0152a2fcd7e5d6c8bc631e5dfc20d8a8dcf062d072c0a1cb63ca4",
+          "fit": "a1df7b4d265bfc7d2aceaab98f457b0cfd80dcc896170b3d19011ef861743e0b",
+          "score": "4d7c228265510f060468c352d6f6f5dd6fca3337e9c7b13e8d979553112b6344"
+        }
+      },
+      {
+        "name": "20201020",
+        "fit_end": 24949,
+        "arrays_sha256": {
+          "x": "90e14fc3fbaf908f157dc4217e280592e74aa0f9f80ecd63d0d75c098418ff6b",
+          "y": "31946d77992a568f8715795c53fbca8070abba04bf5ec1a420474520b320f7b9",
+          "yz": "311c350704bc1edfa3ba052fe31de68216f948e15774dfbba44dad0866d731f3",
+          "fit": "fc4fdb917527ac34bf4b56c5b851d585ec3855e72cf888bec765afa1c9a31473",
+          "score": "c1668958f0233fff67b3900e7778d580c2c96a494da1b21cb03f96b7bf99b494"
+        }
+      },
+      {
+        "name": "20201027",
+        "fit_end": 21566,
+        "arrays_sha256": {
+          "x": "8b4536b1c396807c4a1b3b861d64880a1c6298566938206b62570894a93e9b1d",
+          "y": "33ba1b55d1d24eedfe388f137320c620c1b3574b09e39874c41cfc3c4e32b509",
+          "yz": "03207a3daee1524d2837937411b3339b39cf02cc9b554c97cd83f06a9c1b58f0",
+          "fit": "a5c64d97a99323a9eaf508ab592c8fd29b3bf6d73cae225e6ca29b255bf81d8d",
+          "score": "161db09f3379170b1107f6718802f73926633f27cb9efb80d4f88b084ba3bfd6"
+        }
+      },
+      {
+        "name": "20201028",
+        "fit_end": 14226,
+        "arrays_sha256": {
+          "x": "51f208cb19bddf8866818d60c47c79be04287ce7e5d122ecebb573f102d08be0",
+          "y": "e454c26a71c9ac9036e5eb50a3467d20d055f268e1732087598a7d81f2fe80e4",
+          "yz": "7810a44ddf9c2401820612857898a14adfabe6ebccc09ff88cb0f56bef456046",
+          "fit": "9414aecf62f1a99c59de78965fd02464577f3816008b93aedeb39873558fa399",
+          "score": "7a228a12e861032bb622b084a732ae7d127925f9e2a54f4f1c7c537a08d83375"
+        }
+      },
+      {
+        "name": "20201030",
+        "fit_end": 660,
+        "arrays_sha256": {
+          "x": "c1cd37f4ace311d62a3cdb67f242be29c590966fcfc0d8ee6b370fb22acea978",
+          "y": "f1ea86dc82d7deacd7996f4b8da6b6a32ca7f342086a7e8e1d727e33829a4072",
+          "yz": "bb9b09bf99995c410bccf5ec2bc4ae47faac9f92967454945f659ae3ef307cfd",
+          "fit": "c34d869f98b36bb3dc03c1546e3b8cea9184977d58f858944dd9d432adc20ae6",
+          "score": "b8f4a376b29f491cd49b2cf8c0c4cb4fe484846b6ccf2a640e929a741a15e084"
+        }
+      },
+      {
+        "name": "20201118",
+        "fit_end": 315,
+        "arrays_sha256": {
+          "x": "40166d9fed7b8b8245a153034f59606967b9838be387537641b6da6e80965354",
+          "y": "3ec50c2c9aea8248d80c76b51d64ee48df4eb90a121171a4c342443ee650ab56",
+          "yz": "4d1e8dfb13549db1732458dbc7fa45cd1571ff8a7fcc034e8c241e1b5b4cd8aa",
+          "fit": "0cabcf77a38b6c8ba4dc3ebe9699347dd363b117425157f0483c8cf4fff6eff5",
+          "score": "73f7c3f9391dd89c87cbce33b229f5488691ed13adf797a8ae4e682fd1141366"
+        }
+      },
+      {
+        "name": "20201119",
+        "fit_end": 381,
+        "arrays_sha256": {
+          "x": "96cf0371d98bce04cecf7e18668f561e5bb34f7796b02ef9a9161624d622024f",
+          "y": "8fc4ff161ac3071561fe8e56829e1d55e2fbefda913baf18a4545893f51252d4",
+          "yz": "46926b61b24978f0dad61a4d89d3a946164a101de419a88a536ee2841a280d9e",
+          "fit": "dd80adaff5c9e8aee1f3ab4b5183422c90c6b1d9486331ded98a13732dc00f79",
+          "score": "6b72d981bff32ccbb24bb9928a642ad38b86b577dfebff25c1cba7d95f4bdd2e"
+        }
+      },
+      {
+        "name": "20201124",
+        "fit_end": 570,
+        "arrays_sha256": {
+          "x": "a7213b0059508a9990af2c8c1893b17da8b87168d3cda8215c74d4ec4aa7aaf0",
+          "y": "980256d57c59b93e07566d2c8fee83e557aeebb574d2d2f3946bfabb83d8a255",
+          "yz": "125a59dd6c79653d5a01dd35e6fad4a2994e32e07fa2ba8d6c90c0c4877c0d61",
+          "fit": "3c8ef088917980d3d807c6e37214c648cd0c17148a219c783c9d72c975119a20",
+          "score": "9f1796473ce40b942221f9880fa3a18be073d029867490cf51c77b22dab16972"
+        }
+      }
+    ],
+    "target_statistics_sha256": {
+      "mean": "33fc3ec7606da6cc6affb48c0c6d9ea5f3ee4e36a177de51ff71e13169bc97d8",
+      "std": "38facce1a5d9a1fbc38a519db16754c8606b9040cb2758b112ff298452f0f9be"
+    }
+  },
+  "timing_scope": "Stream computation; use isolated resource benchmark for deployment timing."
+}

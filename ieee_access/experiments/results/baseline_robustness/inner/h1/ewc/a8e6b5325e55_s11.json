@@ -1,0 +1,53 @@
+{
+ "task": "h1",
+ "method": "ewc",
+ "seed": 11,
+ "candidate": {
+  "id": "a8e6b5325e55",
+  "config": {
+   "lr": 1e-05,
+   "epochs": 1,
+   "ewc": 10.0
+  },
+  "incumbent": false
+ },
+ "status": "complete",
+ "checkpoint_sha256": "14f7c058eeabb47504612224d548df1753ced10643e5ee3c689de86b18578c9e",
+ "rng_seed": 11,
+ "wall_seconds": 1.8928263880079612,
+ "environment": {
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "numpy": "2.2.6",
+  "device": "cuda",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "runner_sha256": "f4342964fa19494138276c79063acb19bc6f9d85ee359a8eb20a387d7c9501f3",
+  "plan_sha256": "4da4b6a6541e61142e72abd69513ac9ed046ae0eefe720652e05057cf7d864a2",
+  "tf32_matmul": false,
+  "tf32_cudnn": false,
+  "cpu_threads": 4
+ },
+ "acc": 0.5891735255718231,
+ "final_scores": [
+  0.668820858001709,
+  0.6580216884613037,
+  0.6270313262939453,
+  0.5702091455459595,
+  0.5415991544723511,
+  0.46935898065567017
+ ],
+ "held_in": 4,
+ "names": [
+  "S0",
+  "S1",
+  "S2",
+  "S3",
+  "S4",
+  "S5"
+ ],
+ "adapt_macs": [
+  375291101871,
+  367632099792
+ ]
+}

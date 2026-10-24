@@ -1,3 +1,0 @@
-- H1: FT-full/HDC = 23.1x, FT-readout/HDC = 0.9x, EWC/HDC = 24.3x, Replay/HDC = 92.4x, FT-full-tag/HDC = 11.6x, FT-readout-tag/HDC = 0.5x, FT-last-tag/HDC = 0.4x; HDC/Closed form = 9.7x
-- M1: FT-full/HDC = 0.2x, FT-readout/HDC = 0.1x, EWC/HDC = 0.3x, Replay/HDC = 4.0x, FT-full-tag/HDC = 2.0x, FT-readout-tag/HDC = 0.1x, FT-last-tag/HDC = 0.0x; HDC/Closed form = 57.8x
-- M2: FT-full/HDC = 28.7x, FT-readout/HDC = 0.7x, EWC/HDC = 29.5x, Replay/HDC = 14.3x, FT-full-tag/HDC = 7.2x, FT-readout-tag/HDC = 0.2x, FT-last-tag/HDC = 0.3x; HDC/Closed form = 15.2x

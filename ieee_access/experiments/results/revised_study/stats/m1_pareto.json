@@ -1,0 +1,113 @@
+{
+ "objectives": {
+  "acc": "max",
+  "bwt": "max",
+  "adapt_macs": "min"
+ },
+ "non_dominated": [
+  "frozen",
+  "full_tag",
+  "readout_tag",
+  "closed_linear",
+  "hdc"
+ ],
+ "dominated": [
+  "finetune_full",
+  "finetune_readout",
+  "ewc",
+  "replay",
+  "last_tag",
+  "closed_zero",
+  "hdc_zero",
+  "hdc_shared",
+  "hdc_bound"
+ ],
+ "prob_non_dominated": {
+  "frozen": 1.0,
+  "finetune_full": 0.0,
+  "finetune_readout": 0.0,
+  "ewc": 0.0,
+  "replay": 0.0,
+  "full_tag": 0.7646,
+  "readout_tag": 0.9836,
+  "last_tag": 0.0,
+  "closed_linear": 0.7371,
+  "closed_zero": 0.0,
+  "hdc": 1.0,
+  "hdc_zero": 0.0,
+  "hdc_shared": 0.0,
+  "hdc_bound": 0.0
+ },
+ "point": {
+  "frozen": {
+   "acc": 0.7084614166191646,
+   "bwt": 0.0,
+   "adapt_macs": 0.0
+  },
+  "finetune_full": {
+   "acc": 0.7120014582361495,
+   "bwt": -0.009521147608757021,
+   "adapt_macs": 23623630848.0
+  },
+  "finetune_readout": {
+   "acc": 0.7057921562876021,
+   "bwt": -0.029617928465207416,
+   "adapt_macs": 12319843669.333332
+  },
+  "ewc": {
+   "acc": 0.6843124491827829,
+   "bwt": -0.05516237715880077,
+   "adapt_macs": 248671564224.0
+  },
+  "replay": {
+   "acc": 0.7158421661172596,
+   "bwt": -0.0360771119594574,
+   "adapt_macs": 472472616960.0
+  },
+  "full_tag": {
+   "acc": 0.7457333854266576,
+   "bwt": 0.0,
+   "adapt_macs": 236236308480.0
+  },
+  "readout_tag": {
+   "acc": 0.7407646434647697,
+   "bwt": 0.0,
+   "adapt_macs": 7080240469.333333
+  },
+  "last_tag": {
+   "acc": 0.7212737568787166,
+   "bwt": 0.0,
+   "adapt_macs": 5504099669.333334
+  },
+  "closed_linear": {
+   "acc": 0.7157776960304805,
+   "bwt": 0.0,
+   "adapt_macs": 2039300141.0
+  },
+  "closed_zero": {
+   "acc": 0.6730436887059893,
+   "bwt": 0.0,
+   "adapt_macs": 2039300141.0
+  },
+  "hdc": {
+   "acc": 0.7380378246307374,
+   "bwt": 0.0,
+   "adapt_macs": 4784935912.333334
+  },
+  "hdc_zero": {
+   "acc": 0.7223320731094904,
+   "bwt": 0.0,
+   "adapt_macs": 4784935912.333334
+  },
+  "hdc_shared": {
+   "acc": 0.7064827229295458,
+   "bwt": -0.035276379187901816,
+   "adapt_macs": 135642260866.0
+  },
+  "hdc_bound": {
+   "acc": 0.7314348663602557,
+   "bwt": -0.004354399442672729,
+   "adapt_macs": 4784935912.333334
+  }
+ }
+}

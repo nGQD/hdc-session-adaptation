@@ -1,0 +1,22 @@
+{
+  "task": "h1",
+  "method": "closed_linear",
+  "seed": 137,
+  "dose": [
+    0.125,
+    0.25,
+    0.5
+  ],
+  "acc_held_out": [
+    0.3047915441649301,
+    0.3414939556803022,
+    0.3663476960999625
+  ],
+  "acc": [
+    0.46659559928453886,
+    0.4863584362543546,
+    0.49974121955724865
+  ],
+  "source_result": "mjcs/results/dose/h1/closed_linear_s137.json",
+  "source_sha256": "5886c28dc9b64ca025fc37ddce6bfdc0a486f3af777111b57121f53f692a078a"
+}

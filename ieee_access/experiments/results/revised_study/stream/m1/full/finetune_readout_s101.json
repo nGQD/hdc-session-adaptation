@@ -1,0 +1,222 @@
+{
+  "task": "m1",
+  "method": "finetune_readout",
+  "seed": 101,
+  "rng_seed": 101,
+  "variant": "full",
+  "backbone": {
+    "macs": {
+      "encode": 820736,
+      "head": 83968
+    },
+    "info": {
+      "losses": [
+        0.23725838959217072,
+        0.17157529294490814,
+        0.1473841816186905,
+        0.13635031878948212,
+        0.12988853454589844,
+        0.1258954107761383,
+        0.12245266139507294,
+        0.11980873346328735,
+        0.117404043674469,
+        0.1154751405119896,
+        0.1138567328453064,
+        0.11232270300388336,
+        0.11086210608482361,
+        0.10947892814874649,
+        0.10810142755508423,
+        0.10702548176050186,
+        0.10600732266902924,
+        0.10524645447731018,
+        0.10460441559553146,
+        0.10356473177671432,
+        0.10287205874919891,
+        0.10201772302389145,
+        0.10153404623270035,
+        0.100832499563694,
+        0.10034817457199097,
+        0.09958994388580322,
+        0.09904569387435913,
+        0.09868032485246658,
+        0.09811961650848389,
+        0.09778071194887161,
+        0.0975918248295784,
+        0.0970572978258133,
+        0.09661686420440674,
+        0.09640739858150482,
+        0.09607987105846405,
+        0.09564905613660812,
+        0.095725879073143,
+        0.095273457467556,
+        0.0953504741191864,
+        0.0949883833527565,
+        0.09507392346858978,
+        0.09476657211780548,
+        0.09478936344385147,
+        0.0945102795958519,
+        0.09466336667537689,
+        0.09452056884765625,
+        0.09444750100374222,
+        0.09451540559530258,
+        0.09443185478448868,
+        0.0944475531578064
+      ],
+      "seconds": 167.8552748109214,
+      "bins_processed": 80793600,
+      "parameters": 611216
+    }
+  },
+  "timing_scope": "No deployment timing in this record; use results/resources for isolated prefix-inclusive timing.",
+  "config": {
+    "lr": 3e-05,
+    "epochs": 80
+  },
+  "candidate_id": "7a007afacd18",
+  "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.5.1+cu124",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "runner_sha256": "f4342964fa19494138276c79063acb19bc6f9d85ee359a8eb20a387d7c9501f3",
+    "plan_sha256": "4da4b6a6541e61142e72abd69513ac9ed046ae0eefe720652e05057cf7d864a2",
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "cpu_threads": 4
+  },
+  "wall_seconds": 1.2157436680281535,
+  "summary": {
+    "acc": 0.7088733826364789,
+    "acc_held_in": 0.7558345198631287,
+    "acc_held_out": 0.646258533000946,
+    "plasticity": 0.6552841862042745,
+    "bwt": -0.029225915670394897,
+    "bwt_held_in": -0.03706963360309601,
+    "bwt_held_out": -0.013538479804992676,
+    "zero_shot_held_out": 0.5904163519541422,
+    "adapt_macs": 12319843669.333334,
+    "memory": 695584
+  },
+  "R": [
+    [
+      0.7652407884597778,
+      0.8097087144851685,
+      0.7961980104446411,
+      0.8004691004753113,
+      0.7439512610435486,
+      0.5875821709632874,
+      0.4397156238555908
+    ],
+    [
+      0.7533969283103943,
+      0.7976667881011963,
+      0.7773959040641785,
+      0.781561017036438,
+      0.7783408164978027,
+      0.593039870262146,
+      0.45993632078170776
+    ],
+    [
+      0.725702702999115,
+      0.7855125069618225,
+      0.7444794178009033,
+      0.7652361392974854,
+      0.7629876136779785,
+      0.6588547229766846,
+      0.49511516094207764
+    ],
+    [
+      0.7234108448028564,
+      0.782829999923706,
+      0.7427845001220703,
+      0.7743127346038818,
+      0.7553178668022156,
+      0.6548007130622864,
+      0.5286570191383362
+    ]
+  ],
+  "names": [
+    "20120924",
+    "20120926",
+    "20120927",
+    "20120928",
+    "20121004",
+    "20121017",
+    "20121024"
+  ],
+  "held_in": 4,
+  "adapt_macs": [
+    11891693056,
+    11911113216,
+    13156724736
+  ],
+  "memory": [
+    695584,
+    695584,
+    695584
+  ],
+  "start_macs": 0,
+  "native_memory": [
+    695584,
+    695584,
+    695584
+  ],
+  "memory_accounting": {
+    "native_memory": [
+      695584,
+      695584,
+      695584
+    ],
+    "memory": [
+      695584,
+      695584,
+      695584
+    ],
+    "added_scalars": [
+      0,
+      0,
+      0
+    ],
+    "prior_copy_scalars": 0,
+    "shared_head_scalars": 0,
+    "bound_key_scalars_per_session": 0,
+    "model_parameters": 611216,
+    "full_readout_parameters": 84368,
+    "last_layer_parameters": 2064,
+    "added_components": [
+      {
+        "prior_copy": 0,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      },
+      {
+        "prior_copy": 0,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      },
+      {
+        "prior_copy": 0,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      }
+    ],
+    "definition": "Actually retained model copies/adaptation tensors and replay prefixes/fit masks; disposable offline dataset/feature cache and gradient/optimizer working space excluded"
+  },
+  "source_result": "ieee_access/experiments/results/baseline_robustness/stream/m1/full/finetune_readout_s101.json",
+  "source_sha256": "92845178a9814730d3577252ee8821f492c18ecec58a39448ea789bb17988331"
+}

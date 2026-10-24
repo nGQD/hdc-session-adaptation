@@ -1,0 +1,948 @@
+[
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3057931661605835,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3057931661605835,
+        0.2270074486732483
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 0.1,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.3558879643678665,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.2664003074169159,
+      "plasticity": 0.2664003074169159,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3469699025154114,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3469699025154114,
+        0.30830079317092896
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 1.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.38650548458099365,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.32763534784317017,
+      "plasticity": 0.32763534784317017,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3761425018310547,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3761425018310547,
+        0.3663541078567505
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 10.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.40831196308135986,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.3712483048439026,
+      "plasticity": 0.3712483048439026,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.390011191368103,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.390011191368103,
+        0.39422357082366943
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 30.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.4187465012073517,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.39211738109588623,
+      "plasticity": 0.39211738109588623,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.40717703104019165,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.40717703104019165,
+        0.4338405728340149
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 100.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.4329422116279602,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.42050880193710327,
+      "plasticity": 0.42050880193710327,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.4146549701690674,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.4146549701690674,
+        0.46044665575027466
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 300.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.4414632171392441,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.437550812959671,
+      "plasticity": 0.437550812959671,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.4083576202392578,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.4083576202392578,
+        0.4698469638824463
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 1000.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.4422389566898346,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.43910229206085205,
+      "plasticity": 0.43910229206085205,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.391473650932312,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.391473650932312,
+        0.466824471950531
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 3000.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.4372623413801193,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.4291490614414215,
+      "plasticity": 0.4291490614414215,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3662866950035095,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.3662866950035095,
+        0.4581684470176697
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 10000.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.42880159616470337,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.4122275710105896,
+      "plasticity": 0.4122275710105896,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.34218138456344604,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.34218138456344604,
+        0.44697821140289307
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 30000.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.41997770965099335,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.39457979798316956,
+      "plasticity": 0.39457979798316956,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  },
+  {
+    "R": [
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.30240029096603394,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.32065850496292114,
+        0.41912269592285156
+      ],
+      [
+        0.5393154621124268,
+        0.3514357805252075,
+        0.32065850496292114,
+        0.4330649971961975
+      ]
+    ],
+    "names": [
+      "20201019",
+      "20201020",
+      "20201027",
+      "20201028"
+    ],
+    "held_in": 2,
+    "adapt_macs": [
+      13369561273,
+      8821803703
+    ],
+    "adapt_seconds": [
+      0.20046728302258998,
+      0.13416737306397408
+    ],
+    "memory": [
+      772358,
+      773064
+    ],
+    "start_macs": 0,
+    "start_seconds": 0,
+    "task": "m2",
+    "seed": 23,
+    "split": "inner",
+    "method": "linear_gf",
+    "configuration": {
+      "kind": "linear_gf",
+      "lam": 100000.0,
+      "dimension": 2048,
+      "source": "state",
+      "relu_width": 4096,
+      "scale": 1.0
+    },
+    "algorithm": "prior-centered ridge; exact primal/dual solve chosen by min(N,d)",
+    "computation_note": "Analytic MACs count the implemented dense Gram product N*d*q, q=min(N,d). Retained scalars include the prior copy. Seconds are cached-feature analysis and are not deployment timings.",
+    "feature_cache": "ieee_access/experiments/results/feature_controls/features/m2/inner/s23",
+    "checkpoint_sha256": "9913301da3946c1880a18347e837d16bfbb074be00b03f603e64cc45723f51f0",
+    "extra_feature_parameters": 0,
+    "head_width": 353,
+    "summary": {
+      "acc": 0.41111868619918823,
+      "acc_held_in": 0.44537562131881714,
+      "acc_held_out": 0.3768617510795593,
+      "plasticity": 0.3768617510795593,
+      "bwt": 0.0,
+      "bwt_held_in": 0.0,
+      "bwt_held_out": 0.0,
+      "zero_shot_held_out": 0.36076149344444275,
+      "adapt_macs": 11095682488.0,
+      "adapt_seconds": 0.16731732804328203,
+      "memory": 773064
+    },
+    "legacy_primal_adapt_macs": [
+      12699635049,
+      8379887239
+    ],
+    "legacy_memory": [
+      772100,
+      772806
+    ],
+    "legacy_symmetric_adapt_macs": [
+      12699635049,
+      8379887239
+    ]
+  }
+]

@@ -1,0 +1,246 @@
+{
+  "R": [
+    [
+      0.5749541521072388,
+      0.4654872417449951,
+      0.48133963346481323,
+      0.5582492351531982,
+      0.5270066261291504,
+      0.4443589448928833,
+      0.33579021692276,
+      0.10096752643585205
+    ],
+    [
+      0.5749541521072388,
+      0.4654872417449951,
+      0.48133963346481323,
+      0.5582492351531982,
+      0.526310920715332,
+      0.4443589448928833,
+      0.33579021692276,
+      0.10096752643585205
+    ],
+    [
+      0.5749541521072388,
+      0.4654872417449951,
+      0.48133963346481323,
+      0.5582492351531982,
+      0.526310920715332,
+      0.3909291625022888,
+      0.33579021692276,
+      0.10096752643585205
+    ],
+    [
+      0.5749541521072388,
+      0.4654872417449951,
+      0.48133963346481323,
+      0.5582492351531982,
+      0.526310920715332,
+      0.3909291625022888,
+      0.36986780166625977,
+      0.10096752643585205
+    ],
+    [
+      0.5749541521072388,
+      0.4654872417449951,
+      0.48133963346481323,
+      0.5582492351531982,
+      0.526310920715332,
+      0.3909291625022888,
+      0.36986780166625977,
+      0.12423545122146606
+    ]
+  ],
+  "names": [
+    "20201019",
+    "20201020",
+    "20201027",
+    "20201028",
+    "20201030",
+    "20201118",
+    "20201119",
+    "20201124"
+  ],
+  "held_in": 4,
+  "adapt_macs": [
+    36646369670,
+    9010279910,
+    12785762918,
+    27600773265
+  ],
+  "memory": [
+    1240902,
+    1249352,
+    1257802,
+    1266252
+  ],
+  "start_macs": 0,
+  "summary": {
+    "acc": 0.436421699821949,
+    "acc_held_in": 0.5200075656175613,
+    "acc_held_out": 0.35283583402633667,
+    "plasticity": 0.35283583402633667,
+    "bwt": 0.0,
+    "bwt_held_in": 0.0,
+    "bwt_held_out": 0.0,
+    "zero_shot_held_out": 0.35203082859516144,
+    "adapt_macs": 21510796440.75,
+    "memory": 1266252
+  },
+  "task": "m2",
+  "variant": "epochs25",
+  "seed": 113,
+  "method": "hdc",
+  "backbone": {
+    "macs": {
+      "encode": 1023488,
+      "head": 90368
+    },
+    "info": {
+      "losses": [
+        0.2801363170146942,
+        0.2608800530433655,
+        0.23798097670078278,
+        0.21403644979000092,
+        0.19296526908874512,
+        0.1759662628173828,
+        0.163906529545784,
+        0.1533079445362091,
+        0.14596086740493774,
+        0.13892479240894318,
+        0.13331352174282074,
+        0.12815506756305695,
+        0.12419792264699936,
+        0.12026402354240417,
+        0.118100605905056,
+        0.11612046509981155,
+        0.11375325918197632,
+        0.11226955056190491,
+        0.11063981056213379,
+        0.10934708267450333,
+        0.10912539064884186,
+        0.10811556875705719,
+        0.10790307819843292,
+        0.10847456753253937,
+        0.10705184936523438
+      ],
+      "seconds": 22.50584682589397,
+      "bins_processed": 9209600,
+      "parameters": 771394
+    }
+  },
+  "legacy_symmetric_primal_adapt_macs": [
+    40326894508,
+    25825187968,
+    28599427480,
+    36585874560
+  ],
+  "solver_records": [
+    {
+      "session": "20201030",
+      "N": 2638,
+      "d": 4225,
+      "q": 2638,
+      "solver": "dual",
+      "analytic_macs": 36646369670
+    },
+    {
+      "session": "20201118",
+      "N": 1258,
+      "d": 4225,
+      "q": 1258,
+      "solver": "dual",
+      "analytic_macs": 9010279910
+    },
+    {
+      "session": "20201119",
+      "N": 1522,
+      "d": 4225,
+      "q": 1522,
+      "solver": "dual",
+      "analytic_macs": 12785762918
+    },
+    {
+      "session": "20201124",
+      "N": 2282,
+      "d": 4225,
+      "q": 2282,
+      "solver": "dual",
+      "analytic_macs": 27600773265
+    }
+  ],
+  "native_memory": [
+    1240644,
+    1249094,
+    1257544,
+    1265994
+  ],
+  "memory_accounting": {
+    "native_memory": [
+      1240644,
+      1249094,
+      1257544,
+      1265994
+    ],
+    "memory": [
+      1240902,
+      1249352,
+      1257802,
+      1266252
+    ],
+    "added_scalars": [
+      258,
+      258,
+      258,
+      258
+    ],
+    "prior_copy_scalars": 258,
+    "shared_head_scalars": 0,
+    "bound_key_scalars_per_session": 0,
+    "model_parameters": 771394,
+    "full_readout_parameters": 90754,
+    "last_layer_parameters": 258,
+    "added_components": [
+      {
+        "prior_copy": 258,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      },
+      {
+        "prior_copy": 258,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      },
+      {
+        "prior_copy": 258,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      },
+      {
+        "prior_copy": 258,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      }
+    ],
+    "definition": "Actually retained model copies/adaptation tensors and replay prefixes/fit masks; disposable offline dataset/feature cache and gradient/optimizer working space excluded"
+  },
+  "timing_scope": "No deployment timing in this record; use results/resources for isolated prefix-inclusive timing.",
+  "source_result": "mjcs/results/stream/m2/epochs25/hdc_s113.json",
+  "source_sha256": "4d266b7af2208202186cf59fdb381758ed8aabd2ded7d60de5ecc62894494caf"
+}

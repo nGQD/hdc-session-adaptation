@@ -1,0 +1,1992 @@
+{
+  "schema_version": 1,
+  "all_live_input_checks_passed": true,
+  "validation_scope": "Actual checkpoints and prefix caches, included sources and selections, and every raw repetition verified before aggregation.",
+  "expected_repeats": 3,
+  "threads": 4,
+  "summary_sha256": "1057b0a6ce88e04b75c088aa5b23b7b323d966e13f3656f353ac9d7ae06ff52a",
+  "raw_records_sha256": {
+    "cpu_h1_closed_linear_r0.json": "29a3062bd945844d197b3b06c1ba149df3ba6ccf459cbd390862e4b25b678b26",
+    "cpu_h1_closed_linear_r1.json": "39828cd203f59937fadda9df64c8f3da8ec5e8fe35a7e3786d34a13b74c371cf",
+    "cpu_h1_closed_linear_r2.json": "a31ab6aba68fc4a487efcfffb41a931470bbccc35a841e855ee1a845ad7e0e33",
+    "cpu_h1_hdc_r0.json": "12431650e3bbcdd12b5a04a2b37f72e92c3d47a78b49375d3ee9b9c55818615e",
+    "cpu_h1_hdc_r1.json": "3538bb2a2ab8ced3bb3360628962b258672bf0157be330d6076a8d2e41e54d8b",
+    "cpu_h1_hdc_r2.json": "e7124117331dd6a8d627ae6a9664682b06574de5c55a869890d16ba9e1bb99bc",
+    "cpu_h1_readout_tag_r0.json": "558288028969242d3c5562e94adbe060edb31f8cd17253ea50be7a8f869d0d79",
+    "cpu_h1_readout_tag_r1.json": "9181523336b1f517a2dbff80a0ed0ca394f0228d373266172a664c0d076f1db5",
+    "cpu_h1_readout_tag_r2.json": "c2cf4a097efbf494dc37c0e1db39282bdefe14e38281b969dd27771f465f0ce1",
+    "cpu_m1_closed_linear_r0.json": "b03943f9f9adfda511223364aa05bc3d214ef4ad6ca2f7fb094eecc8059bb49b",
+    "cpu_m1_closed_linear_r1.json": "3aa6401b52768c66d1a26480d95ffb46642b8d927a7b83555d48b7010d923fc6",
+    "cpu_m1_closed_linear_r2.json": "09af0cc9bdc42341e6b1cc51eccc0824ffee64a1b604ea3c9c476d59a2963462",
+    "cpu_m1_hdc_r0.json": "d06ec431c5f5f356c4135c94353b9b66ddfc153ed2d20cdadaea8b8f10b4ef11",
+    "cpu_m1_hdc_r1.json": "da264dd23eec936516895589aae48eebaf6d912d8236115d1c4b31d84e2d8ac5",
+    "cpu_m1_hdc_r2.json": "2a812df5b6fc47ad6f6411270fb54c92f1b788c2cf98864faee2e87e30dde0cb",
+    "cpu_m1_readout_tag_r0.json": "142560defef3acb7a2206dd48bef2367df7a3d2c7c31533f3bdefb43e08cf803",
+    "cpu_m1_readout_tag_r1.json": "8c75e65a5e442f88785d572e9aa07235cf0c42d7bf5c50d3f02838a6a5e880f1",
+    "cpu_m1_readout_tag_r2.json": "4d09c777477b0c131807c5541873e2d708e58241129c788f536773bbf71f2ba9",
+    "cpu_m2_closed_linear_r0.json": "d92f6c34c74d39c76b0d085b9693d00033587449ad0a6b108416d35e557584ef",
+    "cpu_m2_closed_linear_r1.json": "b48d43666a11125ccbb01b82caa003d3915547c9df72d885ec778794c27aa78a",
+    "cpu_m2_closed_linear_r2.json": "7ba76c746d57b2c70978a93291a9fd544774ab2fec71af0e16a3cac6c77c6504",
+    "cpu_m2_hdc_r0.json": "c0c2747fb23e2e3f96bea8aa0c7556daf47532493267460f3affa2c036ce90c9",
+    "cpu_m2_hdc_r1.json": "5219bda32ecdc32b4f8e2ca95262ad38530a881d96e386a7bedc65e8c8dcde4d",
+    "cpu_m2_hdc_r2.json": "e1900872f8da938805e949892e33802b8a89e3cadc56df42f57241e1e5656b7c",
+    "cpu_m2_readout_tag_r0.json": "2f726a535d46523e62b7c0e446c9cde08867b29bea564a1ceb87a3d6ec89e5ae",
+    "cpu_m2_readout_tag_r1.json": "6b4efc9a28039cac647df08f5029656633d67db1317dba5ec733a0edbcfccbfe",
+    "cpu_m2_readout_tag_r2.json": "81a9c1a2e695703ca1bf362636dcd95d72b561788e20e547ef6b87474616d6cf",
+    "cuda_h1_closed_linear_r0.json": "cee6d204308eff09d49f5ee700f562220b465fc7b6bbce636112491473411755",
+    "cuda_h1_closed_linear_r1.json": "d65eb44d9497f6984092b0e4cd29bad7622a75be154cd6d860559916b4747e63",
+    "cuda_h1_closed_linear_r2.json": "c113024583bb8ed1665709aba358b603a8e91ef74dd1bd55af3a8a294ad9a0bd",
+    "cuda_h1_finetune_full_r0.json": "556d881e2ccfe3136d40382b02bbf9e6b92f3aa6721e5727e2443d29593a5956",
+    "cuda_h1_finetune_full_r1.json": "a5b342fb63c9c13325dc3c4d22ff9641b5aa7339831370eb2d35c636c456f4f4",
+    "cuda_h1_finetune_full_r2.json": "79e6864b2af595a447da21897b06df1f6229aaa515b22ed0fb4cb680ad2cb873",
+    "cuda_h1_hdc_primal_r0.json": "5cc6558d0ff302b1142f3ce8eaa14dbe0eaa9d5a175e603c6666ec47e6e0766a",
+    "cuda_h1_hdc_primal_r1.json": "fd9b183e898cbb68f4cf3af69d639b555ca70b6cf2addf6016cd5395f080da9b",
+    "cuda_h1_hdc_primal_r2.json": "47ba14dacc588477ead01f4724f62931c0fa7dfc7f86161957f5544a5f0d8bf6",
+    "cuda_h1_hdc_r0.json": "371659a82c6eac3d7d92f8b9c91460c8aec71bb99599b470b7b110cfa6fd260d",
+    "cuda_h1_hdc_r1.json": "082653e20a3050e253f6608279d5ce93c0ed51ad67a176cf956d87ff3e6009f7",
+    "cuda_h1_hdc_r2.json": "7ea45fb148491372355fa28a338e95d4156ebd4d3b04e5ac719b7df6ac9fa9e8",
+    "cuda_h1_readout_tag_r0.json": "cbffb458c77b4fbf87f0956c91f5e73cf4759acbe93d7f2ac6feb0431d97ee4f",
+    "cuda_h1_readout_tag_r1.json": "4c09c199c0a6768b2ff0af03d1484fe9093bf53f89572f51d85d6434295010b0",
+    "cuda_h1_readout_tag_r2.json": "52c70a7b0d307746938d66c981c985b59a1a1fa8d9cb4700a780307f5785f994",
+    "cuda_m1_closed_linear_r0.json": "0b4d1bef1a481ea66525a625f1b9d7c17c3538667ad29bf7ea4dd5aaa67197c5",
+    "cuda_m1_closed_linear_r1.json": "3cba4086e97c82de5c7fbc2632212b2331046c4622f6cae6f654dd19d2084b1f",
+    "cuda_m1_closed_linear_r2.json": "22e3515dbf070105aa15ce41ac1a246bbcd8228a80783da99bcdf259e6fa7cc2",
+    "cuda_m1_finetune_full_r0.json": "b8b010a5d0acad2ae592fa9427bcc6e883eb52ac5c992dc13de57f99af86b5b7",
+    "cuda_m1_finetune_full_r1.json": "c74132efe5ea175b5901e4b09bc1063eda630e01163f2d867dcdf27653e8383f",
+    "cuda_m1_finetune_full_r2.json": "5a0c6b39ace3acd7e618f7249289807ef87c8ce1a9987c16d96935ee7f86aa70",
+    "cuda_m1_hdc_primal_r0.json": "c34e7994dddb8ca3da125ff33cfcac11226b81cec2c74d43feda3bfe98612998",
+    "cuda_m1_hdc_primal_r1.json": "e90a83142bdb29253b60b6f6cc5357d194791d1cbee5f25e761ed08e18b5584f",
+    "cuda_m1_hdc_primal_r2.json": "99d84b908af96a6531c0c93d43f0232fda88b41fbc495d2f34d2916f383e73aa",
+    "cuda_m1_hdc_r0.json": "c0500b61637a2fccb155bb0fe6e7a26d0310a52b704d2b39937fb5cfcac0f94e",
+    "cuda_m1_hdc_r1.json": "837ab52afa0dae9026cecbeada48aac27b10ec4369bd37021ea742bb9469e60c",
+    "cuda_m1_hdc_r2.json": "4d7877887b619aa6f95e81d9c2817a0b703d25bcc20ce40273499d43f60ce354",
+    "cuda_m1_readout_tag_r0.json": "b1d7ffafd2e688aced5f6a17bf9465ad9949589e5e9bf758674394cf37532014",
+    "cuda_m1_readout_tag_r1.json": "39816b060ff706bed09a991668b73ba04e9f27303f85f0818999ebc1f1bbf4e5",
+    "cuda_m1_readout_tag_r2.json": "6271653061e52404fa340ee4c7483d477fe7aadba8676f0d094600a9a56aa5fa",
+    "cuda_m2_closed_linear_r0.json": "a64e193e1bc8671ca20b78f3fab1f346d587636a31d3380fca6b28091006a12d",
+    "cuda_m2_closed_linear_r1.json": "ed36de920515462f999dae65d922a0430297f0b991558f6a3f14286c607cb102",
+    "cuda_m2_closed_linear_r2.json": "c2c410e60d44ac289eda4260c2b8e7ac97f4d98981c03c5e3a73f72dd43a2316",
+    "cuda_m2_finetune_full_r0.json": "0bd9a878a386caa2aeacd880554ba3c65b6be860ce9c4126f70c1b2180e6c7c5",
+    "cuda_m2_finetune_full_r1.json": "619d10971c9b06c0c51ecdd822476082282e0a6d9f815ba852423ab5cb2dac3f",
+    "cuda_m2_finetune_full_r2.json": "6215d0f6b32e7c05e5f7cf3341e0ee0a7e566c94c2a85abfcafc89e3511438ea",
+    "cuda_m2_hdc_primal_r0.json": "7ab9220c2220e8d94bdfcbded56062f33df8a073354d8d6d95457a32728da166",
+    "cuda_m2_hdc_primal_r1.json": "d40968ce9f87a47e7a8d1ce792f86aedf68c1552fd8e0a22f0e34cf405965272",
+    "cuda_m2_hdc_primal_r2.json": "a766af9169cf9720f8a699f5da7b16fd6e033372813aa6166a3ef1d3ccd1e00e",
+    "cuda_m2_hdc_r0.json": "686d7207a94e28196baafb37265cee6ff2e9306ecf0d4e15c4297161ed0ae92c",
+    "cuda_m2_hdc_r1.json": "e1d0b575bd9ff78dcbc238b24d792948bc3f3c3819d9b87f6e35434d357d8607",
+    "cuda_m2_hdc_r2.json": "3b3c521d53f50de06efdb6ed19b9835d017a91fb89921dd91646d1b95ddac356",
+    "cuda_m2_readout_tag_r0.json": "f4acbdc1c369abe464d031fd4648f4f7b17aaf6500cd1ad83411f9c2a90e0168",
+    "cuda_m2_readout_tag_r1.json": "be91b6be74ca1cc78226dd2e038e2a0e0bb2275f70fa60a2e37be128b3a2b264",
+    "cuda_m2_readout_tag_r2.json": "7effad1c895b0936ff5ba7804a9164f814689fcc40e960f8268ac718906d6abc"
+  },
+  "groups": [
+    {
+      "device": "cpu",
+      "task": "h1",
+      "method": "closed_linear",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            10.9130859375,
+            11.98095703125,
+            11.31298828125
+          ],
+          "end": [
+            10.759765625,
+            11.93115234375,
+            11.30029296875
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.3662109375,
+            12.59619140625,
+            11.56396484375
+          ],
+          "end": [
+            14.55615234375,
+            12.69287109375,
+            11.6064453125
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.55517578125,
+            12.72216796875,
+            11.76708984375
+          ],
+          "end": [
+            12.43017578125,
+            12.693359375,
+            11.7626953125
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "lam": 300.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "h1",
+      "method": "hdc",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            10.49072265625,
+            11.9794921875,
+            11.29833984375
+          ],
+          "end": [
+            10.9052734375,
+            11.99755859375,
+            11.31494140625
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.4541015625,
+            12.79345703125,
+            11.66357421875
+          ],
+          "end": [
+            14.4150390625,
+            12.85546875,
+            11.701171875
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.8505859375,
+            12.77490234375,
+            11.76220703125
+          ],
+          "end": [
+            12.9521484375,
+            12.80224609375,
+            11.78759765625
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "source": "state",
+          "dimension": 2048,
+          "scale": 1.0,
+          "lam": 3000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "h1",
+      "method": "readout_tag",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            10.61865234375,
+            11.88232421875,
+            11.28759765625
+          ],
+          "end": [
+            10.2890625,
+            11.7705078125,
+            11.2568359375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.51123046875,
+            12.71484375,
+            11.61962890625
+          ],
+          "end": [
+            14.49365234375,
+            12.77294921875,
+            11.65087890625
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.9765625,
+            12.79736328125,
+            11.75341796875
+          ],
+          "end": [
+            13.01220703125,
+            12.80517578125,
+            11.7666015625
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "lr": 0.001,
+          "epochs": 20
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "m1",
+      "method": "closed_linear",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            10.00390625,
+            11.66162109375,
+            11.22705078125
+          ],
+          "end": [
+            10.1640625,
+            11.66748046875,
+            11.2314453125
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.5419921875,
+            12.90771484375,
+            11.724609375
+          ],
+          "end": [
+            14.5419921875,
+            12.90771484375,
+            11.724609375
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.57861328125,
+            12.484375,
+            11.71337890625
+          ],
+          "end": [
+            11.57861328125,
+            12.484375,
+            11.71337890625
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "lam": 30.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "m1",
+      "method": "hdc",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            10.265625,
+            11.74072265625,
+            11.25
+          ],
+          "end": [
+            10.265625,
+            11.74072265625,
+            11.25
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            13.59033203125,
+            12.7802734375,
+            11.70263671875
+          ],
+          "end": [
+            13.59033203125,
+            12.7802734375,
+            11.70263671875
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.890625,
+            12.560546875,
+            11.73388671875
+          ],
+          "end": [
+            11.890625,
+            12.560546875,
+            11.73388671875
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "source": "state",
+          "dimension": 4096,
+          "scale": 1.0,
+          "lam": 1000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "m1",
+      "method": "readout_tag",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            10.15087890625,
+            11.6396484375,
+            11.224609375
+          ],
+          "end": [
+            11.10009765625,
+            11.81201171875,
+            11.28271484375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.25830078125,
+            12.8759765625,
+            11.720703125
+          ],
+          "end": [
+            14.0771484375,
+            12.861328125,
+            11.72265625
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.1552734375,
+            12.6318359375,
+            11.74755859375
+          ],
+          "end": [
+            12.142578125,
+            12.62109375,
+            11.7490234375
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "lr": 0.001,
+          "epochs": 40
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "m2",
+      "method": "closed_linear",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.6025390625,
+            12.36767578125,
+            11.474609375
+          ],
+          "end": [
+            13.55419921875,
+            12.37841796875,
+            11.48291015625
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            15.22509765625,
+            13.1328125,
+            11.82275390625
+          ],
+          "end": [
+            14.966796875,
+            13.11376953125,
+            11.82373046875
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.4755859375,
+            12.54931640625,
+            11.75537109375
+          ],
+          "end": [
+            12.27734375,
+            12.5068359375,
+            11.74560546875
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "lam": 30.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "m2",
+      "method": "hdc",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            11.10009765625,
+            11.81201171875,
+            11.28271484375
+          ],
+          "end": [
+            13.91650390625,
+            12.40771484375,
+            11.48291015625
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            13.61279296875,
+            12.91015625,
+            11.7783203125
+          ],
+          "end": [
+            13.3232421875,
+            12.86181640625,
+            11.7685546875
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.017578125,
+            12.2919921875,
+            11.666015625
+          ],
+          "end": [
+            10.77587890625,
+            12.220703125,
+            11.64599609375
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "source": "state",
+          "dimension": 2048,
+          "scale": 1.0,
+          "lam": 1000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cpu",
+      "task": "m2",
+      "method": "readout_tag",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.55419921875,
+            12.37841796875,
+            11.48291015625
+          ],
+          "end": [
+            14.31103515625,
+            12.55517578125,
+            11.544921875
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.56884765625,
+            13.06201171875,
+            11.8134765625
+          ],
+          "end": [
+            14.36279296875,
+            13.0439453125,
+            11.81494140625
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.3720703125,
+            12.42626953125,
+            11.69873046875
+          ],
+          "end": [
+            11.1064453125,
+            12.3310546875,
+            11.67529296875
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "lr": 0.003,
+          "epochs": 10
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "h1",
+      "method": "closed_linear",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            12.50390625,
+            10.923828125,
+            10.50634765625
+          ],
+          "end": [
+            13.5849609375,
+            11.17431640625,
+            10.58984375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            13.302734375,
+            11.9638671875,
+            10.9541015625
+          ],
+          "end": [
+            13.302734375,
+            11.9638671875,
+            10.9541015625
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.56103515625,
+            12.322265625,
+            11.298828125
+          ],
+          "end": [
+            11.56103515625,
+            12.322265625,
+            11.298828125
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "lam": 300.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "h1",
+      "method": "finetune_full",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.20751953125,
+            11.21337890625,
+            10.61181640625
+          ],
+          "end": [
+            13.3837890625,
+            11.3203125,
+            10.65380859375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            12.85498046875,
+            11.93310546875,
+            10.96044921875
+          ],
+          "end": [
+            14.3857421875,
+            12.3095703125,
+            11.09423828125
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.875,
+            12.62109375,
+            11.3583984375
+          ],
+          "end": [
+            12.564453125,
+            12.560546875,
+            11.345703125
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "lr": 1e-05,
+          "epochs": 20
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "h1",
+      "method": "hdc_primal",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.3837890625,
+            11.3203125,
+            10.65380859375
+          ],
+          "end": [
+            14.154296875,
+            11.5146484375,
+            10.72021484375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.0341796875,
+            12.27099609375,
+            11.087890625
+          ],
+          "end": [
+            13.7109375,
+            12.23291015625,
+            11.08203125
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.27880859375,
+            12.5009765625,
+            11.3330078125
+          ],
+          "end": [
+            11.69580078125,
+            12.3759765625,
+            11.298828125
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "source": "state",
+          "dimension": 2048,
+          "scale": 1.0,
+          "lam": 3000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "h1",
+      "method": "hdc",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            12.28662109375,
+            10.85498046875,
+            10.48193359375
+          ],
+          "end": [
+            12.50390625,
+            10.923828125,
+            10.50634765625
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            15.095703125,
+            12.544921875,
+            11.189453125
+          ],
+          "end": [
+            15.095703125,
+            12.544921875,
+            11.189453125
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.28076171875,
+            12.486328125,
+            11.34033203125
+          ],
+          "end": [
+            11.697265625,
+            12.36181640625,
+            11.30615234375
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "source": "state",
+          "dimension": 2048,
+          "scale": 1.0,
+          "lam": 3000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "h1",
+      "method": "readout_tag",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.2978515625,
+            11.15478515625,
+            10.58642578125
+          ],
+          "end": [
+            13.8349609375,
+            11.3017578125,
+            10.63720703125
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            13.35888671875,
+            11.998046875,
+            10.970703125
+          ],
+          "end": [
+            12.9296875,
+            11.931640625,
+            10.95458984375
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            13.46923828125,
+            12.72705078125,
+            11.37841796875
+          ],
+          "end": [
+            12.951171875,
+            12.6318359375,
+            11.3544921875
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "b3dcbccd8f7d1ecadf3ebb09b6218f1ddbaa799e1ac7f0a9cfb90df3162bca39",
+        "configuration": {
+          "lr": 0.001,
+          "epochs": 20
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "109ce76054342b1f00a9709a9ac213c30942da05cffbe9f74dd7392c91ab6bfb",
+        "prefix_manifest_sha256": "a19f4647a53a08d6fd2b2542f533c969e2ec4d6e82e16cb24adf675b30902552",
+        "selection_file_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m1",
+      "method": "closed_linear",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            15.13623046875,
+            11.7978515625,
+            10.8203125
+          ],
+          "end": [
+            14.404296875,
+            11.701171875,
+            10.7939453125
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            15.40869140625,
+            12.65234375,
+            11.2314453125
+          ],
+          "end": [
+            15.40869140625,
+            12.65234375,
+            11.2314453125
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            14.34423828125,
+            12.78125,
+            11.482421875
+          ],
+          "end": [
+            14.076171875,
+            12.75146484375,
+            11.4794921875
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "lam": 30.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m1",
+      "method": "finetune_full",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            14.3037109375,
+            11.775390625,
+            10.828125
+          ],
+          "end": [
+            14.68017578125,
+            11.8955078125,
+            10.8720703125
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.83056640625,
+            12.654296875,
+            11.2548828125
+          ],
+          "end": [
+            14.603515625,
+            12.64306640625,
+            11.25927734375
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.00439453125,
+            12.16015625,
+            11.26171875
+          ],
+          "end": [
+            11.00439453125,
+            12.16015625,
+            11.26171875
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "lr": 3e-05,
+          "epochs": 2
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m1",
+      "method": "hdc_primal",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            14.22509765625,
+            11.84716796875,
+            10.86181640625
+          ],
+          "end": [
+            14.20703125,
+            11.88330078125,
+            10.87890625
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.603515625,
+            12.64306640625,
+            11.25927734375
+          ],
+          "end": [
+            14.31494140625,
+            12.61572265625,
+            11.2578125
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.08447265625,
+            12.1572265625,
+            11.26611328125
+          ],
+          "end": [
+            11.318359375,
+            12.18798828125,
+            11.28125
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "source": "state",
+          "dimension": 4096,
+          "scale": 1.0,
+          "lam": 1000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m1",
+      "method": "hdc",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.5810546875,
+            11.439453125,
+            10.7001953125
+          ],
+          "end": [
+            15.13623046875,
+            11.7978515625,
+            10.8203125
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.5302734375,
+            12.68896484375,
+            11.2890625
+          ],
+          "end": [
+            14.32763671875,
+            12.67724609375,
+            11.29296875
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            10.89208984375,
+            12.0849609375,
+            11.25244140625
+          ],
+          "end": [
+            10.89208984375,
+            12.0849609375,
+            11.25244140625
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "source": "state",
+          "dimension": 4096,
+          "scale": 1.0,
+          "lam": 1000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m1",
+      "method": "readout_tag",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            14.8525390625,
+            11.83935546875,
+            10.84375
+          ],
+          "end": [
+            14.8525390625,
+            11.83935546875,
+            10.84375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.81494140625,
+            12.57470703125,
+            11.2138671875
+          ],
+          "end": [
+            14.990234375,
+            12.6484375,
+            11.2451171875
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.03515625,
+            12.20068359375,
+            11.2646484375
+          ],
+          "end": [
+            11.35302734375,
+            12.24755859375,
+            11.28515625
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "4d3ca7d2819d46426fde6563986d4ac3ece16512c9caed4d648913d90fcbbcc4",
+        "configuration": {
+          "lr": 0.001,
+          "epochs": 40
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "24c07d42e0979f768ad529603e8c9a3a70202ffdf07cb15b1af7e778e040cdcc",
+        "prefix_manifest_sha256": "b998820f169a14b0b9dbd14592fb8b6e7a8f0d793c24ad09c29a300fade29ee8",
+        "selection_file_sha256": "c2973ffa0b2c471bf4681e1615fca802f742919683ca1ee44792a1e37872be7d",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m2",
+      "method": "closed_linear",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.96728515625,
+            11.904296875,
+            10.896484375
+          ],
+          "end": [
+            13.96728515625,
+            11.904296875,
+            10.896484375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.32763671875,
+            12.67724609375,
+            11.29296875
+          ],
+          "end": [
+            14.5419921875,
+            12.7490234375,
+            11.32373046875
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.16650390625,
+            12.396484375,
+            11.41162109375
+          ],
+          "end": [
+            12.16650390625,
+            12.396484375,
+            11.41162109375
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "lam": 30.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m2",
+      "method": "finetune_full",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.40673828125,
+            11.87744140625,
+            10.90380859375
+          ],
+          "end": [
+            13.373046875,
+            11.92919921875,
+            10.931640625
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.37841796875,
+            12.77392578125,
+            11.34765625
+          ],
+          "end": [
+            14.185546875,
+            12.7822265625,
+            11.36572265625
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            13.21533203125,
+            12.61083984375,
+            11.44677734375
+          ],
+          "end": [
+            12.505859375,
+            12.4755859375,
+            11.4150390625
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "lr": 3e-06,
+          "epochs": 80
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m2",
+      "method": "hdc_primal",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.50341796875,
+            11.98046875,
+            10.95361328125
+          ],
+          "end": [
+            13.50341796875,
+            11.98046875,
+            10.95361328125
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.2509765625,
+            12.8193359375,
+            11.38525390625
+          ],
+          "end": [
+            14.47119140625,
+            12.88916015625,
+            11.41552734375
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            11.98486328125,
+            12.36767578125,
+            11.3857421875
+          ],
+          "end": [
+            11.98486328125,
+            12.36767578125,
+            11.3857421875
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "source": "state",
+          "dimension": 2048,
+          "scale": 1.0,
+          "lam": 1000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m2",
+      "method": "hdc",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.7900390625,
+            11.8349609375,
+            10.86865234375
+          ],
+          "end": [
+            13.7900390625,
+            11.8349609375,
+            10.86865234375
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.03271484375,
+            12.82421875,
+            11.40234375
+          ],
+          "end": [
+            14.03271484375,
+            12.82421875,
+            11.40234375
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            12.38671875,
+            12.44482421875,
+            11.416015625
+          ],
+          "end": [
+            12.35546875,
+            12.43701171875,
+            11.41943359375
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "source": "state",
+          "dimension": 2048,
+          "scale": 1.0,
+          "lam": 1000.0
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    },
+    {
+      "device": "cuda",
+      "task": "m2",
+      "method": "readout_tag",
+      "measurement_environment": {
+        "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+        "cpu_affinity": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "system_load_by_repetition": [
+        {
+          "repetition": 0,
+          "start": [
+            13.3291015625,
+            11.80615234375,
+            10.8701171875
+          ],
+          "end": [
+            13.70361328125,
+            11.9091796875,
+            10.90869140625
+          ]
+        },
+        {
+          "repetition": 1,
+          "start": [
+            14.49853515625,
+            12.77001953125,
+            11.33837890625
+          ],
+          "end": [
+            14.49853515625,
+            12.77001953125,
+            11.33837890625
+          ]
+        },
+        {
+          "repetition": 2,
+          "start": [
+            14.076171875,
+            12.75146484375,
+            11.4794921875
+          ],
+          "end": [
+            13.66943359375,
+            12.68896484375,
+            11.4658203125
+          ]
+        }
+      ],
+      "identity": {
+        "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+        "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+        "configuration": {
+          "lr": 0.003,
+          "epochs": 10
+        },
+        "implementation_sha256": {
+          "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+          "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+          "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+          "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+        },
+        "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+        "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+        "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+        "software_versions": {
+          "python": "3.10.20",
+          "numpy": "2.2.6",
+          "torch": "2.5.1+cu124",
+          "cuda_runtime": "12.4"
+        },
+        "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be"
+      }
+    }
+  ]
+}

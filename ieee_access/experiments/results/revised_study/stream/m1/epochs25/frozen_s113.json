@@ -1,0 +1,176 @@
+{
+  "R": [
+    [
+      0.7574324607849121,
+      0.8051419258117676,
+      0.7858037352561951,
+      0.8003888726234436,
+      0.7291880249977112,
+      0.6175853610038757,
+      0.4736631512641907
+    ],
+    [
+      0.7574324607849121,
+      0.8051419258117676,
+      0.7858037352561951,
+      0.8003888726234436,
+      0.7291880249977112,
+      0.6175853610038757,
+      0.4736631512641907
+    ],
+    [
+      0.7574324607849121,
+      0.8051419258117676,
+      0.7858037352561951,
+      0.8003888726234436,
+      0.7291880249977112,
+      0.6175853610038757,
+      0.4736631512641907
+    ],
+    [
+      0.7574324607849121,
+      0.8051419258117676,
+      0.7858037352561951,
+      0.8003888726234436,
+      0.7291880249977112,
+      0.6175853610038757,
+      0.4736631512641907
+    ]
+  ],
+  "names": [
+    "20120924",
+    "20120926",
+    "20120927",
+    "20120928",
+    "20121004",
+    "20121017",
+    "20121024"
+  ],
+  "held_in": 4,
+  "adapt_macs": [
+    0,
+    0,
+    0
+  ],
+  "memory": [
+    611216,
+    611216,
+    611216
+  ],
+  "start_macs": 0,
+  "summary": {
+    "acc": 0.7098862188202995,
+    "acc_held_in": 0.7871917486190796,
+    "acc_held_out": 0.6068121790885925,
+    "plasticity": 0.6068121790885925,
+    "bwt": 0.0,
+    "bwt_held_in": 0.0,
+    "bwt_held_out": 0.0,
+    "zero_shot_held_out": 0.6068121790885925,
+    "adapt_macs": 0.0,
+    "memory": 611216
+  },
+  "task": "m1",
+  "variant": "epochs25",
+  "seed": 113,
+  "method": "frozen",
+  "backbone": {
+    "macs": {
+      "encode": 820736,
+      "head": 83968
+    },
+    "info": {
+      "losses": [
+        0.23761078715324402,
+        0.17068488895893097,
+        0.1463155895471573,
+        0.13550812005996704,
+        0.12932614982128143,
+        0.1250966340303421,
+        0.12216101586818695,
+        0.11917220056056976,
+        0.11728178709745407,
+        0.11541572958230972,
+        0.11407572776079178,
+        0.11249256879091263,
+        0.11159200966358185,
+        0.11050062626600266,
+        0.10931830108165741,
+        0.10870186984539032,
+        0.10777346044778824,
+        0.10735561698675156,
+        0.10700050741434097,
+        0.10666202008724213,
+        0.10628792643547058,
+        0.10595907270908356,
+        0.10564810782670975,
+        0.1057284027338028,
+        0.10559698194265366
+      ],
+      "seconds": 82.09879065304995,
+      "bins_processed": 40396800,
+      "parameters": 611216
+    }
+  },
+  "native_memory": [
+    611216,
+    611216,
+    611216
+  ],
+  "memory_accounting": {
+    "native_memory": [
+      611216,
+      611216,
+      611216
+    ],
+    "memory": [
+      611216,
+      611216,
+      611216
+    ],
+    "added_scalars": [
+      0,
+      0,
+      0
+    ],
+    "prior_copy_scalars": 0,
+    "shared_head_scalars": 0,
+    "bound_key_scalars_per_session": 0,
+    "model_parameters": 611216,
+    "full_readout_parameters": 84368,
+    "last_layer_parameters": 2064,
+    "added_components": [
+      {
+        "prior_copy": 0,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      },
+      {
+        "prior_copy": 0,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      },
+      {
+        "prior_copy": 0,
+        "shared_head": 0,
+        "bound_keys": 0,
+        "redundant_pretrained_model": 0,
+        "unused_tagged_shared_head": 0,
+        "copied_frozen_readout": 0,
+        "replay_fit_masks": 0
+      }
+    ],
+    "definition": "Actually retained model copies/adaptation tensors and replay prefixes/fit masks; disposable offline dataset/feature cache and gradient/optimizer working space excluded"
+  },
+  "timing_scope": "No deployment timing in this record; use results/resources for isolated prefix-inclusive timing.",
+  "source_result": "mjcs/results/stream/m1/epochs25/frozen_s113.json",
+  "source_sha256": "298a0d71c49dc1c58ba0ad99e76efff57454175ecce47b33ee95e327e34fd13f"
+}

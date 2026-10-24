@@ -1,0 +1,2764 @@
+{
+  "h1": {
+    "linear_gf": {
+      "records": [
+        {
+          "seed": 101,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 113,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 127,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 131,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 137,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 149,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 157,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 163,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 173,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 181,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4427795551
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4719951799
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4460639127
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4538677695
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4323797935
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4544118775
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 433,
+              "q": 433,
+              "solver": "primal",
+              "analytic_macs": 4906205231
+            }
+          ],
+          "mean_adapt_macs": 4560169444.714286,
+          "retained_scalars_after_final_session": 1217039,
+          "prior_scalars": 903
+        }
+      ],
+      "mean_adapt_macs": 4560169444.714286,
+      "retained_scalars_after_final_session": 1217039
+    },
+    "relu_matched": {
+      "records": [
+        {
+          "seed": 101,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 113,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 127,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 131,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 137,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 149,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 157,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 163,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 173,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        },
+        {
+          "seed": 181,
+          "solver_records": [
+            {
+              "session": "S6",
+              "N": 2324,
+              "d": 4225,
+              "q": 2324,
+              "solver": "dual",
+              "analytic_macs": 31881632577
+            },
+            {
+              "session": "S7",
+              "N": 2481,
+              "d": 4225,
+              "q": 2481,
+              "solver": "dual",
+              "analytic_macs": 35989835404
+            },
+            {
+              "session": "S8",
+              "N": 2357,
+              "d": 4225,
+              "q": 2357,
+              "solver": "dual",
+              "analytic_macs": 32694373287
+            },
+            {
+              "session": "S9",
+              "N": 2392,
+              "d": 4225,
+              "q": 2392,
+              "solver": "dual",
+              "analytic_macs": 33612453266
+            },
+            {
+              "session": "S10",
+              "N": 2266,
+              "d": 4225,
+              "q": 2266,
+              "solver": "dual",
+              "analytic_macs": 30435354204
+            },
+            {
+              "session": "S11",
+              "N": 2377,
+              "d": 4225,
+              "q": 2377,
+              "solver": "dual",
+              "analytic_macs": 33256250699
+            },
+            {
+              "session": "S12",
+              "N": 2570,
+              "d": 4225,
+              "q": 2570,
+              "solver": "dual",
+              "analytic_macs": 38458892215
+            }
+          ],
+          "mean_adapt_macs": 33761255950.285713,
+          "retained_scalars_after_final_session": 2648031,
+          "prior_scalars": 903
+        }
+      ],
+      "mean_adapt_macs": 33761255950.285713,
+      "retained_scalars_after_final_session": 2648031
+    }
+  },
+  "m1": {
+    "linear_gf": {
+      "records": [
+        {
+          "seed": 101,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 113,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 127,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 131,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 137,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 149,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 157,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 163,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 173,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 181,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1620408973
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 1575498304
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 321,
+              "q": 321,
+              "solver": "primal",
+              "analytic_macs": 3081181402
+            }
+          ],
+          "mean_adapt_macs": 2092362893.0,
+          "retained_scalars_after_final_session": 628688,
+          "prior_scalars": 2064
+        }
+      ],
+      "mean_adapt_macs": 2092362893.0,
+      "retained_scalars_after_final_session": 628688
+    },
+    "relu_matched": {
+      "records": [
+        {
+          "seed": 101,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 113,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 127,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 131,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 137,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 149,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 157,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 163,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 173,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        },
+        {
+          "seed": 181,
+          "solver_records": [
+            {
+              "session": "20121004",
+              "N": 520,
+              "d": 8321,
+              "q": 520,
+              "solver": "dual",
+              "analytic_macs": 4721875050
+            },
+            {
+              "session": "20121017",
+              "N": 523,
+              "d": 8321,
+              "q": 523,
+              "solver": "dual",
+              "analytic_macs": 4708252268
+            },
+            {
+              "session": "20121024",
+              "N": 517,
+              "d": 8321,
+              "q": 517,
+              "solver": "dual",
+              "analytic_macs": 6151514339
+            }
+          ],
+          "mean_adapt_macs": 5193880552.333333,
+          "retained_scalars_after_final_session": 2585552,
+          "prior_scalars": 2064
+        }
+      ],
+      "mean_adapt_macs": 5193880552.333333,
+      "retained_scalars_after_final_session": 2585552
+    }
+  },
+  "m2": {
+    "linear_gf": {
+      "records": [
+        {
+          "seed": 101,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 113,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 127,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 131,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 137,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 149,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 157,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 163,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 173,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 181,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 3276513478
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1566457498
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 1893598642
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 353,
+              "q": 353,
+              "solver": "primal",
+              "analytic_macs": 2835368602
+            }
+          ],
+          "mean_adapt_macs": 2392984555.0,
+          "retained_scalars_after_final_session": 774476,
+          "prior_scalars": 258
+        }
+      ],
+      "mean_adapt_macs": 2392984555.0,
+      "retained_scalars_after_final_session": 774476
+    },
+    "relu_matched": {
+      "records": [
+        {
+          "seed": 101,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 113,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 127,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 131,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 137,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 149,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 157,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 163,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 173,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        },
+        {
+          "seed": 181,
+          "solver_records": [
+            {
+              "session": "20201030",
+              "N": 2638,
+              "d": 4225,
+              "q": 2638,
+              "solver": "dual",
+              "analytic_macs": 37856557446
+            },
+            {
+              "session": "20201118",
+              "N": 1258,
+              "d": 4225,
+              "q": 1258,
+              "solver": "dual",
+              "analytic_macs": 9587389926
+            },
+            {
+              "session": "20201119",
+              "N": 1522,
+              "d": 4225,
+              "q": 1522,
+              "solver": "dual",
+              "analytic_macs": 13483983462
+            },
+            {
+              "session": "20201124",
+              "N": 2282,
+              "d": 4225,
+              "q": 2282,
+              "solver": "dual",
+              "analytic_macs": 28647645329
+            }
+          ],
+          "mean_adapt_macs": 22393894040.75,
+          "retained_scalars_after_final_session": 1722956,
+          "prior_scalars": 258
+        }
+      ],
+      "mean_adapt_macs": 22393894040.75,
+      "retained_scalars_after_final_session": 1722956
+    }
+  }
+}

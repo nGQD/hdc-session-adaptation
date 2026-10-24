@@ -1,0 +1,136 @@
+{
+  "task": "h1",
+  "split": "outer",
+  "seed": 157,
+  "held_in": 6,
+  "sessions": [
+    {
+      "file": "00_S0.npz",
+      "name": "S0",
+      "fit_bins": 0,
+      "prefix_bins": 13820,
+      "score_bins": 3070
+    },
+    {
+      "file": "01_S1.npz",
+      "name": "S1",
+      "fit_bins": 0,
+      "prefix_bins": 20419,
+      "score_bins": 4700
+    },
+    {
+      "file": "02_S2.npz",
+      "name": "S2",
+      "fit_bins": 0,
+      "prefix_bins": 18702,
+      "score_bins": 4327
+    },
+    {
+      "file": "03_S3.npz",
+      "name": "S3",
+      "fit_bins": 0,
+      "prefix_bins": 17870,
+      "score_bins": 4094
+    },
+    {
+      "file": "04_S4.npz",
+      "name": "S4",
+      "fit_bins": 0,
+      "prefix_bins": 19178,
+      "score_bins": 4425
+    },
+    {
+      "file": "05_S5.npz",
+      "name": "S5",
+      "fit_bins": 0,
+      "prefix_bins": 18802,
+      "score_bins": 4322
+    },
+    {
+      "file": "06_S6.npz",
+      "name": "S6",
+      "fit_bins": 2324,
+      "prefix_bins": 2392,
+      "score_bins": 2083
+    },
+    {
+      "file": "07_S7.npz",
+      "name": "S7",
+      "fit_bins": 2481,
+      "prefix_bins": 2550,
+      "score_bins": 2238
+    },
+    {
+      "file": "08_S8.npz",
+      "name": "S8",
+      "fit_bins": 2357,
+      "prefix_bins": 2408,
+      "score_bins": 2096
+    },
+    {
+      "file": "09_S9.npz",
+      "name": "S9",
+      "fit_bins": 2392,
+      "prefix_bins": 2451,
+      "score_bins": 2149
+    },
+    {
+      "file": "10_S10.npz",
+      "name": "S10",
+      "fit_bins": 2266,
+      "prefix_bins": 2336,
+      "score_bins": 2042
+    },
+    {
+      "file": "11_S11.npz",
+      "name": "S11",
+      "fit_bins": 2377,
+      "prefix_bins": 2456,
+      "score_bins": 2149
+    },
+    {
+      "file": "12_S12.npz",
+      "name": "S12",
+      "fit_bins": 2570,
+      "prefix_bins": 2652,
+      "score_bins": 2377
+    }
+  ],
+  "target_mean": [
+    1.069872268999461e-05,
+    -3.242525963287335e-06,
+    -4.296110091672745e-06,
+    -2.593638600956183e-05,
+    3.1971580028766766e-05,
+    4.333991455496289e-05,
+    -4.085633554495871e-05
+  ],
+  "target_std": [
+    0.0006567489472217858,
+    0.0010313739767298102,
+    0.0011446019634604454,
+    0.003859186079353094,
+    0.005771503783762455,
+    0.0060726348310709,
+    0.00563071109354496
+  ],
+  "model_parameters": 1194919,
+  "backbone_macs": {
+    "encode": 1548288,
+    "head": 111488
+  },
+  "checkpoint": "mjcs/results/checkpoints/h1/outer/full_s157.pt",
+  "checkpoint_sha256": "1833eea89d74b30c95894645251df8ff4e5c27f466903545d9dd4c256dedac66",
+  "source_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "extraction_device": "cuda",
+  "extraction_seconds": 4.768442564993165,
+  "projection_width": 304,
+  "prior_width": 129,
+  "dtype": "float32 features; float64 prior and solves",
+  "torch_version": "2.5.1+cu124"
+}

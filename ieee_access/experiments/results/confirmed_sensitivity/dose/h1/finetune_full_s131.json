@@ -1,0 +1,53 @@
+{
+  "task": "h1",
+  "method": "finetune_full",
+  "variant": "full",
+  "seed": 131,
+  "rng_seed": 131,
+  "config": {
+    "lr": 1e-05,
+    "epochs": 20
+  },
+  "selection_sha256": "0fb81ac4430b7f1a78727248bb295e51f3a9ef38b8ff08ac47b5270e181cf2c0",
+  "checkpoint_sha256": "de2f35be1428f2f3e29b84583c1ef325c6080a603dd735a1fe2a26cccd577373",
+  "runner_sha256": "6f04f8d2d9b4e6d4e88253181390d823daa3ff5a80046bc9b7cde4cfaf123a48",
+  "implementation_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "software_versions": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu124",
+    "cuda_runtime": "12.4",
+    "device": "cuda"
+  },
+  "data_manifest_sha256": "1ace6f9cbb3fe2a1a535e514bc75110b17717cad1e9c280a83de8df4c2634c15",
+  "dose": [
+    0.125,
+    0.25,
+    0.5
+  ],
+  "stream_records_sha256": {
+    "dose_stream/h1/finetune_full_p0.125_s131.json": "05a7f49dd6d36f81846ecf3123c8f1a2bc83f2e6063ea87041ef3766f2f34b62",
+    "dose_stream/h1/finetune_full_p0.25_s131.json": "1fadda375360eaba3ddc4f605ed4f11fc5e8fa87137326cfa67d462ebe19f35d",
+    "dose_stream/h1/finetune_full_p0.5_s131.json": "6fadefa7509e903c8e315d7cb29c07eaeb7dbf95f17c6897f5098fa65065ec69"
+  },
+  "acc_held_out": [
+    0.3255200045449393,
+    0.3578107016427176,
+    0.3732688937868391
+  ],
+  "acc": [
+    0.4562466282110948,
+    0.4874177345862755,
+    0.4915442971082834
+  ],
+  "adapt_macs": [
+    182101138285.7143,
+    426116663588.5714,
+    917789736960.0
+  ]
+}

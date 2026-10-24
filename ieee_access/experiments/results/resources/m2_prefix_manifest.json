@@ -1,0 +1,22 @@
+[
+  {
+    "name": "20201030",
+    "prefix_bins": 2638,
+    "labeled_bins": 2638
+  },
+  {
+    "name": "20201118",
+    "prefix_bins": 1258,
+    "labeled_bins": 1258
+  },
+  {
+    "name": "20201119",
+    "prefix_bins": 1522,
+    "labeled_bins": 1522
+  },
+  {
+    "name": "20201124",
+    "prefix_bins": 2282,
+    "labeled_bins": 2282
+  }
+]

@@ -1,0 +1,1469 @@
+{
+ "version": 1,
+ "design": "Fixed boundary-sensitivity confirmation, not an unbounded hyperparameter search.",
+ "protocol": "Original inner held-in stream; no held-out calibration or outer test data are used for selection.",
+ "dev_seeds": [
+  11,
+  23,
+  37
+ ],
+ "outer_seeds": [
+  101,
+  113,
+  127,
+  131,
+  137,
+  149,
+  157,
+  163,
+  173,
+  181
+ ],
+ "selection_metric": "Mean final stream ACC across the three development seeds.",
+ "stopping_rule": "Run exactly the candidates listed here; stop after this finite confirmation even if a new edge wins. No candidate is chosen using outer outcomes.",
+ "tie_rule": "Highest mean inner ACC; exact ties prefer the original incumbent, then candidate order.",
+ "rng_rule": "Reset Python, NumPy, CPU torch and CUDA torch RNGs to the declared seed immediately before each candidate stream, after loading the checkpoint.",
+ "historical_note": "Legacy run.py reset RNGs during backbone pretraining but not explicitly after checkpoint loading. Original results remain unchanged; fresh incumbent and extension runs use explicit common seeds.",
+ "selection_implementation": "Final-row-only scoring is validated against the original full stream before selection; scoring uses evaluation mode and consumes no RNG.",
+ "original_files": {
+  "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+  "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+  "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+  "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+ },
+ "tasks": {
+  "h1": {
+   "selection_file_sha256": "b5b7c5cdc63d34441a56c3a95644ae127f1bcdba24eda9618ed39072036f0372",
+   "methods": {
+    "finetune_full": [
+     {
+      "id": "b9a1a95cb739",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 20
+      },
+      "incumbent": true
+     },
+     {
+      "id": "35ec77257f6c",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 20
+      },
+      "incumbent": false
+     },
+     {
+      "id": "e73419dd56fd",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 20
+      },
+      "incumbent": false
+     }
+    ],
+    "finetune_readout": [
+     {
+      "id": "d903549ec9de",
+      "config": {
+       "lr": 3e-05,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "7a007afacd18",
+      "config": {
+       "lr": 3e-05,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "replay": [
+     {
+      "id": "ff566fe3bd7d",
+      "config": {
+       "lr": 0.001,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "4c98f48b59a9",
+      "config": {
+       "lr": 0.001,
+       "epochs": 80
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ddbaec69765e",
+      "config": {
+       "lr": 0.003,
+       "epochs": 40
+      },
+      "incumbent": false
+     },
+     {
+      "id": "32928b063524",
+      "config": {
+       "lr": 0.003,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "full_tag": [
+     {
+      "id": "6d00593e46be",
+      "config": {
+       "lr": 0.0003,
+       "epochs": 10
+      },
+      "incumbent": true
+     }
+    ],
+    "readout_tag": [
+     {
+      "id": "244e8ab885d7",
+      "config": {
+       "lr": 0.001,
+       "epochs": 20
+      },
+      "incumbent": true
+     },
+     {
+      "id": "837b82a3ca18",
+      "config": {
+       "lr": 0.003,
+       "epochs": 20
+      },
+      "incumbent": false
+     }
+    ],
+    "last_tag": [
+     {
+      "id": "ff566fe3bd7d",
+      "config": {
+       "lr": 0.001,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "4c98f48b59a9",
+      "config": {
+       "lr": 0.001,
+       "epochs": 80
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ddbaec69765e",
+      "config": {
+       "lr": 0.003,
+       "epochs": 40
+      },
+      "incumbent": false
+     },
+     {
+      "id": "32928b063524",
+      "config": {
+       "lr": 0.003,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "ewc": [
+     {
+      "id": "d96f85f09208",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 20,
+       "ewc": 100.0
+      },
+      "incumbent": true
+     },
+     {
+      "id": "4fb368a48c32",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 1,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "2ce02aa03988",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 2,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "8bcf61cf3d65",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 5,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "cc7fc9978f7f",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 10,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "39070a6d8db8",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 40,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "22e912f573c6",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 80,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a8e6b5325e55",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 1,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "9d51565a2c0a",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 2,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "9a417840a301",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 5,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "83948bab591b",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 10,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "70b6871cd2a8",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 20,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "6471a9138593",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 40,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a106c49e2f43",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 80,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "f3e2941745b0",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 1,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "01e8ddff7453",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 2,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "0eddb5140084",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 5,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "7373b5ef6ec5",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 10,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "66f9d6b258cc",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 20,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "25e1aa662ae9",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 40,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a4bb5835134a",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 80,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "cacdab02516b",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 1,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "d9806b9a7b21",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 2,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "837759154d4a",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 5,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ad5e6a251cab",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 10,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "305026175c33",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 20,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "755aa0065d2a",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 40,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "c137ebb881d5",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 80,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "15fd2e581bb1",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 1,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "807ea632b55b",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 2,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "6892c40a3e98",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 5,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "20b206fec9b3",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 10,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "eae72962d854",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 20,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "213c9957c7dc",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 40,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "b23e1e8d423c",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 80,
+       "ewc": 100.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "b05bbfea39ee",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 1,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "e018b298eeac",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 2,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "50e4a7ca3bdc",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 5,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "7fe6d510ada3",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 10,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a25c7ad473ce",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 20,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "aeaf1b1d31d9",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 40,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "d94578d2e502",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 80,
+       "ewc": 10.0
+      },
+      "incumbent": false
+     }
+    ]
+   }
+  },
+  "m1": {
+   "selection_file_sha256": "38cd74cd8ec6e7094c71d461b109a0f0f29a1ca0dad587f2640bc1ab9365df8d",
+   "methods": {
+    "finetune_full": [
+     {
+      "id": "717820da5b89",
+      "config": {
+       "lr": 3e-05,
+       "epochs": 2
+      },
+      "incumbent": true
+     }
+    ],
+    "finetune_readout": [
+     {
+      "id": "d903549ec9de",
+      "config": {
+       "lr": 3e-05,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "7a007afacd18",
+      "config": {
+       "lr": 3e-05,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "replay": [
+     {
+      "id": "f6b08849da9c",
+      "config": {
+       "lr": 0.0003,
+       "epochs": 20
+      },
+      "incumbent": true
+     }
+    ],
+    "full_tag": [
+     {
+      "id": "681baffc884a",
+      "config": {
+       "lr": 0.0001,
+       "epochs": 20
+      },
+      "incumbent": true
+     }
+    ],
+    "readout_tag": [
+     {
+      "id": "ff566fe3bd7d",
+      "config": {
+       "lr": 0.001,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "4c98f48b59a9",
+      "config": {
+       "lr": 0.001,
+       "epochs": 80
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ddbaec69765e",
+      "config": {
+       "lr": 0.003,
+       "epochs": 40
+      },
+      "incumbent": false
+     },
+     {
+      "id": "32928b063524",
+      "config": {
+       "lr": 0.003,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "last_tag": [
+     {
+      "id": "ff566fe3bd7d",
+      "config": {
+       "lr": 0.001,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "4c98f48b59a9",
+      "config": {
+       "lr": 0.001,
+       "epochs": 80
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ddbaec69765e",
+      "config": {
+       "lr": 0.003,
+       "epochs": 40
+      },
+      "incumbent": false
+     },
+     {
+      "id": "32928b063524",
+      "config": {
+       "lr": 0.003,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "ewc": [
+     {
+      "id": "2739b7930d48",
+      "config": {
+       "lr": 0.001,
+       "epochs": 2,
+       "ewc": 1000000.0
+      },
+      "incumbent": true
+     },
+     {
+      "id": "7869407a909b",
+      "config": {
+       "lr": 0.001,
+       "epochs": 1,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "127e8a5af298",
+      "config": {
+       "lr": 0.001,
+       "epochs": 5,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a4bb747e1beb",
+      "config": {
+       "lr": 0.001,
+       "epochs": 10,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a3c3768eb12c",
+      "config": {
+       "lr": 0.001,
+       "epochs": 20,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "059e702549ed",
+      "config": {
+       "lr": 0.001,
+       "epochs": 40,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "103d1e025c26",
+      "config": {
+       "lr": 0.001,
+       "epochs": 80,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ec5398db1296",
+      "config": {
+       "lr": 0.001,
+       "epochs": 1,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "f108759ffb8f",
+      "config": {
+       "lr": 0.001,
+       "epochs": 2,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "3088e00544e8",
+      "config": {
+       "lr": 0.001,
+       "epochs": 5,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "0c9eacc47ffa",
+      "config": {
+       "lr": 0.001,
+       "epochs": 10,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "9bf9e6d0d105",
+      "config": {
+       "lr": 0.001,
+       "epochs": 20,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "33e33c118349",
+      "config": {
+       "lr": 0.001,
+       "epochs": 40,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "bb75e821b9ab",
+      "config": {
+       "lr": 0.001,
+       "epochs": 80,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ed2ae86f71ed",
+      "config": {
+       "lr": 0.003,
+       "epochs": 1,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "c63445d1728a",
+      "config": {
+       "lr": 0.003,
+       "epochs": 2,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "86ffdc48feaa",
+      "config": {
+       "lr": 0.003,
+       "epochs": 5,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "0243bd5f1901",
+      "config": {
+       "lr": 0.003,
+       "epochs": 10,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "feadf549a2f3",
+      "config": {
+       "lr": 0.003,
+       "epochs": 20,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "639209a0959f",
+      "config": {
+       "lr": 0.003,
+       "epochs": 40,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "52e74b04b4ea",
+      "config": {
+       "lr": 0.003,
+       "epochs": 80,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "230dd6d4973d",
+      "config": {
+       "lr": 0.003,
+       "epochs": 1,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "0b8dae6553b4",
+      "config": {
+       "lr": 0.003,
+       "epochs": 2,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "b956d8aa13f0",
+      "config": {
+       "lr": 0.003,
+       "epochs": 5,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "49703c3af8d4",
+      "config": {
+       "lr": 0.003,
+       "epochs": 10,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "5a1c73cb121f",
+      "config": {
+       "lr": 0.003,
+       "epochs": 20,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "7daaebbf5b98",
+      "config": {
+       "lr": 0.003,
+       "epochs": 40,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "c458df849f3e",
+      "config": {
+       "lr": 0.003,
+       "epochs": 80,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     }
+    ]
+   }
+  },
+  "m2": {
+   "selection_file_sha256": "bc81cbc01c6725828a67bc10964f0c99589d0704d26461ea25f3c2023e4e6180",
+   "methods": {
+    "finetune_full": [
+     {
+      "id": "cd28d895178a",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "39e8b26c0f42",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 80
+      },
+      "incumbent": false
+     },
+     {
+      "id": "e356ac4e95b9",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 40
+      },
+      "incumbent": false
+     },
+     {
+      "id": "3e34f5716758",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 80
+      },
+      "incumbent": false
+     },
+     {
+      "id": "203ca93c49b3",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 40
+      },
+      "incumbent": false
+     },
+     {
+      "id": "4ec37bcf4fd9",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "finetune_readout": [
+     {
+      "id": "548dde0e876f",
+      "config": {
+       "lr": 0.0001,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "90c5ba13dde0",
+      "config": {
+       "lr": 0.0001,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "replay": [
+     {
+      "id": "6d00593e46be",
+      "config": {
+       "lr": 0.0003,
+       "epochs": 10
+      },
+      "incumbent": true
+     }
+    ],
+    "full_tag": [
+     {
+      "id": "5fca035728a1",
+      "config": {
+       "lr": 0.001,
+       "epochs": 10
+      },
+      "incumbent": true
+     },
+     {
+      "id": "42cb3fc87e13",
+      "config": {
+       "lr": 0.003,
+       "epochs": 10
+      },
+      "incumbent": false
+     }
+    ],
+    "readout_tag": [
+     {
+      "id": "5fca035728a1",
+      "config": {
+       "lr": 0.001,
+       "epochs": 10
+      },
+      "incumbent": true
+     },
+     {
+      "id": "42cb3fc87e13",
+      "config": {
+       "lr": 0.003,
+       "epochs": 10
+      },
+      "incumbent": false
+     }
+    ],
+    "last_tag": [
+     {
+      "id": "ff566fe3bd7d",
+      "config": {
+       "lr": 0.001,
+       "epochs": 40
+      },
+      "incumbent": true
+     },
+     {
+      "id": "4c98f48b59a9",
+      "config": {
+       "lr": 0.001,
+       "epochs": 80
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ddbaec69765e",
+      "config": {
+       "lr": 0.003,
+       "epochs": 40
+      },
+      "incumbent": false
+     },
+     {
+      "id": "32928b063524",
+      "config": {
+       "lr": 0.003,
+       "epochs": 80
+      },
+      "incumbent": false
+     }
+    ],
+    "ewc": [
+     {
+      "id": "0b73e8fbd6a4",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 40,
+       "ewc": 1000000.0
+      },
+      "incumbent": true
+     },
+     {
+      "id": "11182151c59d",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 1,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "9c7777a01342",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 2,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "fe2e245acf86",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 5,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "3f77cb3e300d",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 10,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "80450099f28f",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 20,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "568db51bef10",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 80,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "7da908f86e57",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 1,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "4f42d43632b3",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 2,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "d318efeb944a",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 5,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "f58b2253bf5f",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 10,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "02d867a03cb5",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 20,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "e20b03d74da2",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 40,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "fadb77789235",
+      "config": {
+       "lr": 1e-05,
+       "epochs": 80,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "367e2fb34b11",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 1,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "41625a2f8539",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 2,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "7246e447d9e1",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 5,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a0f406098fed",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 10,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "a50c718263a0",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 20,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "8d25813a06b7",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 40,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "2fc2d53ea143",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 80,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "f66a1e118e07",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 1,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "8f2eb1bb0cae",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 2,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "fb99d9b09982",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 5,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "4ee5c87b0e62",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 10,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "044d506dbf99",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 20,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "e0f93a9c94eb",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 40,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ed9005ea8559",
+      "config": {
+       "lr": 1e-06,
+       "epochs": 80,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "bc598eddf63c",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 1,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "f523a670d5cf",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 2,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "3edc394f8f44",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 5,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "f5b96a195b37",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 10,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "246023e376f2",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 20,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "27ba2f993732",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 40,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "ea2333795c1a",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 80,
+       "ewc": 1000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "babd7ea585c0",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 1,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "8c8fc04a58b1",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 2,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "8f7679eced56",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 5,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "0b8536f46ebc",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 10,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "dd74339a6019",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 20,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "d51d2ea57b72",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 40,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     },
+     {
+      "id": "bacbb01c9be9",
+      "config": {
+       "lr": 3e-06,
+       "epochs": 80,
+       "ewc": 10000000.0
+      },
+      "incumbent": false
+     }
+    ]
+   }
+  }
+ }
+}

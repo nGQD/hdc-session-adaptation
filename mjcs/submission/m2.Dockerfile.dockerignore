@@ -1,0 +1,11 @@
+*
+!falcon-challenge/falcon_challenge
+!falcon-challenge/decoder_demos
+!falcon-challenge/preproc
+!falcon-challenge/setup.py
+!falcon-challenge/pyproject.toml
+!falcon-challenge/README.md
+!mjcs/code/model.py
+!mjcs/submission/decoder.py
+!mjcs/submission/artifacts/m2
+**/__pycache__

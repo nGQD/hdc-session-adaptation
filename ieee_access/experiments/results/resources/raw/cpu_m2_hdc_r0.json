@@ -1,0 +1,124 @@
+{
+  "task": "m2",
+  "method": "hdc",
+  "device": "cpu",
+  "repetition": 0,
+  "configuration": {
+    "source": "state",
+    "dimension": 2048,
+    "scale": 1.0,
+    "lam": 1000.0
+  },
+  "benchmark_source_sha256": "45c9a876b3a7c47cbe04cef94674f6e2bea4cf66b193f8b4c11892271368d7c9",
+  "solver_source_sha256": "ebf0b68c4d6c02998b72a8fc7503d4afb7e0fbf28cd08a346726ddda3b20d1be",
+  "selection_file_sha256": "7d40a483bbad5a7f772b46fe2ab5b531c20028a22f70dd34f49ca531493c28f3",
+  "prefix_manifest_sha256": "388efa7c3b4456a1edf6830ca3904d301ef874c736b17281e23571e9598dce67",
+  "implementation_sha256": {
+    "engine.py": "4c87437e6c2b91d030064f466e5713d82b2b571f4906fc3e7317c92eac2c6ae9",
+    "run.py": "2b0910864355e37d1e41551d20f086934a4f972899f6bc4595a13e44fbfbbcac",
+    "model.py": "ab88ac37b410bea1a1113524995a971d36b973293de7d5f89881ea7d7cee3e9b",
+    "data.py": "89297f58c577f6649915dab21ff8e20cdb73f28ce3dfe6ee9cf60c819370ba9c"
+  },
+  "checkpoint_sha256": "ed7de3ea05da21f43ec0e7e314afbefaa68c2f1f879c09f3c52455c4be07a34c",
+  "prefix_cache_sha256": "ef1439bd61dd59ebb432132eed965508a5ee6775d2207dbe80154f323e38c6fa",
+  "software_versions": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu124",
+    "cuda_runtime": "12.4"
+  },
+  "seed": 101,
+  "threads": 4,
+  "rows": [
+    {
+      "name": "20201030",
+      "prefix_bins": 2638,
+      "labeled_bins": 2638,
+      "seconds": 1.4785803819540888,
+      "analytic_macs": 36646369670,
+      "method_returned_macs": 36646369670,
+      "process_rss_base_bytes": 476815360,
+      "process_rss_peak_bytes": 769114112,
+      "process_rss_increment_bytes": 292298752,
+      "cuda_baseline_allocated_bytes": null,
+      "cuda_peak_allocated_bytes": null,
+      "cuda_peak_reserved_bytes": null,
+      "persistent_scalars_after_update": 1240902,
+      "method_memory_return_value": 1240902
+    },
+    {
+      "name": "20201118",
+      "prefix_bins": 1258,
+      "labeled_bins": 1258,
+      "seconds": 1.077004568069242,
+      "analytic_macs": 9010279910,
+      "method_returned_macs": 9010279910,
+      "process_rss_base_bytes": 492916736,
+      "process_rss_peak_bytes": 613240832,
+      "process_rss_increment_bytes": 120324096,
+      "cuda_baseline_allocated_bytes": null,
+      "cuda_peak_allocated_bytes": null,
+      "cuda_peak_reserved_bytes": null,
+      "persistent_scalars_after_update": 1240902,
+      "method_memory_return_value": 1240902
+    },
+    {
+      "name": "20201119",
+      "prefix_bins": 1522,
+      "labeled_bins": 1522,
+      "seconds": 0.6561862679664046,
+      "analytic_macs": 12785762918,
+      "method_returned_macs": 12785762918,
+      "process_rss_base_bytes": 493137920,
+      "process_rss_peak_bytes": 615641088,
+      "process_rss_increment_bytes": 122503168,
+      "cuda_baseline_allocated_bytes": null,
+      "cuda_peak_allocated_bytes": null,
+      "cuda_peak_reserved_bytes": null,
+      "persistent_scalars_after_update": 1240902,
+      "method_memory_return_value": 1240902
+    },
+    {
+      "name": "20201124",
+      "prefix_bins": 2282,
+      "labeled_bins": 2282,
+      "seconds": 1.5223174639977515,
+      "analytic_macs": 27600773265,
+      "method_returned_macs": 27600773265,
+      "process_rss_base_bytes": 493498368,
+      "process_rss_peak_bytes": 717410304,
+      "process_rss_increment_bytes": 223911936,
+      "cuda_baseline_allocated_bytes": null,
+      "cuda_peak_allocated_bytes": null,
+      "cuda_peak_reserved_bytes": null,
+      "persistent_scalars_after_update": 1240902,
+      "method_memory_return_value": 1240902
+    }
+  ],
+  "torch": "2.5.1+cu124",
+  "numpy": "2.2.6",
+  "python": "3.10.20",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Core(TM) i9-14900HX",
+  "measurement_environment": {
+    "cpu_model": "Intel(R) Core(TM) i9-14900HX",
+    "cpu_affinity": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  "system_load_start": [
+    11.10009765625,
+    11.81201171875,
+    11.28271484375
+  ],
+  "system_load_end": [
+    13.91650390625,
+    12.40771484375,
+    11.48291015625
+  ],
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "protocol": "fresh process; pretrained model; normalized prefixes prepared before timing; isolated session update; empty feature cache; prefix only; method initialization, forward pass and update timed; no evaluation suffix; data loading and normalization excluded equally for all methods"
+}
